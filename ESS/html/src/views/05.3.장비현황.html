@@ -1,0 +1,122 @@
+@@include('modules/header.html', { "title": "05.3.장비 현황",
+									"class": "",
+									"addClass": "@@include('head/head-status.html')",
+									"current-menu-monitoring": "",
+									"current-menu-system": "",
+									"current-menu-driving": "",
+									"current-menu-status": "current-menu-item",
+										"active1": "",
+										"active2": "",
+										"active3": "is-active",
+										"active4": "",
+									"current-menu-statistics": "",
+										"active5": "",
+										"active6": "",
+										"active7": "",
+										"active8": "",
+										"active9": "",
+										"active10": "",
+									"current-menu-management": "",
+										"active11": "",
+										"active12": "",
+										"active13": ""})
+
+<div id="page-body" class="page-body status-page">
+	<div class="container-fluid">
+		<div class="status__top d-flex group-generation">
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded data--pv number-stats" data-number="500" data-duration="2000" data-decimal=",">
+					<img src="images/3.png" />
+					<p class="name">설비 용량(PV)</p>
+					<div class="stats-number">
+						<span class="stats-count"></span><span class="suffix">kWh</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded data--pv-inverter number-stats" data-number="500" data-duration="2000" data-decimal=",">
+					<img src="images/PV-inverter-icon.png" />
+					<p class="name">설비 용량(PV 인버터)</p>
+					<div class="stats-number">
+						<span class="stats-count"></span><span class="suffix">kWh</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded data--pcs number-stats" data-number="500" data-duration="2000" data-decimal=",">
+					<img src="images/PCS-icon.png" />
+					<p class="name">설비 용량(PCS)</p>
+					<div class="stats-number">
+						<span class="stats-count"></span><span class="suffix">kWh</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 box-item">
+				<div class="data--battery box-rounded rounded number-stats" data-number="2500" data-duration="2000" data-decimal=",">
+					<img src="images/battery-icon.png" />
+					<p class="name">설비 용량(배터리)</p>
+					<div class="stats-number">
+						<span class="stats-count"></span><span class="suffix">kWh</span>
+					</div>
+				</div>
+			</div>
+		</div><!-- End Status Top -->
+
+		<div class="equipment-bar d-flex align-items-center my-2">
+			<div class="title"><img class=energy-icon src="images/energy-icon.png" />장비</div>
+			<ul class="nav nav-pills equipment-bar__tab" role="tablist">
+				<li class="equipment-bar__tab--item">
+					<a class="nav-link active" id="pills-PCS-tab" data-toggle="pill" href="#pills-PCS" role="tab" aria-controls="pills-PCS"
+					 aria-selected="true">PCS</a>
+				</li>
+				<li class="equipment-bar__tab--item">
+					<a class="nav-link" id="pills-BMS-tab" data-toggle="pill" href="#pills-BMS" role="tab" aria-controls="pills-BMS"
+					 aria-selected="false">BMS</a>
+				</li>
+				<li class="equipment-bar__tab--item">
+					<a class="nav-link" id="pills-rack-tab" data-toggle="pill" href="#pills-rack" role="tab" aria-controls="pills-rack"
+					 aria-selected="false">Rack</a>
+				</li>
+				<li class="equipment-bar__tab--item">
+					<a class="nav-link" id="pills-THS-tab" data-toggle="pill" href="#pills-THS" role="tab" aria-controls="pills-THS"
+					 aria-selected="false">THS</a>
+				</li>
+				<li class="equipment-bar__tab--item">
+					<a class="nav-link" id="pills-PV-inverter-tab" data-toggle="pill" href="#pills-PV-inverter" role="tab"
+					 aria-controls="pills-PV-inverter" aria-selected="false">PV인버터</a>
+				</li>
+				<li class="equipment-bar__tab--item">
+					<a class="nav-link" id="pills-VCB-tab" data-toggle="pill" href="#pills-VCB" role="tab" aria-controls="pills-VCB"
+					 aria-selected="false">VCB</a>
+				</li>
+				<li class="equipment-bar__tab--item">
+					<a class="nav-link" id="pills-ACB-tab" data-toggle="pill" href="#pills-ACB" role="tab" aria-controls="pills-ACB"
+					 aria-selected="false">ACB</a>
+				</li>
+			</ul>
+		</div><!-- End Equipment Bar -->
+		<div class="tab-content p-0">
+			<div class="tab-pane fade show active" id="pills-PCS" role="tabpanel" aria-labelledby="pills-home-tab">
+				@@include('modules/tabEquipmentStatus/tab-pcs.html')
+			</div>
+			<div class="tab-pane fade" id="pills-BMS" role="tabpanel" aria-labelledby="pills-BMS-tab">
+				@@include('modules/tabEquipmentStatus/tab-bms.html')
+			</div>
+			<div class="tab-pane fade" id="pills-rack" role="tabpanel" aria-labelledby="pills-rack-tab">
+				@@include('modules/tabEquipmentStatus/tab-rack.html')
+			</div>
+			<div class="tab-pane fade" id="pills-THS" role="tabpanel" aria-labelledby="pills-THS-tab">
+				@@include('modules/tabEquipmentStatus/tab-ths.html')
+			</div>
+			<div class="tab-pane fade" id="pills-PV-inverter" role="tabpanel" aria-labelledby="pills-rack-tab">
+				@@include('modules/tabEquipmentStatus/tab-pv.html')
+			</div>
+			<div class="tab-pane fade" id="pills-VCB" role="tabpanel" aria-labelledby="pills-VCB-tab">
+				@@include('modules/tabEquipmentStatus/tab-vcb.html')
+			</div>
+			<div class="tab-pane fade" id="pills-ACB" role="tabpanel" aria-labelledby="pills-ACB-tab">
+				@@include('modules/tabEquipmentStatus/tab-acb.html')
+			</div>
+		</div>
+	</div>
+	@@include('modules/footer.html', {"addJs": "@@include('footer/script-status-equipment.html')"})

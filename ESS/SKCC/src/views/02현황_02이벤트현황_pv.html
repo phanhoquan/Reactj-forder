@@ -1,0 +1,168 @@
+@@include('modules/header.html', {"title": "02현황_02이벤트현황_pv", "class": ""})
+
+<div id="page-body" class="page-body main-page">
+	<div class="container-fluid">
+		<div class="row page-index">
+			<div class="banner-menu">
+				@@include('modules/banner-menu.html', {"class": "active", "subactive1": "", "subactive2": "active"})
+			</div><!-- End Banner Menu -->
+			<div class="d-flex">
+				<div class="event-status">
+					<div class="page-content">
+						<div class="box-custom">
+							<div class="box-custom-title">
+								<p>이벤트 현황</p>
+							</div>
+							<div class="part d-flex justify-content-around box-padding">
+								<div class="warning-box box-0 col-2">
+									<h2>PVC</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+
+								<div class="warning-box box-1 col-2">
+									<h2>PVI</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+
+								<div class="warning-box box-3 col-2">
+									<h2>PVS</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+
+								<div class="warning-box box-4 col-2">
+									<h2>TRS</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+
+								<div class="warning-box box-5 col-2">
+									<h2>ACB</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+
+								<div class="warning-box box-6 col-2">
+									<h2>VCB</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex justify-content-between equipment-bar part b-p part-2">
+							<div class=" d-flex align-items-center tablink">
+								<div class="title">장비</div>
+								<ul class="nav nav-pills equipment-bar__tab" role="tablist">
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link" id="pills-All-tab" data-toggle="pill" href="#pills-tab-All" role="tab" aria-controls="pills-All"
+										 aria-selected="false">All</a>
+									</li>
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link" id="pills-PVC-tab" data-toggle="pill" href="#pills-tab-PVC" role="tab" aria-controls="pills-PVC"
+										 aria-selected="false">PVC</a>
+									</li>
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link" id="pills-PVI-tab" data-toggle="pill" href="#pills-tab-PVI" role="tab" aria-controls="pills-PVI"
+										 aria-selected="false">PVI</a>
+									</li>
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link" id="pills-PVS-tab" data-toggle="pill" href="#pills-tab-PVS" role="tab" aria-controls="pills-PVS"
+										 aria-selected="false">PVS</a>
+									</li>
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link" id="pills-ACB-tab" data-toggle="pill" href="#pills-tab-ACB" role="tab" aria-controls="pills-ACB"
+										 aria-selected="false">ACB</a>
+									</li>
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link active" id="pills-VCB-tab" data-toggle="pill" href="#pills-tab-VCB" role="tab"
+										 aria-controls="pills-VCB" aria-selected="true">VCB</a>
+									</li>
+								</ul>
+							</div><!-- End Equipment Bar -->
+							<!-- <div class="search">
+								<a href="javascript:void(0)">검색</a>
+							</div> -->
+						</div>
+						<div class="part b-p part-3">
+							<div class="equipment d-flex">
+								<div class="block e-name d-flex align-items-center tablink">
+									<div class="title">기기번호</div>
+									<form action="">
+										<div class="equip-name form-group d-flex">
+											<div class="form-group d-flex">
+												<select class="select-option" id="exampleSelect1">
+													<option>수위</option>
+													<option>Warming</option>
+													<option>Fault</option>
+												</select>
+											</div>
+
+											<div class="form-group d-flex">
+												<select class="select-option" id="exampleSelect2">
+													<option>상태</option>
+													<option>발생</option>
+													<option>진행중</option>
+													<option>종료</option>
+												</select>
+											</div>
+
+											<div class="form-group d-flex">
+												<select class="select-option" id="exampleSelect3">
+													<option>장비번호</option>
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+
+											<div class="search">
+												<a href="javascript:void(0)">검색</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="tab-content p-0">
+							<div class="tab-pane fade" id="pills-tab-ALL" role="tabpanel" aria-labelledby="pills-ALL-tab">
+								@@include('modules/02.02.tab-all.html')
+							</div>
+							<div class="tab-pane fade" id="pills-tab-PVC" role="tabpanel" aria-labelledby="pills-PVC-tab">
+								@@include('modules/02.02.tab-pvc.html')
+							</div>
+							<div class="tab-pane fade" id="pills-tab-PVI" role="tabpanel" aria-labelledby="pills-PVI-tab">
+								@@include('modules/02.02.tab-pvi.html')
+							</div>
+							<div class="tab-pane fade" id="pills-tab-PVS" role="tabpanel" aria-labelledby="pills-PVS-tab">
+								@@include('modules/02.02.tab-pvs.html')
+							</div>
+							<div class="tab-pane fade" id="pills-tab-ACB" role="tabpanel" aria-labelledby="pills-ACB-tab">
+								@@include('modules/02.02.tab-acb.html')
+							</div>
+							<div class="tab-pane fade show active" id="pills-tab-VCB" role="tabpanel" aria-labelledby="pills-VCB-tab">
+								@@include('modules/02.02.tab-vcb.html')
+							</div>
+						</div>
+					</div><!-- End Main Content -->
+				</div>
+			</div>
+			@@include('modules/footer.html')
+		</div>
+	</div>

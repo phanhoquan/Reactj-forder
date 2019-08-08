@@ -1,0 +1,749 @@
+@@include('modules/header.html', { "title": "07.3.운휴및시스템관리",
+"class": "",
+"addClass": "@@include('head/head-management03.html')",
+"current-menu-monitoring": "",
+"current-menu-system": "",
+"current-menu-driving": "",
+"current-menu-status": "",
+"active1": "",
+"active2": "",
+"active3": "",
+"active4": "",
+"current-menu-statistics": "",
+"active5": "",
+"active6": "",
+"active7": "",
+"active8": "",
+"active9": "",
+"active10": "",
+"current-menu-management": "current-menu-item",
+"active11": "",
+"active12": "",
+"active13": "is-active"})
+
+<div id="page-body" class="page-body statistics-page mb-3">
+	<div class="row">
+		<div class="col-12 management">
+			<div class="top_box">
+				<div class="d-flex justify-content-start">
+					<div class="operation-box p-0 mr-3">
+						<div class=" rounded">
+							<div class="title d-flex border-black justify-content-between align-items-center">
+								<p>자동 운전 설정</p>
+								<a class="settings" href="javascript:void(0)" data-fancybox="" data-src="#automatic_operation_popup">설정
+									변경하기</a>
+							</div>
+							<div class="custom-table">
+								<table class="table ">
+									<tbody>
+										<tr>
+											<td colspan="2">
+												<div class="d-flex flex-nowrap align-items-center">
+													<div class="txt">PV 추종률</div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+
+											<td>95 <span>%</span></td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<div class="d-flex flex-nowrap align-items-center">
+													<div class="txt">배너리 운전 범위</div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>3 ~ 97 <span>%</span> </td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<div class="d-flex flex-nowrap align-items-center">
+													<div class="txt">추종 운전간(충전) </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												23:59 ~ 09:09 <span></span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<div class="d-flex flex-nowrap align-items-center">
+													<div class="txt">출력제한 </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>1,000 <span>Kw</span></td>
+										</tr>
+										<tr>
+											<td rowspan="3" class="th-group">
+												<div class="d-flex flex-wrap align-items-center justify-content-center flex-wrap">
+													<div class="txt">온도<br /> 설정 </div>
+													<a href="javascript:void(0)" class="tooltipCustom mt-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td class="th-group-sub text-left">
+												<p>기기선택:</p>
+											</td>
+											<td class="text-right">
+												BAT실 <span></span>
+											</td>
+										</tr>
+										<tr class="tr-groups">
+											<td class="th-group-sub">
+												<p>온도 범위:</p>
+											</td>
+											<td>
+												Warming: 22 ~28 <span>℃</span>
+												Fault: 22 ~28 <span>℃</span>
+											</td>
+										</tr>
+										<tr>
+											<td class="pl-3 th-group-sub">
+												<p>사용 여부:</p>
+											</td>
+											<td>
+												사용 <span></span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="operation-box p-0 mr-3">
+						<div class="rounded">
+							<div class="title border-black d-flex justify-content-between align-items-center">
+								<p>용량 설정</p>
+								<a class="settings" href="javascript:void(0)" data-fancybox="" data-src="#capacity_popup">설정
+									변경하기</a>
+							</div>
+							<div class="custom-table">
+								<table class="table ">
+									<tbody>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">태양광 용량 </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												1,000.0 <span>kWh</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">PCS 용량 </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												1,000.0 <span>kw</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">BAT 용량 </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												2,000.0 <span>kWh</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="operation-box p-0 mr-3">
+						<div class="rounded">
+							<div class="title border-black d-flex justify-content-between align-items-center">
+								<p>계약 유형</p>
+								<a class="settings" href="javascript:void(0)" data-fancybox="" data-src="#changing-settings_popup">설정 변경하기</a>
+							</div>
+							<div class="custom-table">
+								<table class="table ">
+									<tbody>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">SMP +REC </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												185 <span>kWh</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">SMP 단가 </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												105 <span>kWh</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">REC 단가 </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												80 <span>kWh</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">REC 가중치(ESS) </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>5.0 <span></span></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">REC 가중치(ESS) </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>5.0 <span></span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="operation-box p-0 mr-3">
+						<div class="rounded">
+							<div class="title border-black d-flex justify-content-between align-items-center">
+								<p>이벤트 설정</p>
+								<a class="settings" href="javascript:void(0)" data-fancybox="" data-src="#event_popup">설정
+									변경하기</a>
+							</div>
+							<div class="custom-table">
+								<table class="table ">
+									<tbody>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">BMS 온도 설정 </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												22 ~ 28<span>℃</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">BMS 전압 설정 </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												200 ~ 3,000 <span>V</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">BATT 전압 설정 </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												200 ~ 3,000 <span>V</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex flex-nowrap align-items-center flex-wrap">
+													<div class="txt">BATT 전압 설정 </div>
+													<a href="javascript:void(0)" class="tooltipCustom ml-2">
+														<img class="popupBtn" src="images/fa-circle.png" alt="">
+														<div class="mode_popupbox" style="display: none;">
+															<h2>가동률 산식</h2>
+															<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+																<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+															<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+															<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+														</div>
+													</a>
+												</div>
+											</td>
+											<td>
+												200 ~ 3,000 <span>V</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="schedule-management">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+						 aria-selected="true">스케줄 관리</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+						 aria-selected="false">스케줄 차트 보기</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<h2>스케줄 입력</h2>
+						<div class="schedule-input">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>PCS 선택</td>
+										<td class="w-40">
+											<select class="form-control" name="" id="">
+												<option value="">All</option>
+												<option value="">All</option>
+											</select>
+										</td>
+										<td>충방전 구분</td>
+										<td>
+											<select class="form-control" name="" id="">
+												<option value="">충전</option>
+												<option value="">충전</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>계절 선택</td>
+										<td>
+											<select class="form-control" name="" id="">
+												<option value="">봄</option>
+												<option value="">충전</option>
+											</select>
+										</td>
+										<td>요일 선택</td>
+										<td>
+											<div class="custom-control custom-checkbox custom-control-inline pl-0 mr-0">
+												<input class="styled-checkbox check-box" id="styled-checkbox-1" type="checkbox" value="value1" checked>
+												<label for="styled-checkbox-1">월</label>
+											</div>
+											<div class="custom-control custom-checkbox custom-control-inline mr-0">
+												<input class="styled-checkbox  check-box" id="styled-checkbox-2" type="checkbox" value="value2" checked>
+												<label for="styled-checkbox-2">화</label>
+											</div>
+											<div class="custom-control custom-checkbox  custom-control-inline mr-0">
+												<input class="styled-checkbox check-box" id="styled-checkbox-3" type="checkbox" value="value3" checked>
+												<label for="styled-checkbox-3">수</label>
+											</div>
+											<div class="custom-control custom-checkbox custom-control-inline mr-0">
+												<input class="styled-checkbox check-box " id="styled-checkbox-4" type="checkbox" value="value4">
+												<label for="styled-checkbox-4">목</label>
+											</div>
+											<div class="custom-control custom-checkbox  custom-control-inline mr-0">
+												<input class="styled-checkbox check-box" id="styled-checkbox-5" type="checkbox" value="value5" checked>
+												<label for="styled-checkbox-5">금</label>
+											</div>
+											<div class="custom-control custom-checkbox  custom-control-inline mr-0">
+												<input class="styled-checkbox check-box" id="styled-checkbox-6" type="checkbox" value="value6">
+												<label for="styled-checkbox-6">토</label>
+											</div>
+											<div class="custom-control custom-checkbox  custom-control-inline mr-1">
+												<input class="styled-checkbox check-box" id="styled-checkbox-7" type="checkbox" value="value7">
+												<label for="styled-checkbox-7">일</label>
+											</div>
+											<div class="custom-control custom-checkbox custom-control-inline pl-0 mr-1">
+												<a href="javascript:void(0)" class="check-all">전체 선택</a>
+											</div>
+											<div class="custom-control custom-checkbox custom-control-inline pl-0">
+												<a class="check-off all" href="javascript:void(0)">전체 해제</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>시작 시간</td>
+										<td>
+											<select class="form-control float-left mr-1" name="" id="">
+												<option value="">0</option>
+												<option value="">1</option>
+												<option value="">2</option>
+											</select>
+											<span class="float-left mr-3">시</span>
+											<select class="form-control float-left mr-1" name="" id="">
+												<option value="">0</option>
+												<option value="">1</option>
+												<option value="">2</option>
+											</select>
+											<span class="float-left mr-3">분</span>
+										</td>
+										<td>종료 시간</td>
+										<td>
+											<select class="form-control float-left mr-1" name="" id="">
+												<option value="">0</option>
+												<option value="">1</option>
+												<option value="">2</option>
+											</select>
+											<span class="float-left mr-3">시</span>
+											<select class="form-control float-left mr-1" name="" id="">
+												<option value="">0</option>
+												<option value="">1</option>
+												<option value="">2</option>
+											</select>
+											<span class="float-left mr-3">분</span>
+										</td>
+									</tr>
+									<tr class="tr-border-top">
+										<td>설정 전력(kw)</td>
+										<td colspan="3">
+											<input class="form-control" type="text" name="" id="" placeholder="Text input">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="d-flex justify-content-center button-center">
+							<a href="javascript:void(0)">목록추가</a>
+							<a href="javascript:void(0)">입력 초기화</a>
+						</div>
+						<h2>스케줄 등록 현황</h2>
+						<div class="d-flex justify-content-between">
+							<div class="button-lenght">
+								<select name="" id="">
+									<option value="">5</option>
+									<option value="">10</option>
+									<option value="">15</option>
+									<option value="">20</option>
+								</select>
+								<p>개씩 보기</p>
+							</div>
+							<div class="button-group">
+								<p>검색</p>
+								<select name="" id="">
+									<option value="">PCS #</option>
+								</select>
+								<select name="" id="">
+									<option value="">동작</option>
+								</select>
+								<select name="" id="">
+									<option value="">계절</option>
+								</select>
+								<select name="" id="">
+									<option value="">요일</option>
+								</select>
+							</div>
+						</div>
+						<div class="table-responsive" width="100%">
+							<table class="table table-striped table-bordered table-hover custom-datatable" id="custom-dataTables">
+								<thead>
+									<tr>
+										<th class="text-center odd">
+											<div class="custom-control custom-checkbox pl-0">
+												<input class="styled-checkbox checked" id="checkbox-0" type="checkbox" value="0">
+												<label for="checkbox-0"></label>
+											</div>
+											</td>
+										<th class=" even">PCS #</td>
+										<th class=" odd">동작</td>
+										<th class=" even">계절</td>
+										<th class=" odd">요일</td>
+										<th class=" odd">시작시간</td>
+										<th class=" odd">종료시간</td>
+										<th class=" odd">충방전량</td>
+										<th class=" odd">수정</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="odd gradeX">
+										<td class="text-center">
+											<div class="custom-control custom-checkbox pl-0">
+												<input class="styled-checkbox checkbox " id="checkbox-1" type="checkbox" value="1" checked>
+												<label for="checkbox-1"></label>
+											</div>
+										</td>
+										<td class=" even">1</td>
+										<td class="">충전</td>
+										<td class=" even">봄 (3월 ~ 5월)</td>
+										<td class="">월</td>
+										<td class="">00:08</td>
+										<td class="">03:59</td>
+										<td class="">2000</td>
+										<td class="">
+											<a href="javascript:void(0)">삭제</a>
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td class="text-center">
+											<div class="custom-control custom-checkbox pl-0">
+												<input class="styled-checkbox checkbox" id="checkbox-2" type="checkbox" value="2">
+												<label for="checkbox-2"></label>
+											</div>
+										</td>
+										<td class=" even">2</td>
+										<td class="">발전</td>
+										<td class=" even">봄 (3월 ~ 5월)</td>
+										<td class="">화</td>
+										<td class="">00:08</td>
+										<td class="">03:59</td>
+										<td class="">2000</td>
+										<td class="">
+											<a href="javascript:void(0)">삭제</a>
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td class="text-center">
+											<div class="custom-control custom-checkbox pl-0">
+												<input class="styled-checkbox checkbox" id="checkbox-3" type="checkbox" value="3">
+												<label for="checkbox-3"></label>
+											</div>
+										</td>
+										<td class=" even">3</td>
+										<td class="">충전</td>
+										<td class=" even">가을 (9월 ~ 10월)</td>
+										<td class="">수</td>
+										<td class="">00:08</td>
+										<td class="">03:59</td>
+										<td class="">2000</td>
+										<td class="">
+											<a href="javascript:void(0)">삭제</a>
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td class="text-center">
+											<div class="custom-control custom-checkbox pl-0">
+												<input class="styled-checkbox checkbox" id="checkbox-4" type="checkbox" value="4">
+												<label for="checkbox-4"></label>
+											</div>
+										</td>
+										<td class=" even">4</td>
+										<td class="">충전</td>
+										<td class=" even">겨울 (11월 ~2월)</td>
+										<td class="">목</td>
+										<td class="">00:08</td>
+										<td class="">03:59</td>
+										<td class="">2000</td>
+										<td class="">
+											<a href="javascript:void(0)">삭제</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="d-flex justify-content-between">
+							<div class="button-left">
+								<a href="javascript:void(0)">저장</a>
+								<a href="javascript:void(0)">선택 삭제</a>
+							</div>
+							<nav aria-label="Page navigation example">
+								<ul class="pagination">
+									<li class="page-item">
+										<a class="page-link" href="javascript:void(0)" aria-label="Next">
+											<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+											<span class="sr-only">preview</span>
+										</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="javascript:void(0)" aria-label="Previous">
+											<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+											<span class="sr-only">first</span>
+										</a>
+									</li>
+									<li class="page-item"><a class="page-link  acitve" href="javascript:void(0)">1</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void(0)">5</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void(0)">6</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void(0)">7</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void(0)">8</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void(0)">9</a></li>
+									<li class="page-item"><a class="page-link" href="javascript:void(0)">10</a></li>
+									<li class="page-item">
+										<a class="page-link" href="javascript:void(0)" aria-label="Next">
+											<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="javascript:void(0)" aria-label="Next">
+											<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+											<span class="sr-only">last</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="tab-pane fade pb-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="button-lenght">
+							<select id="select2-single" data-minimum-results-for-search="Infinity">
+								<option>계절선택</option>
+								<option>봄 (3월~5월)</option>
+								<option>여름 (6월~8월)</option>
+								<option>가을 (9월~10월)</option>
+								<option>겨울 (11월~2월)</option>
+							</select>
+						</div>
+						<div id="managementChartsetting" class="amchart"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('modules/footer.html', {"addJs": "@@include('footer/script-management-setting.html')"})

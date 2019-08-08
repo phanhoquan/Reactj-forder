@@ -1,0 +1,274 @@
+@@include('modules/header.html', { 	"title": "06.4.이벤트통계",
+									"class": "",
+									"addClass": "@@include('head/head-statistics04.html')",
+									"current-menu-monitoring": "",
+									"current-menu-system": "",
+									"current-menu-driving": "",
+									"current-menu-status": "",
+										"active1": "",
+										"active2": "",
+										"active3": "",
+										"active4": "",
+									"current-menu-statistics": "current-menu-item",
+										"active5": "",
+										"active6": "",
+										"active7": "",
+										"active8": "is-active",
+										"active9": "",
+										"active10": "",
+									"current-menu-management": "",
+										"active11": "",
+										"active12": "",
+										"active13": ""})
+
+<div id="page-body" class="page-body status-page">
+	<div class="container-fluid">
+		<div class="status__top d-flex group-generation">
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded  number-stats">
+					<div class="box-content d-flex align-items-center">
+						<div class="groups-left">
+							<img src="images/3_icon1.png" />
+							<p class="name">PCS</p>
+						</div>
+						<div class="groups-icon">
+							<div class="warning d-flex mb-1"> <span>Warning</span><span class="number">999</span></div>
+							<div class="fault d-flex"><span>Fault</span><span class="number">3</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded  number-stats">
+					<div class="box-content d-flex align-items-center">
+						<div class="groups-left">
+							<img src="images/pms-icon.png" />
+							<p class="name">BMS</p>
+						</div>
+						<div class="groups-icon">
+							<div class="warning d-flex mb-1"> <span>Warning</span><span class="number">999</span></div>
+							<div class="fault d-flex"><span>Fault</span><span class="number">3</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded  number-stats">
+					<div class="box-content d-flex align-items-center">
+						<div class="groups-left">
+							<img src="images/rack-icon.png" />
+							<p class="name">Rack</p>
+						</div>
+						<div class="groups-icon">
+							<div class="warning d-flex mb-1"> <span>Warning</span><span class="number">999</span></div>
+							<div class="fault d-flex"><span>Fault</span><span class="number">3</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded  number-stats">
+					<div class="box-content d-flex align-items-center">
+						<div class="groups-left">
+							<img src="images/PV-inverter-icon.png" />
+							<p class="name">PVI</p>
+						</div>
+						<div class="groups-icon">
+							<div class="warning d-flex mb-1"> <span>Warning</span><span class="number">999</span></div>
+							<div class="fault d-flex"><span>Fault</span><span class="number">3</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- End Status Top -->
+
+		<div class="d-flex justify-content-between equipment-bar my-2">
+			<div class=" d-flex align-items-center ">
+				<div class="title"><img class="energy-icon" src="images/energy-icon.png" />장비</div>
+				<ul class="nav nav-pills equipment-bar__tab" role="tablist">
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-PCS-tab" data-toggle="pill" href="#pills-tab-PCS" role="tab" aria-controls="pills-PCS"
+						 aria-selected="true">PCS</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-BMS-tab" data-toggle="pill" href="#pills-tab-BMS" role="tab" aria-controls="pills-BMS"
+						 aria-selected="false">BMS</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-rack-tab" data-toggle="pill" href="#pills-tab-rack" role="tab" aria-controls="pills-rack"
+						 aria-selected="false">Rack</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-THS-tab" data-toggle="pill" href="#pills-tab-THS" role="tab" aria-controls="pills-THS"
+						 aria-selected="false">THS</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-PV-inverter-tab" data-toggle="pill" href="#pills-tab-PV-inverter" role="tab"
+						 aria-controls="pills-PV-inverter" aria-selected="false">PV인버터</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-VCB-tab" data-toggle="pill" href="#pills-tab-VCB" role="tab" aria-controls="pills-VCB"
+						 aria-selected="false">VCB</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-ACB-tab" data-toggle="pill" href="#pills-tab-ACB" role="tab" aria-controls="pills-ACB"
+						 aria-selected="false">ACB</a>
+					</li>
+				</ul>
+				<div class="title"><img class="energy-icon" src="images/icon1.png" alt="">기기</div>
+				<div class="device">
+					<select class="form-control" name="" id="">
+						<option value="">All</option>
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+
+			</div><!-- End Equipment Bar -->
+			<div class="search">
+				<a href="javascript:void(0)">검색</a>
+			</div>
+		</div>
+		<div class="period_bar d-flex justify-content-between">
+			<div class="term form-inline">
+				<div class="term__title">
+					<img src="images/time.png" alt="">
+					<p>기간</p>
+				</div>
+				<ul class="nav checkbox-square">
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link active" id="hourly" data-toggle="pill" href="" aria-selected="true">시간별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="glance" data-toggle="pill" href="">일별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="monthly" data-toggle="pill" href="">월별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="quarterly" data-toggle="pill" href="">기간별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="yearly" data-toggle="pill" href="">연별</a>
+					</li>
+				</ul>
+				<div class="term__title">
+					<img src="images/day.png" alt="">
+					<p>날짜</p>
+				</div>
+				<div class="input-group term__button" id="day">
+					<label for="" class="date d-flex">
+						<input type="text" class="form-control" placeholder="2019.01.02" id="date" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="month">
+					<label for="" class="month" data-date-format="yyyy.mm">
+						<input type="text" class="form-control" placeholder="2019.02" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="month-start">
+					<label for="" class="month" data-date-format="yyyy.mm">
+						<input type="text" class="form-control" placeholder="2019.02" name="date">
+						<p>~</p>
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="month-end">
+					<label for="" class="month" data-date-format="yyyy.mm">
+						<input type="text" class="form-control" placeholder="2019.02" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="year">
+					<label for="" class="yearly" data-date-format="yyyy">
+						<input type="text" class="form-control" placeholder="2019" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="year-start">
+					<label for="" class="yearly" data-date-format="yyyy">
+						<input type="text" class="form-control" placeholder="2019" name="date">
+						<p>~</p>
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="year-end">
+					<label for="" class="yearly" data-date-format="yyyy">
+						<input type="text" class="form-control" placeholder="2019" name="date">
+					</label>
+				</div>
+				<div class="term__title clock">
+					<img src="images/clock.png" alt="">
+					<p>시간</p>
+				</div>
+				<div class="term__button option" id="option">
+					<select class="form-control selectpicker" name="" id="" data-size="13">
+						<option value="">00시</option>
+						<option value="">01시</option>
+						<option value="">02시</option>
+						<option value="">03시</option>
+						<option value="">04시</option>
+						<option value="">05시</option>
+						<option value="">06시</option>
+						<option value="">07시</option>
+						<option value="">08시</option>
+						<option value="">08시</option>
+						<option value="">10시</option>
+						<option value="">11시</option>
+						<option value="">12시</option>
+						<option value="">13시</option>
+						<option value="">14시</option>
+						<option value="">15시</option>
+						<option value="">16시</option>
+						<option value="">17시</option>
+						<option value="">18시</option>
+					</select>
+					<p>~</p>
+					<select class="form-control selectpicker" name="" id="" data-size="13">
+						<option value="">23시</option>
+						<option value="">24시</option>
+						<option value="">25시</option>
+						<option value="">26시</option>
+						<option value="">27시</option>
+						<option value="">28시</option>
+						<option value="">29시</option>
+						<option value="">30시</option>
+						<option value="">31시</option>
+						<option value="">32시</option>
+						<option value="">33시</option>
+						<option value="">34시</option>
+						<option value="">35시</option>
+						<option value="">36시</option>
+						<option value="">37시</option>
+						<option value="">38시</option>
+						<option value="">39시</option>
+						<option value="">40시</option>
+						<option value="">41시</option>
+					</select>
+				</div>
+			</div>
+			<div class="search">
+				<a href="javascript:void(0)">검색</a>
+			</div>
+		</div>
+		<div class="tab-content p-0 event-status">
+			<div class="tab-pane fade show active" id="pills-tab-PCS" role="tabpanel" aria-labelledby="pills-pcs-tab">
+				@@include('modules/tabEventstatistics/6.4.tab-pcs.html')
+			</div>
+			<div class="tab-pane fade" id="pills-tab-BMS" role="tabpanel" aria-labelledby="pills-BMS-tab">
+				@@include('modules/tabEventstatistics/6.4.tab-bms.html')
+			</div>
+			<div class="tab-pane fade" id="pills-tab-rack" role="tabpanel" aria-labelledby="pills-rack-tab">
+				@@include('modules/tabEventstatistics/6.4.tab-rack.html')
+			</div>
+			<div class="tab-pane fade" id="pills-tab-THS" role="tabpanel" aria-labelledby="pills-THS-tab">
+				@@include('modules/tabEventstatistics/6.4.tab-ths.html')
+			</div>
+			<div class="tab-pane fade" id="pills-tab-PV-inverter" role="tabpanel" aria-labelledby="pills-rack-tab">
+				@@include('modules/tabEventstatistics/6.4.tab-pv.html')
+			</div>
+			<div class="tab-pane fade" id="pills-tab-VCB" role="tabpanel" aria-labelledby="pills-VCB-tab">
+				@@include('modules/tabEventstatistics/6.4.tab-vcb.html')
+			</div>
+			<div class="tab-pane fade" id="pills-tab-ACB" role="tabpanel" aria-labelledby="pills-ACB-tab">
+				@@include('modules/tabEventstatistics/6.4.tab-acb.html')
+			</div>
+		</div>
+	</div><!-- End Equipment Bar -->
+	@@include('modules/footer.html', {"addJs": "@@include('footer/script-statistics-event.html')"})

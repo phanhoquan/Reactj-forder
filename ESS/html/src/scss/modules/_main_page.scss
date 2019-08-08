@@ -1,0 +1,1389 @@
+.main-page {
+	padding: 10px 20px 0px;
+}
+
+@include breakpoint(lgxxxxmax) {
+	.main-page {
+		padding-bottom: 6px;
+	}
+}
+
+.container-fluid {
+	.page-index {
+		min-height: 835px;
+
+		@include firefox() {
+			min-height: 845px;
+		}
+
+		@include ie11() {
+			min-height: 810px;
+		}
+
+		@include ieEdge() {
+			min-height: 835px;
+		}
+	}
+}
+
+.integrated-chart {
+	border: 1px solid $boder-color;
+	margin-bottom: 16px;
+	height: calc(100% - 268px);
+	background-color: #212428;
+
+	@include firefox() {
+		height: calc(100% - 262px);
+	}
+
+	@include ie11() {
+		height: calc(100% - 268px);
+	}
+
+	.box-content {
+		padding: 10px 20px;
+		background-color: #212428;
+
+		.title {
+			font-size: 17px;
+			font-weight: $bold;
+
+			&--sun {
+				color: $color-Dark-moderate-cyan;
+			}
+
+			&--power {
+				font-weight: $regular;
+
+				strong {
+					font-size: 17px;
+					margin-left: 14px;
+				}
+
+				span {
+					font-size: 16px;
+					font-weight: $light;
+					margin-left: 8px;
+				}
+			}
+
+			&--ess {
+				color: $color-Very-soft-blue;
+			}
+		}
+
+		@include breakpoint(lgxmax) {
+			.title {
+				font-size: 14px;
+			}
+		}
+
+		.parameter {
+			margin-top: 15px;
+			padding: 22px;
+
+			&--sunlight {
+				background: $bgSection-box;
+				border: 2px dotted $color-Dark-moderate-cyan;
+
+				.arrowLine01 {
+					top: calc(50% - 40px);
+					left: 113.5px;
+					z-index: 0;
+
+					@include firefox() {
+						top: calc(50% - 42px);
+					}
+
+					@include ie11() {
+						top: calc(50% - 27px);
+					}
+
+					@include ieEdge() {
+						top: calc(50% - 42px);
+					}
+
+					.arrowLineWrap {
+						width: 213px;
+
+						.arrowLine_list {
+							.line {
+								&--1 {
+									width: 100%;
+								}
+
+								&--2A {
+									position: absolute;
+									width: 100%;
+
+									@include ie11() {
+										left: 0;
+									}
+
+									.lineCont::after {
+										background-image: none;
+
+										@include ie11() {
+											background-image: "";
+										}
+									}
+
+									.lineIE {
+										@include ie11 {
+											background-image: none;
+										}
+									}
+
+									.lineEDGE {
+										@include ieEdge {
+											background-image: none;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					@include breakpoint(lgsmax) {
+						top: calc(50% - 48px);
+
+						@include ie11() {
+							top: calc(50% - 31px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 49px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 50px);
+						}
+					}
+
+					@include breakpoint(lgxmax) {
+						top: calc(50% - 46px);
+
+						@include ie11() {
+							top: calc(50% - 33px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 48px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 48px);
+						}
+					}
+
+					@include breakpoint(lgxxxxmax) {
+						top: calc(50% - 41px);
+
+						@include ie11() {
+							top: calc(50% - 26px);
+						}
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						@include ieEdge() {
+							top: calc(50% - 41px);
+						}
+
+						top: calc(50% - 40px);
+
+						@include ie11() {
+							top: calc(50% - 41px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 41px);
+						}
+					}
+				}
+
+				.arrowLine02 {
+					top: calc(50% - 40px);
+					left: 316.5px;
+					z-index: 0;
+
+					@include firefox() {
+						top: calc(50% - 42px);
+					}
+
+					@include ie11() {
+						top: calc(50% - 27px);
+					}
+
+					@include ieEdge() {
+						top: calc(50% - 42px);
+					}
+
+					.arrowLineWrap {
+						width: 269px;
+
+						.arrowLine_list {
+							.line {
+								&--1 {
+									width: 100%;
+								}
+
+								&--2A {
+									position: absolute;
+									width: 100%;
+
+									@include ie11() {
+										left: 0;
+									}
+
+									.lineCont::after {
+										background-image: none;
+
+										@include ie11() {
+											background-image: "";
+										}
+									}
+
+									.lineIE {
+										@include ie11 {
+											background-image: none;
+										}
+									}
+
+									.lineEDGE {
+										@include ieEdge {
+											background-image: none;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					@include breakpoint(lgsmax) {
+						top: calc(50% - 48px);
+
+						@include ie11() {
+							top: calc(50% - 31px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 49px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 50px);
+						}
+					}
+
+					@include breakpoint(lgxmax) {
+						top: calc(50% - 46px);
+
+						@include ie11() {
+							top: calc(50% - 33px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 48px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 48px);
+						}
+					}
+
+					@include breakpoint(lgxxxxmax) {
+						top: calc(50% - 41px);
+
+						@include ie11() {
+							top: calc(50% - 26px);
+						}
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						top: calc(50% - 40px);
+
+						@include ie11() {
+							top: calc(50% - 41px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 41px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 41px);
+						}
+					}
+				}
+			}
+
+			&--power {
+				margin-top: 15px;
+				padding-top: 0px;
+
+				.arrowLine03 {
+					top: 28%;
+					right: calc(50% - 60px);
+					z-index: 0;
+					@include rotate(90deg);
+
+					@include ie11() {
+						top: 30%;
+						right: calc(50% - 60px);
+					}
+
+					@include ieEdge() {
+						right: calc(50% - 60px);
+					}
+
+					@include firefox() {
+						right: calc(50% - 61.2px);
+					}
+
+					.arrowLineWrap {
+						width: 120px;
+
+						.arrowLine_list {
+							@include ie11() {
+								position: relative;
+							}
+
+							.line {
+								&--1 {
+									width: 100%;
+								}
+
+								&--2A {
+									position: absolute;
+									width: 100%;
+
+									@include ie11() {
+										left: 0;
+									}
+
+									.lineCont::after {
+										background-image: none;
+
+										@include ie11() {
+											background-image: "";
+										}
+									}
+
+									.lineIE {
+										@include ie11 {
+											background-image: none;
+										}
+									}
+
+									.lineEDGE {
+										@include ieEdge {
+											background-image: none;
+										}
+									}
+								}
+							}
+						}
+
+						@include breakpoint(lgsmax) {
+							width: 104px;
+						}
+
+						@include breakpoint(lgxmax) {
+							width: 92px;
+						}
+
+						@include breakpoint(lgxxxxmax) {
+							width: 110px;
+						}
+
+						@include breakpoint(maxdesktop19in) {
+							width: 110px;
+
+							@include ieEdge() {
+								width: 126px;
+							}
+						}
+					}
+
+					@include breakpoint(lgsmax) {
+						right: calc(50% - 52px);
+
+						@include ie11() {
+							top: 30%;
+						}
+					}
+
+					@include breakpoint(lgxmax) {
+						right: calc(50% - 46px);
+
+						@include ie11() {
+							top: 30%;
+						}
+					}
+
+					@include breakpoint(lgxxxxmax) {
+						right: calc(50% - 55px);
+
+						@include firefox() {
+							right: calc(50% - 55px);
+						}
+
+						@include ie11() {
+							top: 32%;
+							right: calc(50% - 55px);
+						}
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						top: 27%;
+						right: calc(50% - 55px);
+
+						@include firefox() {
+							right: calc(50% - 56px);
+						}
+
+						@include ie11() {
+							right: calc(50% - 56px);
+						}
+
+						@include ieEdge() {
+							top: 25%;
+							right: calc(-55px + 46.5%);
+						}
+					}
+				}
+
+				@include breakpoint(lgxmax) {
+					padding: 0 15px !important;
+				}
+			}
+
+			&--ess {
+				background: $bgSection-box;
+				border: 2px dotted $color-Very-soft-blue;
+
+				.arrowLine02 {
+					top: calc(50% - 40px);
+					right: 321px;
+					z-index: 0;
+
+					@include firefox() {
+						top: calc(50% - 42px);
+					}
+
+					@include ie11() {
+						top: calc(50% - 27px);
+					}
+
+					@include ieEdge() {
+						top: calc(50% - 42px);
+					}
+
+					.arrowLineWrap {
+						width: 480.5px;
+
+						.arrowLine_list {
+							.line {
+								&--1 {
+									width: 100%;
+								}
+
+								&--2A {
+									position: absolute;
+									width: 100%;
+
+									@include ie11() {
+										left: 0;
+									}
+
+									.lineCont::after {
+										background-image: none;
+
+										@include ie11() {
+											background-image: "";
+										}
+									}
+
+									.lineIE {
+										@include ie11 {
+											background-image: none;
+										}
+									}
+
+									.lineEDGE {
+										@include ieEdge {
+											background-image: none;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					@include breakpoint(lgsmax) {
+						top: calc(50% - 48px);
+
+						@include ie11() {
+							top: calc(50% - 31px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 49px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 50px);
+						}
+					}
+
+					@include breakpoint(lgxmax) {
+						top: calc(50% - 46px);
+
+						@include ie11() {
+							top: calc(50% - 33px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 48px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 48px);
+						}
+					}
+
+					@include breakpoint(lgxxxxmax) {
+						top: calc(50% - 41px);
+
+						@include ie11() {
+							top: calc(50% - 26px);
+						}
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						top: calc(50% - 40px);
+
+						@include ie11() {
+							top: calc(50% - 41px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 41px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 41px);
+						}
+					}
+				}
+
+				.arrowLine04 {
+					top: calc(50% - 39px);
+					right: 113px;
+					z-index: 0;
+					transform: rotate(180deg);
+
+					@include ie11() {
+						top: calc(50% - 26px);
+					}
+
+					@include ieEdge() {
+						top: calc(50% - 41px);
+					}
+
+					@include firefox() {
+						top: calc(50% - 40px);
+					}
+
+					.arrowLineWrap {
+						width: 213px;
+
+						.arrowLine_list {
+							.line {
+								&--1 {
+									width: 100%;
+								}
+
+								&--2A {
+									position: absolute;
+									width: 100%;
+
+									@include ie11() {
+										left: 0;
+									}
+
+									.lineCont::after {
+										background-image: none;
+
+										@include ie11() {
+											background-image: "";
+										}
+									}
+
+									.lineIE {
+										@include ie11 {
+											background-image: none;
+										}
+									}
+
+									.lineEDGE {
+										@include ieEdge {
+											background-image: none;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					@include breakpoint(lgsmax) {
+						top: calc(50% - 47px);
+
+						@include ie11() {
+							top: calc(50% - 30px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 31px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 48px);
+						}
+					}
+
+					@include breakpoint(lgxmax) {
+						top: calc(50% - 45px);
+
+						@include ie11() {
+							top: calc(50% - 31.5px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 47px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 46px);
+						}
+					}
+
+					@include breakpoint(lgxxxxmax) {
+						top: calc(50% - 40px);
+
+						@include ie11() {
+							top: calc(50% - 25px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 39px);
+						}
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						top: calc(50% - 39px);
+
+						@include ie11() {
+							top: calc(50% - 40px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 40px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 40px);
+						}
+					}
+				}
+
+				.arrowLine05 {
+					top: calc(50% - 39px);
+					right: 318px;
+					z-index: 0;
+					transform: rotate(180deg);
+
+					@include ie11() {
+						top: calc(50% - 26px);
+					}
+
+					@include ieEdge() {
+						top: calc(50% - 41px);
+					}
+
+					@include firefox() {
+						top: calc(50% - 40px);
+					}
+
+					.arrowLineWrap {
+						width: 269px;
+
+						.arrowLine_list {
+							.line {
+								&--1 {
+									width: 100%;
+								}
+
+								&--2A {
+									position: absolute;
+									width: 100%;
+
+									@include ie11() {
+										left: 0;
+									}
+
+									.lineCont::after {
+										background-image: none;
+
+										@include ie11() {
+											background-image: "";
+										}
+									}
+
+									.lineIE {
+										@include ie11 {
+											background-image: none;
+										}
+									}
+
+									.lineEDGE {
+										@include ieEdge {
+											background-image: none;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					@include breakpoint(lgsmax) {
+						top: calc(50% - 47px);
+
+						@include ie11() {
+							top: calc(50% - 30px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 31px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 48px);
+						}
+					}
+
+					@include breakpoint(lgxmax) {
+						top: calc(50% - 45px);
+
+						@include ie11() {
+							top: calc(50% - 31.5px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 47px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 46px);
+						}
+					}
+
+					@include breakpoint(lgxxxxmax) {
+						top: calc(50% - 40px);
+
+						@include ie11() {
+							top: calc(50% - 25px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 39px);
+						}
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						top: calc(50% - 39px);
+
+						@include ie11() {
+							top: calc(50% - 40px);
+						}
+
+						@include ieEdge() {
+							top: calc(50% - 40px);
+						}
+
+						@include firefox() {
+							top: calc(50% - 40px);
+						}
+					}
+				}
+			}
+
+			&__content {
+				position: relative;
+				z-index: 1;
+
+				.box-detail {
+					width: 100%;
+					top: -15px;
+					background-color: $bgBoxPopup;
+					margin-left: 5px;
+					padding: 12px 10px 0;
+					z-index: 1;
+
+					.col-4 {
+						padding-bottom: 12px;
+
+						p {
+							font-size: 15px;
+							color: $colorWhite-8;
+
+							.unit {
+								color: $colorWhite-5;
+							}
+						}
+					}
+				}
+
+				@include breakpoint(lgsmax) {
+					.box-detail {
+						.col-4 {
+							p {
+								font-size: 10px;
+							}
+						}
+					}
+				}
+
+				@include breakpoint(lgxxxxmax) {
+					.box-detail {
+						top: -10px;
+					}
+				}
+
+				@include breakpoint(maxdesktop19in) {
+					.box-detail {
+						padding: 0;
+
+						.col-4 {
+							p {
+								font-size: 13px;
+							}
+						}
+					}
+				}
+
+				&--image {
+					min-height: 110px;
+					margin-top: 70px;
+					margin-bottom: 10px;
+
+					.dot-top {
+						margin-top: 12px;
+					}
+
+					.img-tool {
+						display: none;
+						height: 90px;
+						width: auto;
+
+						&.gr {
+							height: 90px;
+						}
+
+						&.active {
+							display: block;
+							height: 90px;
+						}
+					}
+
+					.battery-box {
+						width: 100%;
+						height: 90px;
+
+						.img-tool {
+							margin: 0 auto;
+						}
+
+						.bat-icon {
+							width: 120px;
+							top: calc(50% - 44px);
+							left: calc(50% - 60px);
+						}
+
+						.skills-container {
+							height: 33.5px;
+							width: 49px;
+							top: calc(50% - 17px);
+							left: calc(50% - 27.5px);
+
+							.skills {
+								height: 100%;
+								@include background("../images/battery-skills-bg.png",
+								center,
+								repeat);
+							}
+						}
+					}
+
+					@include ie11() {
+						.mbIE {
+							position: absolute;
+							bottom: 3px;
+							left: 45.2%;
+						}
+					}
+
+					@include ieEdge() {
+						.mbEDGE {
+							position: absolute;
+							top: 0px;
+						}
+
+						.dot-top {
+							margin-top: 60px;
+
+							@include breakpoint(maxdesktop19in) {
+								margin-top: 40px;
+							}
+						}
+					}
+
+					@include breakpoint(lgxmax) {
+						.mbEDGE {
+							width: 40%;
+						}
+
+						@include ie11() {
+							.mbIE {
+								left: 45.2%;
+							}
+						}
+					}
+
+					@include breakpoint(lgxxmax) {
+						@include ie11() {
+							.mbIE {
+								bottom: 3px;
+							}
+						}
+					}
+
+					@include breakpoint(lgxxxxmax) {
+						@include ie11() {
+							.mbIE {
+								left: 44.6%;
+								bottom: 3px;
+							}
+						}
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						@include ie11() {
+							.mbIE {
+								left: 44.6%;
+							}
+						}
+					}
+				}
+
+				@include breakpoint(lgsmax) {
+					&--image {
+						min-height: 110px;
+						margin-top: 55px;
+					}
+
+					@include ieEdge() {
+						&--image {
+							min-height: 90px;
+						}
+					}
+
+					@include ie11() {
+						&--image {
+							min-height: 90px;
+							margin-top: 60px;
+						}
+					}
+				}
+
+				@include breakpoint(lgxmax) {
+					@include firefox() {
+						&--image {
+							min-height: 100px;
+						}
+					}
+
+					@include ie11() {
+						&--image {
+							min-height: 90px;
+							margin-top: 20px;
+						}
+					}
+				}
+
+				@include breakpoint(lgxxmax) {
+					@include firefox() {
+						&--image {
+							min-height: 100px;
+						}
+					}
+
+					@include ie11() {
+						&--image {
+							min-height: 90px;
+							margin-top: 20px;
+						}
+					}
+				}
+
+				@include breakpoint(maxdesktop19in) {
+					@include firefox() {
+						&--image {
+							min-height: 80px;
+						}
+					}
+
+					@include ieEdge() {
+						&--image {
+							min-height: 90px;
+						}
+					}
+
+					@include ie11() {
+						&--image {
+							min-height: 90px;
+							margin-top: 20px;
+						}
+					}
+				}
+
+				h3 {
+					font-size: 15px;
+					font-weight: $medium;
+					color: $colorWhite;
+				}
+
+				&--power {
+					width: 100%;
+
+					.parameter__content--image {
+						margin-top: 0px;
+						min-height: 205px;
+						margin-bottom: 44px;
+
+						@include ie11() {
+							min-height: 207px;
+							margin-bottom: 38px;
+						}
+					}
+
+					@include breakpoint(lgsmax) {
+						.parameter__content--image {
+							min-height: 190px;
+							margin-bottom: 41px;
+
+							@include ie11() {
+								min-height: 198px;
+								margin-bottom: 38px;
+							}
+						}
+					}
+
+					@include breakpoint(lgxmax) {
+						.parameter__content--image {
+							min-height: 187px;
+							margin-bottom: 35px;
+
+							@include ie11() {
+								min-height: 190px;
+								margin-bottom: 41px;
+							}
+						}
+
+						@include firefox() {
+							.parameter__content--image {
+								min-height: 187px;
+								margin-bottom: 38px;
+							}
+						}
+
+						@include ieEdge() {
+							.parameter__content--image {
+								min-height: 185px;
+								margin-bottom: 36px;
+							}
+						}
+
+						@include ie11() {
+							.parameter__content--image {
+								min-height: 190px;
+								margin-bottom: 35px;
+							}
+						}
+					}
+
+					@include breakpoint(lgxxmax) {
+						.parameter__content--image {
+							min-height: 187px;
+							margin-bottom: 36px;
+						}
+
+						@include firefox() {
+							.parameter__content--image {
+								min-height: 187px;
+								margin-bottom: 38px;
+							}
+						}
+
+						@include ieEdge() {
+							.parameter__content--image {
+								min-height: 187px;
+								margin-bottom: 34px;
+							}
+						}
+
+						@include ie11() {
+							.parameter__content--image {
+								min-height: 190px;
+								margin-bottom: 34px;
+							}
+						}
+					}
+
+					@include breakpoint(lgxxxmax) {
+						.parameter__content--image {
+							min-height: 187px;
+						}
+
+						@include ie11() {
+							.parameter__content--image {
+								min-height: 190px;
+							}
+						}
+					}
+
+					@include breakpoint(lgxxxxmax) {
+						.parameter__content--image {
+							min-height: 192px;
+						}
+
+						@include ie11() {
+							.parameter__content--image {
+								min-height: 196px;
+								margin-bottom: 34px;
+							}
+						}
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						.parameter__content--image {
+							min-height: 188px;
+							margin-bottom: 40px;
+
+							.mbEDGE {
+								width: 35%;
+							}
+						}
+
+						@include firefox() {
+							.parameter__content--image {
+								min-height: 189px;
+								margin-bottom: 38px;
+							}
+						}
+
+						@include ieEdge() {
+							.parameter__content--image {
+								min-height: 188px;
+								margin-bottom: 40px;
+							}
+						}
+
+						@include ie11() {
+							.parameter__content--image {
+								min-height: 192px;
+								margin-bottom: 34px;
+
+								.mbEDGE {
+									width: 60px;
+								}
+							}
+						}
+					}
+				}
+
+				&__lists {
+					margin-top: 12px;
+
+					&--item {
+						padding: 10px;
+
+						@include ie11() {
+							padding: 7px;
+						}
+
+						.name {
+							font-size: 14px;
+						}
+
+						.data {
+							font-size: 14px;
+
+							&.off {
+								color: $data-off;
+							}
+						}
+
+						@include breakpoint(lgxxxxmax) {
+							.name {
+								font-size: 13px;
+							}
+
+							.data {
+								font-size: 13px;
+							}
+						}
+
+						@include breakpoint(maxdesktop19in) {
+							@include ie11() {
+								padding: 10px;
+							}
+						}
+					}
+				}
+
+				@include breakpoint(lgxmax) {
+					&--image {
+						margin-top: 55px;
+						min-height: 100px;
+
+						@include firefox() {
+							&--image {
+								min-height: 100px;
+							}
+						}
+					}
+
+					h3 {
+						font-size: 13px;
+					}
+
+					.pr-3 {
+						padding-right: 0.5rem !important;
+					}
+
+					.pl-3 {
+						padding-left: 0.5rem !important;
+					}
+				}
+
+				@include breakpoint(lgxxxxmax) {
+					&--image {
+						margin-top: 60px;
+						min-height: 100px;
+
+						@include firefox() {
+							&--image {
+								min-height: 100px;
+							}
+						}
+					}
+
+					h3 {
+						font-size: 13px;
+					}
+
+					.pr-3 {
+						padding-right: 0.5rem !important;
+					}
+
+					.pl-3 {
+						padding-left: 0.5rem !important;
+					}
+				}
+
+				@include breakpoint(maxdesktop19in) {
+					&--image {
+						margin-top: 63px;
+						min-height: 80px;
+
+						@include ie11() {
+							min-height: 100px;
+						}
+					}
+				}
+			}
+
+			@include breakpoint(lgxmax) {
+				padding: 22px 15px;
+			}
+
+			@include breakpoint(maxdesktop19in) {
+				padding: 16px 15px;
+			}
+		}
+
+		@include breakpoint(lgmax) {
+			padding: 10px 15px 22px;
+		}
+
+		@include breakpoint(lgxxxmax) {
+			padding: 10px 15px 10px;
+		}
+	}
+
+	@include breakpoint(maxdesktop19in) {
+		height: calc(100% - 277px);
+
+		@include ie11() {
+			height: calc(100% - 263px);
+		}
+	}
+}
+
+.ess-charge-chart {
+	border: 1px solid $boder-color-2;
+	background-color: #212428 !important;
+
+	.box-content1 {
+		margin-top: -52px !important;
+	}
+
+	.essChart_canvas {
+		padding: 0px 10px 0px !important;
+
+		#essChart {
+			padding: 0;
+		}
+
+		.flow-chart {
+			height: 257px;
+
+			.amChartsLegend {
+				right: -55px !important;
+			}
+
+			a {
+				display: none !important;
+			}
+		}
+	}
+
+	@include breakpoint(lgmax) {
+		.essChart_canvas {
+			padding: 0px 15px 13px;
+		}
+	}
+
+	@include breakpoint(lgxmax) {
+		.essChart_canvas {
+			padding-bottom: 0px !important;
+		}
+	}
+
+	@include breakpoint(maxdesktop19in) {
+		.box-content {
+			margin-top: -49px !important;
+		}
+	}
+}

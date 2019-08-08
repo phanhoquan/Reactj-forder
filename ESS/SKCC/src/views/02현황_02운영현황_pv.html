@@ -1,0 +1,487 @@
+@@include('modules/header.html', {"title": "02현황_02운영현황_pv", "class": ""})
+
+<div id="page-body" class="page-body main-page">
+	<div class="container-fluid">
+		<div class="row page-index">
+			<div class="banner-menu">
+				@@include('modules/banner-menu.html', {"class": "active", "subactive1": "active", "subactive2": ""})
+			</div>
+			<!-- End Banner Menu -->
+			<div class="d-flex">
+				<div class="event-status event-status-skcc">
+					<div class="page-content">
+						<div class="part part-1 d-flex">
+							<div class="warning-part status-part box-0">
+								<div class="status">
+									<p class="ttl">상태</p>
+								</div>
+								<h3>정상</h3>
+								<p class="unit"></p>
+							</div>
+
+							<div class="warning-part status-part box-1">
+								<div class="status">
+									<p class="ttl">발전시간</p>
+								</div>
+								<h3>145.60</h3>
+								<p class="unit">KWh</p>
+							</div>
+
+							<div class="warning-part status-part box-2">
+								<div class="status">
+									<p class="ttl">금일 발전량</p>
+								</div>
+								<h3>145.60</h3>
+								<p class="unit">kWh</p>
+							</div>
+
+							<div class="warning-part status-part box-3">
+								<div class="status">
+									<p class="ttl">발전 출력</p>
+								</div>
+								<h3>145.60</h3>
+								<p class="unit">kWh</p>
+							</div>
+
+							<div class="warning-part status-part box-4">
+								<div class="status">
+									<p class="ttl">누적 발전량</p>
+								</div>
+								<h3>145.60</h3>
+								<p class="unit">kWh</p>
+							</div>
+
+							<div class="warning-part status-part box-5">
+								<div class="status">
+									<p class="ttl">경사 일사량</p>
+								</div>
+								<h3>145.60</h3>
+								<p class="unit">W<sup>^</sup>2/m</p>
+							</div>
+
+							<div class="warning-part status-part box-6">
+								<div class="status">
+									<p class="ttl">수평 일사량</p>
+								</div>
+								<h3>145.60</h3>
+								<p class="unit">W<sup>^</sup>2/m</p>
+							</div>
+
+							<div class="warning-part status-part box-7">
+								<div class="status">
+									<p class="ttl">PR</p>
+								</div>
+								<h3>145.60</h3>
+								<p class="unit">%</p>
+							</div>
+						</div>
+						<div class="am-charts part">
+							<div class="box-title align-items-center opacity">
+								<p class="mr-auto">운영 현황 차트 <span>*운영 현황 차트를 1시간 단위로 확인 할 수 있습니다.</span> </p>
+							</div>
+
+							<div class="d-flex flex-row justify-content-between custom-chart">
+								<div class="essChart_canvas">
+									<div id="flow-chart" class="flow-chart">
+										<div id="chartdiv2"></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="part table-custom">
+							<div class="txt">
+								<p>운영 현황 차트 <span>*운영 현황 차트를 1시간 단위로 확인 할 수 있습니다.</span></p>
+							</div>
+							<div class="table-responsive table-mr" style="width: 100%;">
+								<table class="table table-striped table-bordered nowrap custome-datatable">
+									<thead>
+										<tr>
+											<th>발생 시간</th>
+											<th>발전량 <span>&nbsp;[kWh]</span></th>
+											<th>발전출력 <span>&nbsp;[kWh]</span></th>
+											<th>누적 발전량 <span>&nbsp;[kWh]</span></th>
+											<th>경사 일사량 <span>&nbsp;[kWh]</span></th>
+											<th>수평 일사량 <span>&nbsp;[W/m2]</span></th>
+											<th>PR <span>&nbsp;%</span></th>
+											<th>상태</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="gradeX">
+											<td>2018-01-12 03:30:47</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>20</td>
+											<td>정상</td>
+										</tr>
+										<tr class="gradeX">
+											<td>2018-01-12 03:30:48</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>30</td>
+											<td>정상</td>
+										</tr>
+										<tr class="gradeX">
+											<td>2018-01-12 03:30:49</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>10</td>
+											<td>정상</td>
+										</tr>
+										<tr class="gradeX">
+											<td>2018-01-12 03:30:50</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>15</td>
+											<td>정상</td>
+										</tr>
+										<tr class="gradeX">
+											<td>2018-01-12 03:30:55</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>35</td>
+											<td>정상</td>
+										</tr>
+										<tr class="gradeX">
+											<td>2018-01-12 03:30:56</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>80</td>
+											<td>정상</td>
+										</tr>
+										<tr class="gradeX">
+											<td>2018-01-12 03:30:57</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>76</td>
+											<td>정상</td>
+										</tr>
+										<tr class="gradeX">
+											<td>2018-01-12 03:30:58</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>82</td>
+											<td>정상</td>
+										</tr>
+										<tr class="gradeX">
+											<td>2018-01-12 03:30:59</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>245.57</td>
+											<td>20</td>
+											<td>정상</td>
+										</tr>
+										<tr class="gradeX">
+											<td>2018-01-12 03:30:60</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>123.45</td>
+											<td>30</td>
+											<td>정상</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Main Content -->
+		</div>
+	</div>
+</div>
+@@include('modules/footer.html')
+<script>
+	// Use themes
+	am4core.useTheme(am4themes_animated);
+
+	// Create chart instance
+	var chart = am4core.create("chartdiv2", am4charts.XYChart);
+	//chart.paddingRight = 120;
+	chart.data = [{
+		"hour": "0",
+		"kw1": 6050,
+		"kw2": 4500,
+		"wm": '',
+	}, {
+		"hour": "1",
+		"kw1": 8050,
+		"kw2": 7100,
+		"wm": 0
+	}, {
+		"hour": "2",
+		"kw1": 5500,
+		"kw2": 4500,
+		"wm": 0
+	}, {
+		"hour": "3",
+		"kw1": 4500,
+		"kw2": 3800,
+		"wm": 4500
+	}, {
+		"hour": "4",
+		"kw1": 8050,
+		"kw2": 3000,
+		"wm": 2200
+	}, {
+		"hour": "5",
+		"kw1": 4800,
+		"kw2": 3500,
+		"wm": 3100
+	}, {
+		"hour": "6",
+		"kw1": 7100,
+		"kw2": 3700,
+		"wm": 5100
+	}, {
+		"hour": "7",
+		"kw1": 9000,
+		"kw2": 3500,
+		"wm": 3500
+	}, {
+		"hour": "8",
+		"kw1": 8400,
+		"kw2": 3450,
+		"wm": 6100
+	}, {
+		"hour": "9",
+		"kw1": 5500,
+		"kw2": 3000,
+		"wm": 3500
+	}, {
+		"hour": "10",
+		"kw1": 6000,
+		"kw2": 4500,
+		"wm": 7000
+	}, {
+		"hour": "11",
+		"kw1": 6600,
+		"kw2": 3000,
+		"wm": 4500
+	}, {
+		"hour": "12",
+		"kw1": 4500,
+		"kw2": 7000,
+		"wm": 9000
+	}, {
+		"hour": "13",
+		"kw1": 5000,
+		"kw2": 4050,
+		"wm": 6500
+	}, {
+		"hour": "14",
+		"kw1": 8000,
+		"kw2": 3950,
+		"wm": 9000
+	}, {
+		"hour": "15",
+		"kw1": 6900,
+		"kw2": 3500,
+		"wm": 9000
+	}, {
+		"hour": "16",
+		"kw1": 8050,
+		"kw2": 3000,
+		"wm": 2200
+	}, {
+		"hour": "17",
+		"kw1": 4800,
+		"kw2": 3500,
+		"wm": 3100
+	}, {
+		"hour": "18",
+		"kw1": 7100,
+		"kw2": 3700,
+		"wm": 5100
+	}, {
+		"hour": "19",
+		"kw1": 9000,
+		"kw2": 3500,
+		"wm": 3500
+	}, {
+		"hour": "20",
+		"kw1": 8400,
+		"kw2": 3450,
+		"wm": 6100
+	}, {
+		"hour": "21",
+		"kw1": 5500,
+		"kw2": 3000,
+		"wm": 3500
+	}, {
+		"hour": "22",
+		"kw1": 6000,
+		"kw2": 4500,
+		"wm": 0
+	}, {
+		"hour": "23",
+		"kw1": 6600,
+		"kw2": 3000,
+		"wm": 0
+	}, {
+		"hour": "24",
+		"kw1": 4500,
+		"kw2": 7000,
+		"wm": 0
+	}, ];
+
+
+	// Create axes
+	var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+	//remove horizontal grid
+	categoryAxis.renderer.grid.template.disabled = true;
+	categoryAxis.renderer.grid.template.location = 0;
+
+	categoryAxis.dataFields.category = "hour";
+	categoryAxis.renderer.minGridDistance = 30;
+	//color for categoryAxis
+	categoryAxis.renderer.line.strokeOpacity = 1;
+	categoryAxis.renderer.line.strokeWidth = 1;
+	categoryAxis.renderer.line.stroke = am4core.color("#e1e1e1");
+	// edit label
+	categoryAxis.renderer.labels.template.fill = am4core.color("#0c0d0f");
+	categoryAxis.renderer.labels.template.fontSize = 10;
+	// start and end series
+	categoryAxis.startLocation = 0.5;
+	categoryAxis.endLocation = 1.5;
+
+	// Create value axis
+	var valueAxisLineChart = chart.yAxes.push(new am4charts.ValueAxis());
+	// set distance between grid
+	valueAxisLineChart.renderer.minGridDistance = 20;
+	//color for horizontal grid
+	valueAxisLineChart.renderer.grid.template.strokeOpacity = 1;
+	valueAxisLineChart.renderer.grid.template.stroke = am4core.color("#e1e1e1");
+	valueAxisLineChart.renderer.grid.template.strokeWidth = 1;
+	// edit label
+	valueAxisLineChart.renderer.labels.template.fill = am4core.color("#0c0d0f");
+	valueAxisLineChart.renderer.labels.template.fontSize = 10;
+	//color for valueAxis
+	valueAxisLineChart.renderer.line.strokeOpacity = 1;
+	valueAxisLineChart.renderer.line.strokeWidth = 1;
+	valueAxisLineChart.renderer.line.stroke = am4core.color("#e1e1e1");
+
+
+
+	var valueAxisBarChart = chart.yAxes.push(new am4charts.ValueAxis());
+	//position of valueAxis
+	valueAxisBarChart.renderer.opposite = true;
+	//color for horizontal grid
+	valueAxisBarChart.renderer.grid.template.strokeOpacity = 0;
+	//color for valueAxis
+	valueAxisBarChart.renderer.line.strokeOpacity = 1;
+	valueAxisBarChart.renderer.line.strokeWidth = 1;
+	valueAxisBarChart.renderer.line.stroke = am4core.color("#e1e1e1");
+	// edit label
+	valueAxisBarChart.renderer.labels.template.fill = am4core.color("#0c0d0f");
+	valueAxisBarChart.renderer.labels.template.fontSize = 10;
+
+	var seriesBarChart = chart.series.push(new am4charts.ColumnSeries());
+	seriesBarChart.zIndex = 1;
+	seriesBarChart.dataFields.categoryX = "hour";
+	seriesBarChart.dataFields.valueY = "wm";
+	seriesBarChart.name = "발전량";
+	seriesBarChart.fill = am4core.color("#8dd241");
+	//Tooltip contents
+	seriesBarChart.tooltipText = "{valueY.value}"
+	seriesBarChart.yAxis = valueAxisBarChart;
+	seriesBarChart.columns.template.width = 15;
+	seriesBarChart.columns.template.stroke = am4core.color("#8dd241");
+	seriesBarChart.columns.template.fill = am4core.color("#8dd241");
+	seriesBarChart.tensionX = 0;
+
+	// Create series
+	var seriesLineChart02 = chart.series.push(new am4charts.LineSeries());
+	seriesLineChart02.zIndex = 2;
+	seriesLineChart02.dataFields.categoryX = "hour";
+	seriesLineChart02.dataFields.valueY = "kw2";
+	//Tooltip contents
+	seriesLineChart02.tooltipText = "{valueY.value}";
+	seriesLineChart02.name = "경사 일사량";
+	seriesLineChart02.fill = am4core.color("#ff8532");
+	seriesLineChart02.tooltip.getFillFromObject = false;
+	seriesLineChart02.tooltip.background.fill = am4core.color("#ff8532");
+	seriesLineChart02.tooltip.label.fill = am4core.color("#000");
+	//edit line series
+	seriesLineChart02.strokeWidth = 5;
+	seriesLineChart02.stroke = am4core.color("#ff8532");
+	seriesLineChart02.fill = am4core.color("#ff8532");
+	seriesLineChart02.tensionX = 0.8;
+
+	var seriesLineChart01 = chart.series.push(new am4charts.LineSeries());
+	seriesLineChart01.zIndex = 3;
+	seriesLineChart01.dataFields.categoryX = "hour";
+	seriesLineChart01.dataFields.valueY = "kw1";
+	//Tooltip contents
+	seriesLineChart01.tooltipText = "{valueY.value}";
+	seriesLineChart01.name = "수평 일사량";
+	seriesLineChart01.fill = am4core.color("#f2ae0d");
+	seriesLineChart01.tooltip.getFillFromObject = false;
+	seriesLineChart01.tooltip.background.fill = am4core.color("#f2ae0d");
+	seriesLineChart01.tooltip.label.fill = am4core.color("#000");
+
+	//edit line series
+	seriesLineChart01.strokeWidth = 5;
+	seriesLineChart01.stroke = am4core.color("#f2ae0d");
+	seriesLineChart01.fill = am4core.color("#f2ae0d");
+	seriesLineChart01.tensionX = 0.8;
+
+
+	chart.scrollbarX = new am4core.Scrollbar();
+
+	// add cursor
+	chart.cursor = new am4charts.XYCursor();
+
+	chart.legend = new am4charts.Legend();
+	chart.legend.useDefaultMarker = true;
+	let marker = chart.legend.markers.template.children.getIndex(0);
+	marker.cornerRadius(12, 12, 12, 12);
+	marker.strokeWidth = 0;
+	marker.strokeOpacity = 1;
+	marker.zIndex = 2;
+	// marker.width = 15;
+	// marker.height = 15;
+	chart.legend.paddingTop = 17;
+	marker.stroke = am4core.color("#ccc");
+	chart.legend.position = "top";
+	chart.legend.align = "right";
+	chart.legend.marginTop = -32;
+	chart.legend.contentAlign = "right";
+
+	//remove/addhorizontalgrid
+	categoryAxis.renderer.grid.template.disabled = false;
+	categoryAxis.renderer.grid.template.location = 0.5;
+	// start and end series
+	categoryAxis.startLocation = 0.5;
+	categoryAxis.endLocation = 0.5;
+</script>

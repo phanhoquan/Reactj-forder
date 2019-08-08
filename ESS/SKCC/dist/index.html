@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<meta name="format-detection" content="telephone=no">
+
+	<title>Home SK C&C</title>
+
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body class="scrollindex">
+	<div id="wrapper">
+
+		<header class="header">
+			<img src="images/logo.png" alt="">
+			<h2>PV - SK E&S</h2>
+			<h3>현재시각</h3>
+			<p class="time">2019-05-25 13:15:30</p>
+			<h3>날씨</h3>
+			<img src="images/weather.png" alt="">
+			<p>흐림 20.1℃ 15:00기준</p>
+			<div class="btn-logout ml-auto">
+				<a href="javascript:void(0)">신용종님</a>
+				<a href="javascript:void(0)" class="active">로그아웃</a>
+			</div>
+		</header>
+
+<div id="page-body" class="page-body main-page">
+	<div class="container-fluid">
+		<div class="row page-index">
+			<div class="banner-menu">
+				<div class="nav-left">
+	<div class="lights">
+		<img src="images/bg-light.png" alt="">
+		<p>이벤트 확인 <img src="images/icon-right.png" alt=""></p>
+	</div>
+
+	<nav class="nav flex-column">
+		<ul class="parent">
+			<li class="child">
+				<a href="javascript:void(0)">
+					<img src="images/tv.png" alt="">
+					<p>모니터링</p>
+					<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+				</a>
+			</li>
+			<li class="child active">
+				<a href="javascript:void(0)">
+					<img src="images/status.png" alt="">
+					<p>현황</p>
+					<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+				</a>
+				<ul class="dropdown-menu">
+					<li class="grandChild @@subactive1">
+						<a tabindex="-1" href="02현황_02운영현황_pv.html">
+							<p>운영 현황</p>
+							<img class="icon-menu ml-auto none" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>장비별 현황</p>
+							<img class="icon-menu ml-auto none" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild @@subactive2">
+						<a tabindex="-1" href="02현황_02이벤트현황_pv.html">
+							<p>이벤트 현황</p>
+							<img class="icon-menu ml-auto none" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>손실률 현황</p>
+							<img class="icon-menu ml-auto none" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>일사량 및 기상정보</p>
+							<img class="icon-menu ml-auto none" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="child">
+				<a href="javascript:void(0)">
+					<img src="images/control.png" alt="">
+					<p>제어</p>
+					<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+				</a>
+				<ul class="dropdown-menu">
+					<li class="grandChild active">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>운영 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>장비별 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>이벤트 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>손실률 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>일사량 및 기상정보</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="child">
+				<a href="javascript:void(0)">
+					<img src="images/charts.png" alt="">
+					<p>통계</p>
+					<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+				</a>
+				<ul class="dropdown-menu">
+					<li class="grandChild active">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>운영 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>장비별 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>이벤트 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>손실률 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>일사량 및 기상정보</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="child">
+				<a href="javascript:void(0)">
+					<img src="images/setting.png" alt="">
+					<p>관리</p>
+					<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+				</a>
+				<ul class="dropdown-menu">
+					<li class="grandChild active">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>운영 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>장비별 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>이벤트 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>손실률 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>일사량 및 기상정보</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+			</div><!-- End Banner Menu -->
+			<div class="main-wrap d-flex">
+				<div class="navbar-left">
+					<div class="solar-radiation">
+	<div class="box-title">
+		<p>일사량 및 온도 현황 </p>
+	</div>
+	<div class="box-content">
+		<div class="d-flex justify-content-around align-items-center pt03">
+			<img src="images/thermometer.png" alt="">
+			<div class="temperature">
+				<h3>20 <span>℃</span></h3>
+				<p>모듈 온도</p>
+			</div>
+			<div class="temperature">
+				<h3>30 <span>℃</span></h3>
+				<p>대기 온도</p>
+			</div>
+		</div>
+		<div class="d-flex justify-content-between align-items-center inclined-solar">
+			<p>경사 일사량</p>
+			<h4>123.45</h4>
+		</div>
+		<div class="d-flex justify-content-between align-items-center inclined-solar">
+			<p>수평 일사량</p>
+			<h4>123.45</h4>
+		</div>
+	</div>
+</div>
+<div class="solar-power">
+	<div class="box-title">
+		<p>태양광 발전현황 </p>
+		<span>단위: kWh</span>
+	</div>
+	<div class="box-content">
+		<div class="d-flex justify-content-between align-items-center inclined-solar">
+			<p>현재 발전량 (kWh)</p>
+			<h4>500.00</h4>
+		</div>
+		<div class="d-flex justify-content-between align-items-center inclined-solar">
+			<p>금일 발전 시간 (h)</p>
+			<h4>0.58</h4>
+		</div>
+		<div class="d-flex justify-content-between align-items-center inclined-solar">
+			<p>연 평균 발전 시간 (h)</p>
+			<h4>3.58</h4>
+		</div>
+		<div class="d-flex justify-content-between align-items-center inclined-solar">
+			<p>상업 운전일</p>
+			<h4>2019.01.02</h4>
+		</div>
+		<div class="box-gray d-flex justify-content-between text-center">
+			<div class="col-6 p-0 today">
+				<h4 class="title-top">금일 발전량</h4>
+				<p>132465.7 <span class="increase "><span class="light">(</span> <i class="fa fa-caret-up"></i> 64%<span class="light">)</span></span></p>
+			</div>
+			<div class="col-6 p-0 todo">
+				<h4>전일 발전량</h4>
+				<p>123456.7</p>
+			</div>
+		</div>
+		<div class="box-gray d-flex justify-content-between text-center ">
+			<div class="col-6 p-0 today">
+				<h4 class="title-top">금일 10시-16시 발전량</h4>
+				<p>132465.7 <span class="primary-light"><span class="light">(</span> - 21%<span class="light">)</span></span></p>
+			</div>
+			<div class="col-6 p-0 todo">
+				<h4 class="title-top">전일 10시-16시 발전량</h4>
+				<p>123456.7</p>
+			</div>
+		</div>
+		<div class="box-gray d-flex justify-content-between text-center">
+			<div class="col-6 p-0 today">
+				<h4 class="title-top">누적 발전량</h4>
+				<p>132465.7 <span class="reduction"><span class="light">(</span> <i class="fa fa-caret-down"></i> 89%<span class="light">)</span></span></p>
+			</div>
+			<div class="col-6 p-0 todo">
+				<h4 class="title-top">누적 10-16시 발전량</h4>
+				<p>123456.7</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="performance">
+	<div class="box-title">
+		<p>목표/실적 </p>
+		<span>단위: h</span>
+	</div>
+	<div class="box-content">
+		<div class="d-flex justify-content-between align-items-start button-performance">
+			<div class="col-3 p-0">
+				<h4 class="mr-auto"></h4>
+			</div>
+			<div class="col-3 p-0">
+				<p class="bg-gray">실적</p>
+			</div>
+			<div class="col-3 p-0">
+				<p class="bg-gray">목표</p>
+			</div>
+		</div>
+		<div class="d-flex justify-content-between align-items-start box-performance">
+			<div class="col-4 p-0">
+				<h4>금일 발전 <br /> <span>(달성율 90%)</span> </h4>
+			</div>
+			<div class="col-4 p-0">
+				<p class="primary-dark">3.255</p>
+			</div>
+			<div class="col-4 p-0">
+				<p class="reduction-light">2.335</p>
+			</div>
+		</div>
+		<div class="d-flex justify-content-between align-items-start box-performance">
+			<div class="col-4 p-0">
+				<h4>금일 발전 <br /> <span>(달성율 90%)</span> </h4>
+			</div>
+			<div class="col-4 p-0">
+				<p class="primary-dark">3.255</p>
+			</div>
+			<div class="col-4 p-0">
+				<p class="reduction-light">3.952</p>
+			</div>
+		</div>
+	</div>
+</div>
+				</div><!-- End Siderbar left -->
+
+				<div class="main-content">
+					<h2 class="notify">공지사항 <span>선학 종합 사회 복지관 #1(인천) 시스템 오류로 인한 작업 중</span></h2>
+<div class="integrated-chart">
+	<div class="box-title">
+		<p>실시간 장비 운영 현황</p><span>연동시간: 2019년 01월 29일 10시 59분 22초</span>
+	</div>
+	<div class="box-content d-flex flex-row justify-content-between position-relative">
+
+		<div class="col box-content__sunlight pr-0">
+			<div class="parameter parameter--sunlight d-flex justify-content-start position-relative">
+
+				<!-- Arrow Line 01-->
+				<div id="arrowLine01" class="bdList arrowLine01 position-absolute">
+					<div class="arrowLineWrap">
+						<ul class="arrowLine_list p-0">
+							<!-- arrow Left to Right -->
+							<li class="line line--1 arrow-right"><span class="lineCont"><i class="lineIE"></i></span></li>
+						</ul>
+					</div>
+				</div><!-- End Arrow Line 01-->
+
+				<!-- List PVC -->
+				<div class="parameter__content">
+
+					<div class="parameter__content--image d-flex flex-column justify-content-end align-items-center">
+						<img class="img-tool bl active" src="images/sunlight-icon-bl.png" alt="" />
+						<img class="mt-dot" src="images/dot.png" alt="">
+					</div>
+
+					<h3 class="text-center">PVC</h3>
+
+					<div class="parameter__content__tabel">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">DC 전압</th>
+									<th scope="col">DC 전류</th>
+									<th scope="col">DC 전력</th>
+								</tr>
+							</thead>
+							<tbody class="nicescroll">
+								<tr>
+									<th scope="row">
+										<div class="name">PVC1</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">PVC2</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">PVC3</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">PVC4</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">PVC5</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">PVC6</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">PVC7</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">PVC8</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">PVC9</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">PVC10</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div><!-- End List PVC -->
+
+				<!-- Box PVI -->
+				<div class="parameter__content">
+
+					<div class="parameter__content--image d-flex flex-column justify-content-end align-items-center">
+						<img class="img-tool or active" src="images/PCS-icon-or.png" alt="" />
+						<img class="mt-dot" src="images/dot.png" alt="">
+					</div>
+
+					<h3 class="text-center">PVI</h3>
+
+					<div class="parameter__content__tabel">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">AC 전압</th>
+									<th scope="col">AC 전류</th>
+									<th scope="col">AC 전력</th>
+									<th scope="col">발전량</th>
+									<th scope="col">발전효율</th>
+								</tr>
+							</thead>
+							<tbody class="nicescroll">
+								<tr>
+									<th scope="row">
+										<div class="name">인버터1</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">kWh</span></div>
+									</td>
+									<td>
+										<div class="data">123.4<span class="unit">%</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">인버터2</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">kWh</span></div>
+									</td>
+									<td>
+										<div class="data">123.4<span class="unit">%</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">인버터3</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">kWh</span></div>
+									</td>
+									<td>
+										<div class="data">123.4<span class="unit">%</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">인버터4</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">kWh</span></div>
+									</td>
+									<td>
+										<div class="data">123.4<span class="unit">%</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">인버터5</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">kWh</span></div>
+									</td>
+									<td>
+										<div class="data">123.4<span class="unit">%</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">인버터6</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">kWh</span></div>
+									</td>
+									<td>
+										<div class="data">123.4<span class="unit">%</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">인버터7</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">kWh</span></div>
+									</td>
+									<td>
+										<div class="data">123.4<span class="unit">%</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">인버터8</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">kWh</span></div>
+									</td>
+									<td>
+										<div class="data">123.4<span class="unit">%</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">인버터9</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">kWh</span></div>
+									</td>
+									<td>
+										<div class="data">123.4<span class="unit">%</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="name">인버터10</div>
+									</th>
+									<td>
+										<div class="data">123.45<span class="unit">V</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">A</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">W</span></div>
+									</td>
+									<td>
+										<div class="data">123.45<span class="unit">kWh</span></div>
+									</td>
+									<td>
+										<div class="data">123.4<span class="unit">%</span></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div><!-- End Box PVI -->
+
+				<!-- Box TR -->
+				<div class="parameter__content">
+
+					<div class="parameter__content--image d-flex flex-column justify-content-end align-items-center">
+						<img class="img-tool or active" src="images/tr-icon-re.png" alt="" />
+						<img class="mt-dot" src="images/dot.png" alt="">
+					</div>
+
+					<h3 class="text-center">TR</h3>
+
+					<div class="parameter__content__tabel">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">온도</th>
+								</tr>
+							</thead>
+							<tbody class="nicescroll">
+								<tr>
+									<th scope="row">
+										<div class="item--name">TR1</div>
+									</th>
+									<td>
+										<div class="data">50.00<span class="unit">℃</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="item--name">TR2</div>
+									</th>
+									<td>
+										<div class="data">50.00<span class="unit">℃</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="item--name">TR3</div>
+									</th>
+									<td>
+										<div class="data">50.00<span class="unit">℃</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="item--name">TR4</div>
+									</th>
+									<td>
+										<div class="data">50.00<span class="unit">℃</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="item--name">TR5</div>
+									</th>
+									<td>
+										<div class="data">50.00<span class="unit">℃</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="item--name">TR6</div>
+									</th>
+									<td>
+										<div class="data">50.00<span class="unit">℃</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="item--name">TR7</div>
+									</th>
+									<td>
+										<div class="data">50.00<span class="unit">℃</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="item--name">TR8</div>
+									</th>
+									<td>
+										<div class="data">50.00<span class="unit">℃</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="item--name">TR9</div>
+									</th>
+									<td>
+										<div class="data">50.00<span class="unit">℃</span></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div class="item--name">TR10</div>
+									</th>
+									<td>
+										<div class="data">50.00<span class="unit">℃</span></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div><!-- End Box PVI -->
+
+				<!-- Box 송전전력 -->
+				<div class="parameter__content parameter__content--power">
+
+					<div class="parameter__content--image d-flex flex-column justify-content-end align-items-center">
+						<img class="image-power" src="images/power-icon.png" alt="" />
+						<img class="mt-dot" src="images/dot.png" alt="">
+					</div>
+
+					<h3 class="text-custom">송전전력</h3>
+					<h2>200,000 <span>kW</span> </h2>
+
+				</div><!-- End List 송전전력-->
+
+				<div class="box-detail position-absolute">
+					<div class="d-flex">
+						<div class="col-6 box-detail__wrap">
+							<div class="d-flex justify-content-between">
+								<p class="name">설비 용량</p>
+								<p class="data">20<span class="unit">Kw</span></p>
+							</div>
+							<div class="d-flex justify-content-between">
+								<p class="name">BAT실</p>
+								<p class="data">수양태양광<span class="unit"></span></p>
+							</div>
+							<div class="d-flex justify-content-between">
+								<p class="name">국가</p>
+								<p class="data">이탈리아<span class="unit"></span></p>
+							</div>
+						</div>
+						<div class="col-6 box-detail__wrap">
+							<div class="d-flex justify-content-between">
+								<p class="name">DC Capacity</p>
+								<p class="data">300000<span class="unit"></span></p>
+							</div>
+							<div class="d-flex justify-content-between">
+								<p class="name">PR</p>
+								<p class="data">20<span class="unit">%</span></p>
+							</div>
+							<div class="d-flex justify-content-between">
+								<p class="name">AVA</p>
+								<p class="data">20<span class="unit">%</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+<div class="ess-charge-chart">
+	<div class="box-title align-items-center opacity">
+		<p class="mr-auto">데이터 그래프</p>
+	</div>
+
+	<div class="d-flex flex-row justify-content-between custom-chart">
+		<div class="essChart_canvas w-100 ">
+			<div id="flow-chart" class="flow-chart">
+				<div id="chartdiv"></div>
+			</div>
+		</div>
+	</div>
+
+</div>
+				</div><!-- End Main Content -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Begin Footer -->
+<footer></footer><!-- End Footer -->
+
+</div><!-- End page-body -->
+
+<script type="text/javascript" src="js/vendor.js"></script>
+<script type="text/javascript" src="lib/amchart4/core.js"></script>
+<script type="text/javascript" src="lib/amchart4/charts.js"></script>
+<script type="text/javascript" src="lib/amchart4/animated.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
+	<script>
+		/**
+		 * ---------------------------------------
+		 * This demo was created using amCharts 4.
+		 *
+		 * For more information visit:
+		 * https://www.amcharts.com/
+		 *
+		 * Documentation is available at:
+		 * https://www.amcharts.com/docs/v4/
+		 * ---------------------------------------
+		 */
+
+		// Use themes
+		am4core.useTheme(am4themes_animated);
+
+		// Create chart instance
+		var chart = am4core.create("chartdiv", am4charts.XYChart);
+		//chart.paddingRight = 120;
+
+		chart.data = [{
+			"hour": "",
+			"kw1": 6050,
+			"kw2": 4500,
+			"wm": '',
+		}, {
+			"hour": "0:00",
+			"kw1": 8050,
+			"kw2": 7100,
+			"wm": 3800
+		}, {
+			"hour": "1:00",
+			"kw1": 5500,
+			"kw2": 4500,
+			"wm": 5400
+		}, {
+			"hour": "2:00",
+			"kw1": 4500,
+			"kw2": 3800,
+			"wm": 4500
+		}, {
+			"hour": "3:00",
+			"kw1": 8050,
+			"kw2": 3000,
+			"wm": 2200
+		}, {
+			"hour": "4:00",
+			"kw1": 4800,
+			"kw2": 3500,
+			"wm": 3100
+		}, {
+			"hour": "5:00",
+			"kw1": 7100,
+			"kw2": 3700,
+			"wm": 5100
+		}, {
+			"hour": "6:00",
+			"kw1": 9000,
+			"kw2": 3500,
+			"wm": 3500
+		}, {
+			"hour": "7:00",
+			"kw1": 8400,
+			"kw2": 3450,
+			"wm": 6100
+		}, {
+			"hour": "8:00",
+			"kw1": 5500,
+			"kw2": 3000,
+			"wm": 3500
+		}, {
+			"hour": "9:00",
+			"kw1": 6000,
+			"kw2": 4500,
+			"wm": 7000
+		}, {
+			"hour": "10:00",
+			"kw1": 6600,
+			"kw2": 3000,
+			"wm": 4500
+		}, {
+			"hour": "11:00",
+			"kw1": 4500,
+			"kw2": 7000,
+			"wm": 9000
+		}, {
+			"hour": "12:00",
+			"kw1": 5000,
+			"kw2": 4050,
+			"wm": 6500
+		}, {
+			"hour": "13:00",
+			"kw1": 8000,
+			"kw2": 3950,
+			"wm": 9000
+		}, {
+			"hour": "14:00",
+			"kw1": 6900,
+			"kw2": 3500,
+			"wm": 9000
+		}];
+
+		// Create axes
+		var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+		//remove horizontal grid
+		categoryAxis.renderer.grid.template.disabled = true;
+		categoryAxis.renderer.grid.template.location = 0;
+
+		categoryAxis.dataFields.category = "hour";
+		categoryAxis.renderer.minGridDistance = 30;
+		//color for categoryAxis
+		categoryAxis.renderer.line.strokeOpacity = 1;
+		categoryAxis.renderer.line.strokeWidth = 1;
+		categoryAxis.renderer.line.stroke = am4core.color("#e1e1e1");
+		// edit label
+		categoryAxis.renderer.labels.template.fill = am4core.color("#0c0d0f");
+		categoryAxis.renderer.labels.template.fontSize = 10;
+		// start and end series
+		categoryAxis.startLocation = 0.5;
+		categoryAxis.endLocation = 1.5;
+
+		// Create value axis
+		var valueAxisLineChart = chart.yAxes.push(new am4charts.ValueAxis());
+		// set distance between grid
+		valueAxisLineChart.renderer.minGridDistance = 20;
+		//color for horizontal grid
+		valueAxisLineChart.renderer.grid.template.strokeOpacity = 1;
+		valueAxisLineChart.renderer.grid.template.stroke = am4core.color("#e1e1e1");
+		valueAxisLineChart.renderer.grid.template.strokeWidth = 1;
+		// edit label
+		valueAxisLineChart.renderer.labels.template.fill = am4core.color("#0c0d0f");
+		valueAxisLineChart.renderer.labels.template.fontSize = 10;
+		//color for valueAxis
+		valueAxisLineChart.renderer.line.strokeOpacity = 1;
+		valueAxisLineChart.renderer.line.strokeWidth = 1;
+		valueAxisLineChart.renderer.line.stroke = am4core.color("#e1e1e1");
+
+
+
+		var valueAxisBarChart = chart.yAxes.push(new am4charts.ValueAxis());
+		//position of valueAxis
+		valueAxisBarChart.renderer.opposite = true;
+		//color for horizontal grid
+		valueAxisBarChart.renderer.grid.template.strokeOpacity = 0;
+		//color for valueAxis
+		valueAxisBarChart.renderer.line.strokeOpacity = 1;
+		valueAxisBarChart.renderer.line.strokeWidth = 1;
+		valueAxisBarChart.renderer.line.stroke = am4core.color("#e1e1e1");
+		// edit label
+		valueAxisBarChart.renderer.labels.template.fill = am4core.color("#0c0d0f");
+		valueAxisBarChart.renderer.labels.template.fontSize = 10;
+
+		var seriesBarChart = chart.series.push(new am4charts.ColumnSeries());
+		seriesBarChart.zIndex = 1;
+		seriesBarChart.dataFields.categoryX = "hour";
+		seriesBarChart.dataFields.valueY = "wm";
+		seriesBarChart.name = "발전량";
+		seriesBarChart.fill = am4core.color("#67b067");
+		//Tooltip contents
+		seriesBarChart.tooltipText = "{valueY.value}"
+		seriesBarChart.yAxis = valueAxisBarChart;
+		seriesBarChart.columns.template.width = 15;
+		seriesBarChart.columns.template.stroke = am4core.color("#67b067");
+		seriesBarChart.columns.template.fill = am4core.color("#67b067");
+		seriesBarChart.tensionX = 0;
+
+		var seriesLineChart02 = chart.series.push(new am4charts.LineSeries());
+		seriesLineChart02.zIndex = 3;
+		seriesLineChart02.dataFields.categoryX = "hour";
+		seriesLineChart02.dataFields.valueY = "kw2";
+		//Tooltip contents
+		seriesLineChart02.tooltipText = "{valueY.value}";
+		seriesLineChart02.name = "일사량";
+		seriesLineChart02.fill = am4core.color("#4e519b");
+		//seriesLineChart02.name = "Series 2";
+		//seriesLineChart02.sequencedInterpolation = true;
+		//edit line series
+		seriesLineChart02.strokeWidth = 2;
+		seriesLineChart02.stroke = am4core.color("#4e519b");
+		seriesLineChart02.tensionX = 0.8;
+
+		chart.scrollbarX = new am4core.Scrollbar();
+
+		// add cursor
+		chart.cursor = new am4charts.XYCursor();
+
+		chart.legend = new am4charts.Legend();
+		chart.legend.useDefaultMarker = true;
+
+		let marker = chart.legend.markers.template.children.getIndex(0);
+		marker.cornerRadius(12, 12, 12, 12);
+		marker.strokeWidth = 0;
+		marker.strokeOpacity = 0;
+		marker.zIndex = 2;
+		// marker.width = 15;
+		// marker.height = 15;
+		marker.stroke = am4core.color("#ccc");
+		chart.legend.position = "top";
+		chart.legend.align = "right";
+		chart.legend.labelColor = "red";
+		chart.legend.marginTop = -17;
+		chart.legend.contentAlign = "right";
+	</script>

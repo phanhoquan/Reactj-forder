@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<meta name="format-detection" content="telephone=no">
+
+	<title>06.4.이벤트통계</title>
+
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/fancyapps/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/jquery.mCustomScrollbar/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+<link rel="stylesheet" type="text/css" href="lib/bootstrap-select/css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="lib/amcharts3/plugins/export/export.css">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="lib/jquery/js/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui/ui/jquery-ui.js"></script>
+	<script type="text/javascript" src="lib/jquery.mCustomScrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/html5shiv/js/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<!-- Alert pupup -->
+	<div id="alert_detail_popup" class="page_popup">
+		<div class="panel-title">
+			<h2 class="title">Confirm</h2>
+		</div>
+		<div class="panel-body">
+			<div class="error"><img src="images/icon-alert.png" class=" mr-3 align-middle"><span>로그아웃하시겠습니까?</span>
+			</div>
+			<div class="action-submit d-flex justify-content-center form-group">
+				<input type="submit" name="apply" class="btn btn-default" value="확인">
+				<input type="submit" class="cancel" value="취소" data-fancybox-close>
+			</div>
+		</div>
+	</div>
+
+	<!-- event notification -->
+	<div id="event-notification_popup" class="event_popup">
+		<div class="panel-title">
+			<h2>이벤트 알림</h2>
+		</div>
+		<div class="panel-body">
+			<div class="event_popup--item event-pcs2 event-5-col">
+				<h2>PCS 2</h2>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>rack 이상</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>rack trip</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module 저전압 </span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module 전압불평형</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module 전압불평형</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>battery 과전압</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>battery 저전압</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module 전류 불평형</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>R-M 통신오류</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>R=M 통신오류</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module PCB 저열</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module PCB 저열</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>R-s 통신 오류</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>rack 충전 과전류</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>rack 충전 과전류</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>DC 스위치1 센서 이상</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>DC 스위치2 센서 이상</span>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="event_popup--item event-pms2 event-6-col">
+				<h2>PMS 4</h2>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack string 전류 불평형</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>module 저열 </span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>Fan 이상</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>module 저전압</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>module 과전압 </span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>cell 충전 동작 limit</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack 전류 센서 이상 </span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack fuse rail</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack 과전압 </span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>cell 방전 동작 limit</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>module PCB 저열</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack string 전압 불평형</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack 전압 센싱 이상</span>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="action-submit d-flex justify-content-center form-group">
+				<input type="submit" name="submit" class="btn btn-default" value="확인">
+				<input type="submit" class="cancel" value="취소" data-fancybox-close>
+			</div>
+		</div>
+	</div>
+
+	<!-- 정보 수정 -->
+	<div id="form-edit_info_detail_popup" class="page_popup">
+		<div class="panel-title d-flex justify-content-between">
+			<h2>정보 수정</h2>
+			<i id="close_form-edit_info">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+					<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+				</svg>
+			</i>
+		</div>
+		<div class="panel-body">
+			<form action="" method="" class="form_edit_info">
+				<div class="form-group">
+					<label for="name">아이디</label>
+					<p>jini1237</p>
+				</div>
+				<div class="form-group">
+					<label for="text_name">이름</label>
+					<input type="text" name="text-name" class="text_name" value="김가나">
+				</div>
+				<div class="form-group">
+					<label for="select">직책</label>
+					<select class="select-option" name="select">
+						<option>직책선택</option>
+						<option>직책선택</option>
+						<option>직책선택</option>
+						<option>직책선택</option>
+						<option>직책선택</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="tel">전화번호</label>
+					<input type="tel" name="tel" class="" value="010-1234-1234">
+				</div>
+				<div class="form-group">
+					<label for="password">비밀 번호</label>
+					<input type="password" name="password" class="password" value="0123456789">
+				</div>
+				<div class="form-group">
+					<label for="confirm-password">비밀 번호 확인</label>
+					<input type="password" name="confirm-password" class="password" value="0123456789">
+				</div>
+				<div class="action-submit d-flex justify-content-center form-group">
+					<input type="submit" name="submit" class="btn btn-default mr-2" value="수정">
+					<input type="submit" class="cancel" name="cancel" id="cancel_dialog" class="btn btn-default ml-2" value="취소">
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 인조이웍스 본사 -->
+</head>
+
+<body class="">
+	<div id="wrapper">
+
+		<header class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-6 pl-0 pr-2 header-right">
+						<a href="index.html" class="logo d-flex align-items-center">
+							<div class="logo__image">
+								<img src="images/logo.png" alt="" />
+							</div>
+							<div class="logo__title">
+								<h1 class="site-title">PV + ESS System</h1>
+								<p class="site-sub m-0">인조이컴퍼니</p>
+							</div>
+						</a>
+						<!--
+							.event-notification--none -> don't show image
+							.event-notification--red -> show image notification_re.png
+							.event-notification--grey -> show image notification_gy.png
+							.event-notification--green -> show image notification_gre.png
+							.event-notification--orange -> show image notification_or.png
+						-->
+						<div class="event-notification event-notification--none position-absolute d-flex justify-content-center align-items-center">
+							<a href="javascript:void(0)" id="event-notification" class="event-notification_popup" data-src="#event-notification_popup">
+								<img class="img-notice" src="images/notification_noevent.png" />
+							</a>
+						</div>
+						<!-- <a href="javascript:void(0)" class="event-notification_popup position-absolute" data-fancybox="" data-src="#event-notification_popup">
+							<img class="img-notice position-absolute active" src="images/notification_no.png" />
+							<img class="img-notice position-absolute" src="images/notification_gy.png" />
+							<img class="img-notice position-absolute" src="images/notification_re.png" />
+							<img class="img-notice position-absolute" src="images/notification_or.png" />
+							<img class="img-notice position-absolute" src="images/notification_gre.png" />
+						</a> -->
+					</div><!-- End Logo Site -->
+					<div class="col-6 pr-0 pl-2 header-left">
+						<div class="top-header d-flex flex-row justify-content-end">
+							<div class="date-time d-flex flex-wrap align-items-center">
+								<p class="date-time--date">2018년 09월 18일</p>
+								<p class="date-time--time">15:01:12</p>
+							</div>
+							<div class="userLogin d-flex flex-wrap align-items-center">
+								<a href="javascript:void(0)" class="account" id="edit_info_detail_popup">신용종님</a>
+								<a href="javascript:void(0)" id="alert_detail" class="logout" data-src="#alert_detail_popup">로그아웃</a>
+							</div>
+						</div><!-- End Top Info -->
+						<nav class="nav-menu">
+							<ul class="nav-menu__main d-flex justify-content-end">
+								<li class="menu-item ">
+									<a href="index.html" class="d-flex justify-content-center align-items-center"><img class="icon-main" src="images/monitoring-icon.png" /><img
+										 class="icon-hover" src="images/monitoring-icon-hover.png" />모니터링</a>
+								</li>
+								<li class="menu-item ">
+									<a href="02.계통흐름도2안.html" class="d-flex justify-content-center align-items-center">
+										<img class="icon-main" src="images/system-icon.png" /><img class="icon-hover" src="images/system-icon-hover.png" />계통
+										흐름도</a>
+								</li>
+								<li class="menu-item ">
+									<a href="04.운전.html" class="d-flex justify-content-center align-items-center"><img class="icon-main" src="images/driving-icon.png" /><img
+										 class="icon-hover" src="images/driving-icon-hover.png" />운전</a>
+								</li>
+								<li class="menu-item  menu-has-child">
+									<a href="05.1.발전현황.html" class="d-flex justify-content-center align-items-center"><img class="icon-main" src="images/status-icon.png" /><img
+										 class="icon-hover" src="images/status-icon-hover.png" />현황</a>
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a class="" href="05.1.발전현황.html">발전 현황</a>
+										</li>
+										<li class="menu-item">
+											<a class="" href="05.2.운영현황.html">운영 현황</a>
+										</li>
+										<li class="menu-item">
+											<a class="" href="05.3.장비현황.html">장비 현황</a>
+										</li>
+										<li class="menu-item">
+											<a class="" href="05.4.이벤트현황.html">이벤트 현황</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item current-menu-item menu-has-child">
+									<a href="06.1.발전통계.html" class="d-flex justify-content-center align-items-center"><img class="icon-main" src="images/statistics-icon.png" /><img
+										 class="icon-hover" src="images/statistics-icon-hover.png" />통계</a>
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a class="" href="06.1.발전통계.html">발전 통계</a>
+										</li>
+										<li class="menu-item">
+											<a class="" href="06.2.운영통계.html">운영 통계</a>
+										</li>
+										<li class="menu-item">
+											<a class="" href="06.3.수익통계.html">수익 통계</a>
+										</li>
+										<li class="menu-item">
+											<a class="is-active" href="06.4.이벤트통계.html">이벤트 통계</a>
+										</li>
+										<li class="menu-item">
+											<a class="" href="06.5.운전통계.html">운전 통계</a>
+										</li>
+										<li class="menu-item">
+											<a class="" href="06.6.장비통계.html">장비 통계</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item  menu-has-child">
+									<a href="07.1.접속관리.html" class="d-flex justify-content-center align-items-center"><img class="icon-main" src="images/management-icon.png" /><img
+										 class="icon-hover" src="images/management-icon-hover.png" />관리</a>
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a class="" href="07.1.접속관리.html">접속 관리</a>
+										</li>
+										<li class="menu-item">
+											<a class="" href="07.2.사용자관리.html">사용자 관리</a>
+										</li>
+										<li class="menu-item">
+											<a class="" href="07.3.운휴및시스템관리.html">운휴 및 시스템 관리</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav><!-- End Menu -->
+					</div><!-- End Header Right -->
+				</div>
+			</div>
+		</header>
+
+<div id="page-body" class="page-body status-page">
+	<div class="container-fluid">
+		<div class="status__top d-flex group-generation">
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded  number-stats">
+					<div class="box-content d-flex align-items-center">
+						<div class="groups-left">
+							<img src="images/3_icon1.png" />
+							<p class="name">PCS</p>
+						</div>
+						<div class="groups-icon">
+							<div class="warning d-flex mb-1"> <span>Warning</span><span class="number">999</span></div>
+							<div class="fault d-flex"><span>Fault</span><span class="number">3</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded  number-stats">
+					<div class="box-content d-flex align-items-center">
+						<div class="groups-left">
+							<img src="images/pms-icon.png" />
+							<p class="name">BMS</p>
+						</div>
+						<div class="groups-icon">
+							<div class="warning d-flex mb-1"> <span>Warning</span><span class="number">999</span></div>
+							<div class="fault d-flex"><span>Fault</span><span class="number">3</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded  number-stats">
+					<div class="box-content d-flex align-items-center">
+						<div class="groups-left">
+							<img src="images/rack-icon.png" />
+							<p class="name">Rack</p>
+						</div>
+						<div class="groups-icon">
+							<div class="warning d-flex mb-1"> <span>Warning</span><span class="number">999</span></div>
+							<div class="fault d-flex"><span>Fault</span><span class="number">3</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 box-item">
+				<div class="box-rounded rounded  number-stats">
+					<div class="box-content d-flex align-items-center">
+						<div class="groups-left">
+							<img src="images/PV-inverter-icon.png" />
+							<p class="name">PVI</p>
+						</div>
+						<div class="groups-icon">
+							<div class="warning d-flex mb-1"> <span>Warning</span><span class="number">999</span></div>
+							<div class="fault d-flex"><span>Fault</span><span class="number">3</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- End Status Top -->
+
+		<div class="d-flex justify-content-between equipment-bar my-2">
+			<div class=" d-flex align-items-center ">
+				<div class="title"><img class="energy-icon" src="images/energy-icon.png" />장비</div>
+				<ul class="nav nav-pills equipment-bar__tab" role="tablist">
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-PCS-tab" data-toggle="pill" href="#pills-tab-PCS" role="tab" aria-controls="pills-PCS"
+						 aria-selected="true">PCS</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-BMS-tab" data-toggle="pill" href="#pills-tab-BMS" role="tab" aria-controls="pills-BMS"
+						 aria-selected="false">BMS</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-rack-tab" data-toggle="pill" href="#pills-tab-rack" role="tab" aria-controls="pills-rack"
+						 aria-selected="false">Rack</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-THS-tab" data-toggle="pill" href="#pills-tab-THS" role="tab" aria-controls="pills-THS"
+						 aria-selected="false">THS</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-PV-inverter-tab" data-toggle="pill" href="#pills-tab-PV-inverter" role="tab"
+						 aria-controls="pills-PV-inverter" aria-selected="false">PV인버터</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-VCB-tab" data-toggle="pill" href="#pills-tab-VCB" role="tab" aria-controls="pills-VCB"
+						 aria-selected="false">VCB</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="pills-ACB-tab" data-toggle="pill" href="#pills-tab-ACB" role="tab" aria-controls="pills-ACB"
+						 aria-selected="false">ACB</a>
+					</li>
+				</ul>
+				<div class="title"><img class="energy-icon" src="images/icon1.png" alt="">기기</div>
+				<div class="device">
+					<select class="form-control" name="" id="">
+						<option value="">All</option>
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+
+			</div><!-- End Equipment Bar -->
+			<div class="search">
+				<a href="javascript:void(0)">검색</a>
+			</div>
+		</div>
+		<div class="period_bar d-flex justify-content-between">
+			<div class="term form-inline">
+				<div class="term__title">
+					<img src="images/time.png" alt="">
+					<p>기간</p>
+				</div>
+				<ul class="nav checkbox-square">
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link active" id="hourly" data-toggle="pill" href="" aria-selected="true">시간별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="glance" data-toggle="pill" href="">일별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="monthly" data-toggle="pill" href="">월별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="quarterly" data-toggle="pill" href="">기간별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="yearly" data-toggle="pill" href="">연별</a>
+					</li>
+				</ul>
+				<div class="term__title">
+					<img src="images/day.png" alt="">
+					<p>날짜</p>
+				</div>
+				<div class="input-group term__button" id="day">
+					<label for="" class="date d-flex">
+						<input type="text" class="form-control" placeholder="2019.01.02" id="date" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="month">
+					<label for="" class="month" data-date-format="yyyy.mm">
+						<input type="text" class="form-control" placeholder="2019.02" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="month-start">
+					<label for="" class="month" data-date-format="yyyy.mm">
+						<input type="text" class="form-control" placeholder="2019.02" name="date">
+						<p>~</p>
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="month-end">
+					<label for="" class="month" data-date-format="yyyy.mm">
+						<input type="text" class="form-control" placeholder="2019.02" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="year">
+					<label for="" class="yearly" data-date-format="yyyy">
+						<input type="text" class="form-control" placeholder="2019" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="year-start">
+					<label for="" class="yearly" data-date-format="yyyy">
+						<input type="text" class="form-control" placeholder="2019" name="date">
+						<p>~</p>
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="year-end">
+					<label for="" class="yearly" data-date-format="yyyy">
+						<input type="text" class="form-control" placeholder="2019" name="date">
+					</label>
+				</div>
+				<div class="term__title clock">
+					<img src="images/clock.png" alt="">
+					<p>시간</p>
+				</div>
+				<div class="term__button option" id="option">
+					<select class="form-control selectpicker" name="" id="" data-size="13">
+						<option value="">00시</option>
+						<option value="">01시</option>
+						<option value="">02시</option>
+						<option value="">03시</option>
+						<option value="">04시</option>
+						<option value="">05시</option>
+						<option value="">06시</option>
+						<option value="">07시</option>
+						<option value="">08시</option>
+						<option value="">08시</option>
+						<option value="">10시</option>
+						<option value="">11시</option>
+						<option value="">12시</option>
+						<option value="">13시</option>
+						<option value="">14시</option>
+						<option value="">15시</option>
+						<option value="">16시</option>
+						<option value="">17시</option>
+						<option value="">18시</option>
+					</select>
+					<p>~</p>
+					<select class="form-control selectpicker" name="" id="" data-size="13">
+						<option value="">23시</option>
+						<option value="">24시</option>
+						<option value="">25시</option>
+						<option value="">26시</option>
+						<option value="">27시</option>
+						<option value="">28시</option>
+						<option value="">29시</option>
+						<option value="">30시</option>
+						<option value="">31시</option>
+						<option value="">32시</option>
+						<option value="">33시</option>
+						<option value="">34시</option>
+						<option value="">35시</option>
+						<option value="">36시</option>
+						<option value="">37시</option>
+						<option value="">38시</option>
+						<option value="">39시</option>
+						<option value="">40시</option>
+						<option value="">41시</option>
+					</select>
+				</div>
+			</div>
+			<div class="search">
+				<a href="javascript:void(0)">검색</a>
+			</div>
+		</div>
+		<div class="tab-content p-0 event-status">
+			<div class="tab-pane fade show active" id="pills-tab-PCS" role="tabpanel" aria-labelledby="pills-pcs-tab">
+				<div class="datatable rounded">
+	<div class="chart_title border-black">
+		<p class="p-0 m-0 text-left">이벤트 통계</p>
+	</div>
+	<div class="operation-status">
+		<div class="d-flex justify-content-between">
+			<div class="button-lenght">
+				<select name="" id="">
+					<option value="">5</option>
+					<option value="">10</option>
+					<option value="">15</option>
+				</select>
+				<p>개씩 보기</p>
+			</div>
+			<div class="button-download">
+				<a href="javascript:void(0)">엑셀 다운</a>
+				<a href="javascript:void(0)">CSV 다운</a>
+			</div>
+		</div>
+		<div class="table-responsive" width="100%">
+			<table class="table table-striped table-bordered table-hover custom-datatable" id="custom-dataTables">
+				<thead>
+					<tr>
+						<th>이벤트명</th>
+						<th>기기</th>
+						<th>수위</th>
+						<th>종지 전압</th>
+						<th>발생시간</th>
+						<th>종료시간</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>충전 전압의 110%</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>BMS #1</td>
+						<td>Fault</td>
+						<td>종지 전압</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>RACK #1</td>
+						<td>Warning</td>
+						<td>Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 과전압</td>
+						<td>PCS #1</td>
+						<td>Warning</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="float-right">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link previous" href="#" aria-label="Previous">
+								<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><a class="page-link" href="#">6</a></li>
+						<li class="page-item"><a class="page-link" href="#">7</a></li>
+						<li class="page-item"><a class="page-link" href="#">8</a></li>
+						<li class="page-item"><a class="page-link" href="#">9</a></li>
+						<li class="page-item"><a class="page-link" href="#">10</a></li>
+						<li class="page-item">
+							<a class="page-link next" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="tab-pane fade" id="pills-tab-BMS" role="tabpanel" aria-labelledby="pills-BMS-tab">
+				<div class="datatable rounded">
+	<div class="chart_title border-black">
+		<p class="p-0 m-0 text-left">이벤트 통계</p>
+	</div>
+	<div class="operation-status">
+		<div class="d-flex justify-content-between">
+			<div class="button-lenght">
+				<select name="" id="">
+					<option value="">5</option>
+					<option value="">10</option>
+					<option value="">15</option>
+				</select>
+				<p>개씩 보기</p>
+			</div>
+		</div>
+		<div class="table-responsive" width="100%">
+			<table class="table table-striped table-bordered table-hover custom-datatable" id="custom-dataTables">
+				<thead>
+					<tr>
+						<th>이벤트명</th>
+						<th>기기</th>
+						<th>수위</th>
+						<th>종지 전압</th>
+						<th>발생시간</th>
+						<th>종료시간</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>충전 전압의 110%</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>BMS #1</td>
+						<td>Fault</td>
+						<td>종지 전압</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>RACK #1</td>
+						<td>Warning</td>
+						<td>Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 과전압</td>
+						<td>PCS #1</td>
+						<td>Warning</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="float-right">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link previous" href="#" aria-label="Previous">
+								<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><a class="page-link" href="#">6</a></li>
+						<li class="page-item"><a class="page-link" href="#">7</a></li>
+						<li class="page-item"><a class="page-link" href="#">8</a></li>
+						<li class="page-item"><a class="page-link" href="#">9</a></li>
+						<li class="page-item"><a class="page-link" href="#">10</a></li>
+						<li class="page-item">
+							<a class="page-link next" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="tab-pane fade" id="pills-tab-rack" role="tabpanel" aria-labelledby="pills-rack-tab">
+				<div class="datatable rounded">
+	<div class="chart_title border-black">
+		<p class="p-0 m-0 text-left">이벤트 통계</p>
+	</div>
+	<div class="operation-status">
+		<div class="d-flex justify-content-between">
+			<div class="button-lenght">
+				<select name="" id="">
+					<option value="">5</option>
+					<option value="">10</option>
+					<option value="">15</option>
+				</select>
+				<p>개씩 보기</p>
+			</div>
+		</div>
+		<div class="table-responsive" width="100%">
+			<table class="table custom-datatable" id="custom-dataTables">
+				<thead>
+					<tr>
+						<th>이벤트명</th>
+						<th>기기</th>
+						<th>수위</th>
+						<th>종지 전압</th>
+						<th>발생시간</th>
+						<th>종료시간</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>충전 전압의 110%</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>BMS #1</td>
+						<td>Fault</td>
+						<td>종지 전압</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>RACK #1</td>
+						<td>Warning</td>
+						<td>Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 과전압</td>
+						<td>PCS #1</td>
+						<td>Warning</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="float-right">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link previous" href="#" aria-label="Previous">
+								<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><a class="page-link" href="#">6</a></li>
+						<li class="page-item"><a class="page-link" href="#">7</a></li>
+						<li class="page-item"><a class="page-link" href="#">8</a></li>
+						<li class="page-item"><a class="page-link" href="#">9</a></li>
+						<li class="page-item"><a class="page-link" href="#">10</a></li>
+						<li class="page-item">
+							<a class="page-link next" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="tab-pane fade" id="pills-tab-THS" role="tabpanel" aria-labelledby="pills-THS-tab">
+				<div class="datatable rounded">
+	<div class="chart_title border-black">
+		<p class="p-0 m-0 text-left">이벤트 통계</p>
+	</div>
+	<div class="operation-status">
+		<div class="d-flex justify-content-between">
+			<div class="button-lenght">
+				<select name="" id="">
+					<option value="">5</option>
+					<option value="">10</option>
+					<option value="">15</option>
+				</select>
+				<p>개씩 보기</p>
+			</div>
+		</div>
+		<div class="table-responsive" width="100%">
+			<table class="table table-striped table-bordered table-hover custom-datatable" id="custom-dataTables">
+				<thead>
+					<tr>
+						<th>이벤트명</th>
+						<th>기기</th>
+						<th>수위</th>
+						<th>종지 전압</th>
+						<th>발생시간</th>
+						<th>종료시간</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>충전 전압의 110%</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>BMS #1</td>
+						<td>Fault</td>
+						<td>종지 전압</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>RACK #1</td>
+						<td>Warning</td>
+						<td>Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 과전압</td>
+						<td>PCS #1</td>
+						<td>Warning</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="float-right">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link previous" href="#" aria-label="Previous">
+								<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><a class="page-link" href="#">6</a></li>
+						<li class="page-item"><a class="page-link" href="#">7</a></li>
+						<li class="page-item"><a class="page-link" href="#">8</a></li>
+						<li class="page-item"><a class="page-link" href="#">9</a></li>
+						<li class="page-item"><a class="page-link" href="#">10</a></li>
+						<li class="page-item">
+							<a class="page-link next" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="tab-pane fade" id="pills-tab-PV-inverter" role="tabpanel" aria-labelledby="pills-rack-tab">
+				<div class="datatable rounded">
+	<div class="chart_title border-black">
+		<p class="p-0 m-0 text-left">이벤트 통계</p>
+	</div>
+	<div class="operation-status">
+		<div class="d-flex justify-content-between">
+			<div class="button-lenght">
+				<select name="" id="">
+					<option value="">5</option>
+					<option value="">10</option>
+					<option value="">15</option>
+				</select>
+				<p>개씩 보기</p>
+			</div>
+		</div>
+
+		<div class="table-responsive" width="100%">
+			<table class="table table-striped table-bordered table-hover custom-datatable" id="custom-dataTables">
+				<thead>
+					<tr>
+						<th>이벤트명</th>
+						<th>기기</th>
+						<th>수위</th>
+						<th>종지 전압</th>
+						<th>발생시간</th>
+						<th>종료시간</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>충전 전압의 110%</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>BMS #1</td>
+						<td>Fault</td>
+						<td>종지 전압</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>RACK #1</td>
+						<td>Warning</td>
+						<td>Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 과전압</td>
+						<td>PCS #1</td>
+						<td>Warning</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="float-right">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link previous" href="#" aria-label="Previous">
+								<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><a class="page-link" href="#">6</a></li>
+						<li class="page-item"><a class="page-link" href="#">7</a></li>
+						<li class="page-item"><a class="page-link" href="#">8</a></li>
+						<li class="page-item"><a class="page-link" href="#">9</a></li>
+						<li class="page-item"><a class="page-link" href="#">10</a></li>
+						<li class="page-item">
+							<a class="page-link next" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="tab-pane fade" id="pills-tab-VCB" role="tabpanel" aria-labelledby="pills-VCB-tab">
+				<div class="datatable rounded">
+	<div class="chart_title border-black">
+		<p class="p-0 m-0 text-left">이벤트 통계</p>
+	</div>
+	<div class="operation-status">
+		<div class="d-flex justify-content-between">
+			<div class="button-lenght">
+				<select name="" id="">
+					<option value="">5</option>
+					<option value="">10</option>
+					<option value="">15</option>
+				</select>
+				<p>개씩 보기</p>
+			</div>
+		</div>
+		<div class="table-responsive" width="100%">
+			<table class="table table-striped table-bordered table-hover custom-datatable" id="custom-dataTables">
+				<thead>
+					<tr>
+						<th>이벤트명</th>
+						<th>기기</th>
+						<th>수위</th>
+						<th>종지 전압</th>
+						<th>발생시간</th>
+						<th>종료시간</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>충전 전압의 110%</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>BMS #1</td>
+						<td>Fault</td>
+						<td>종지 전압</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>RACK #1</td>
+						<td>Warning</td>
+						<td>Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 과전압</td>
+						<td>PCS #1</td>
+						<td>Warning</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+				</tbody>
+			</table>>
+			<div class="float-right">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link previous" href="#" aria-label="Previous">
+								<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><a class="page-link" href="#">6</a></li>
+						<li class="page-item"><a class="page-link" href="#">7</a></li>
+						<li class="page-item"><a class="page-link" href="#">8</a></li>
+						<li class="page-item"><a class="page-link" href="#">9</a></li>
+						<li class="page-item"><a class="page-link" href="#">10</a></li>
+						<li class="page-item">
+							<a class="page-link next" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="tab-pane fade" id="pills-tab-ACB" role="tabpanel" aria-labelledby="pills-ACB-tab">
+				<div class="datatable rounded">
+	<div class="chart_title border-black">
+		<p class="p-0 m-0 text-left">이벤트 통계</p>
+	</div>
+	<div class="operation-status">
+		<div class="d-flex justify-content-between">
+			<div class="button-lenght">
+				<select name="" id="">
+					<option value="">5</option>
+					<option value="">10</option>
+					<option value="">15</option>
+				</select>
+				<p>개씩 보기</p>
+			</div>
+		</div>
+		<div class="table-responsive" width="100%">
+			<table class="table table-striped table-bordered table-hover custom-datatable" id="custom-dataTables">
+				<thead>
+					<tr>
+						<th>이벤트명</th>
+						<th>기기</th>
+						<th>수위</th>
+						<th>종지 전압</th>
+						<th>발생시간</th>
+						<th>종료시간</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>PCS #1</td>
+						<td>Fault</td>
+						<td>충전 전압의 110%</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>PCS Fault</td>
+						<td>BMS #1</td>
+						<td>Fault</td>
+						<td>종지 전압</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 저전압</td>
+						<td>RACK #1</td>
+						<td>Warning</td>
+						<td>Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+					<tr>
+						<td>Batt 과전압</td>
+						<td>PCS #1</td>
+						<td>Warning</td>
+						<td>IGBT Fault</td>
+						<td>2017-01-02 04:04:01</td>
+						<td>2017-01-02 06:06:02</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="float-right">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link previous" href="#" aria-label="Previous">
+								<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><a class="page-link" href="#">6</a></li>
+						<li class="page-item"><a class="page-link" href="#">7</a></li>
+						<li class="page-item"><a class="page-link" href="#">8</a></li>
+						<li class="page-item"><a class="page-link" href="#">9</a></li>
+						<li class="page-item"><a class="page-link" href="#">10</a></li>
+						<li class="page-item">
+							<a class="page-link next" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+	</div><!-- End Equipment Bar -->
+	<footer>
+
+</footer>
+<a href="javascript:" id="return-to-top"><img src="images/image.png" alt=""></a>
+</div>
+
+<script type="text/javascript" src="lib/popper.js/popper.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/fancyapps/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="lib/jquery-ui/ui/widget.js"></script>
+<script type="text/javascript" src="lib/jquery-ui/ui/widgets/dialog.js"></script>
+<script type="text/javascript" src="lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="lib/jquery-mousewheel/js/jquery.mousewheel.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/event_statistics.js"></script>
+
+<div id="iframe_detail_power_popup" class="iframe_popup">
+
+	<div class="panel-title">
+		title
+	</div>
+	<div class="panel-body">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+		standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+		type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+		essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+		passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</div>
+	<div class="panel-footer">
+		footer
+	</div>
+</div>
+
+<div id="iframe_detail_popup" class="iframe_popup">
+
+	<div class="panel-title">
+		title
+	</div>
+	<div class="panel-body">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+		standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+		type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+		essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+		passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</div>
+	<div class="panel-footer">
+		footer
+	</div>
+</div>
+<div id="automatic_operation_popup" class="page_popup">
+	<div class="panel-title">
+		<h2>자동 운전 설정</h2>
+	</div>
+	<div class="panel-body">
+		<form action="" method="" class="form_edit_info">
+			<div class="form-group">
+				<label for="text_name">PV 추종률 :</label>
+				<div class="d-flex justify-content-end align-items-center popup-right">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>%</h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">배터리 운전 범위 :</label>
+				<div class="d-flex justify-content-end align-items-center popup-right">
+					<input type="text" name="text-name" class="text_battery" value="1">
+					<h4>~</h4>
+					<input type="text" name="text-name" class="text_battery" value="1">
+					<h6></h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label class="title_name">추종 운전시간 : (충전)</label>
+				<div class="d-flex justify-content-end align-items-center popup-right">
+					<div class="group">
+						<select name="" class="driving-time">
+							<option value="">00시</option>
+							<option value="">01시</option>
+							<option value="">02시</option>
+						</select>
+						<select name="" class="driving-time">
+							<option value="">00시</option>
+							<option value="">01시</option>
+							<option value="">02시</option>
+						</select>
+					</div>
+					<div class="group-bottom">
+						<select name="" class="driving-time">
+							<option value="">00분</option>
+							<option value="">01분</option>
+							<option value="">02분</option>
+						</select>
+						<select name="" class="driving-time">
+							<option value="">00분</option>
+							<option value="">01분</option>
+							<option value="">02분</option>
+						</select>
+					</div>
+					<h6 class="unit">~</h6>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="text_name">출력 제한 : </label>
+				<div class="d-flex justify-content-end align-items-center popup-right">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>kw</h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">온도설정(기기선택) :</label>
+				<div class="d-flex justify-content-end align-items-center popup-right">
+					<select name="">
+						<option value="">기기선택</option>
+					</select>
+					<h6></h6>
+				</div>
+
+			</div>
+			<div class="form-group d-flex align-items-center middle">
+				<label class="text_name-custom">온도설정 (온도 범위) :</label>
+				<div class="fault-title">Warming :</div>
+				<div class="d-flex align-items-center popup-right warming">
+					<input type="text" name="text-name" class="text_battery" value="1">
+					<h4>~</h4>
+					<input type="text" name="text-name" class="text_battery" value="1">
+					<h6>℃</h6> <br />
+
+				</div>
+			</div>
+			<div class="form-group d-flex align-items-center">
+				<label class="text_name-custom"></label>
+				<div class="fault-title">Fault :</div>
+				<div class="d-flex align-items-center popup-right fault">
+
+					<input type="text" name="text-name" class="text_battery" value="1">
+					<h4>~</h4>
+					<input type="text" name="text-name" class="text_battery" value="1">
+					<h6>℃</h6> <br />
+
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="text_name">온도설정(사용여부) :</label>
+				<div class="d-flex popup-right">
+					<div class="custom-control custom-checkbox custom-control-inline pl-0 mr-0">
+						<input class="styled-checkbox check-box temperature" type="checkbox" value="value1" checked="">
+						<label for="styled-checkbox-1">사용</label>
+					</div>
+				</div>
+
+			</div>
+			<div class="d-flex justify-content-center form-group mt-4">
+				<input type="submit" class="apply" value="적용하기">
+				<input type="submit" class="cancel" value="취소" data-fancybox-close>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="capacity_popup" class="page_popup">
+	<div class="panel-title">
+		<h2>용량 설정</h2>
+	</div>
+	<div class="panel-body">
+		<form action="" method="" class="form_edit_info">
+			<div class="form-group">
+				<label for="text_name">태양광 용량 :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>kWh</h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">PCS 용량 :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>kw</h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">태양광 용량 :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>kWh</h6>
+				</div>
+
+			</div>
+			<div class="d-flex justify-content-center form-group">
+				<input type="submit" class="apply" value="적용하기">
+				<input type="submit" class="cancel" value="취소" data-fancybox-close>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div id="changing-settings_popup" class="page_popup">
+	<div class="panel-title">
+		<h2>계약 유형</h2>
+	</div>
+	<div class="panel-body">
+		<form action="" method="" class="form_edit_info">
+			<div class="form-group">
+				<label for="text_name">SMP +REC :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>kWh</h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">SMP 단가 :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>kWh</h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">REC 단가 :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>kWh</h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">REC 가중치(ESS) :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6></h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">REC 가중치(ESS) :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6></h6>
+				</div>
+
+			</div>
+			<div class="d-flex justify-content-center form-group">
+				<input type="submit" class="apply" value="적용하기">
+				<input type="submit" class="cancel" value="취소" data-fancybox-close>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="event_popup" class="page_popup">
+	<div class="panel-title">
+		<h2>이벤트 설정</h2>
+	</div>
+	<div class="panel-body">
+		<form action="" method="" class="form_edit_info">
+			<div class="form-group">
+				<label for="text_name">BMS 전압 설정 :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>~</h6>
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>℃</h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">BMS 전압 설정 :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>~</h6>
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>V</h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">BMS 전압 설정 :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>~</h6>
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>V</h6>
+				</div>
+
+			</div>
+			<div class="form-group">
+				<label for="text_name">BMS 전압 설정 :</label>
+				<div class="d-flex justify-content-end align-items-center">
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>~</h6>
+					<input type="text" name="text-name" class="text_name" value="1">
+					<h6>V</h6>
+				</div>
+			</div>
+			<div class="d-flex justify-content-center form-group">
+				<input type="submit" class="apply" value="적용하기">
+				<input type="submit" class="cancel" value="취소" data-fancybox-close>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="add_user_popup" class="page_popup">
+	<div class="panel-title">
+		<h2>관리자 등록</h2>
+	</div>
+	<div class="panel-body">
+		<form action="" method="" class="form_add_user">
+			<div class="form-group d-flex name align-items-center">
+				<label for="name" class="mr-auto ">아이디</label>
+				<input type="text" name="name" value="Jini1237">
+				<a href="">중복체크</a>
+			</div>
+			<div class="form-group">
+				<label for="name" class="mr-auto "></label>
+				<p class="error">※ 해당 아이디가 존재합니다. </p>
+			</div>
+			<div class="form-group justify-content-between align-items-center">
+				<label for="text_name">비밀 번호</label>
+				<input type="password" name="password" class="password" value="0123456789">
+			</div>
+			<div class="form-group d-flex justify-content-between align-items-center">
+				<label for="confirm-password">비밀 번호 확인</label>
+				<input type="password" name="confirm-password" class="password" value="0123456789">
+			</div>
+			<div class="form-group d-flex justify-content-between align-items-center">
+				<label for="name">이름</label>
+				<input type="text" name="name" class="" value="신용종">
+			</div>
+			<div class="form-group d-flex justify-content-between align-items-center">
+				<label for="select">직책</label>
+				<select class="select-option" name="select">
+					<option>직책선택</option>
+					<option>직책선택</option>
+					<option>직책선택</option>
+					<option>직책선택</option>
+					<option>직책선택</option>
+				</select>
+			</div>
+			<div class="form-group d-flex justify-content-between align-items-center">
+				<label for="tel">전화번호</label>
+				<input type="tel" name="tel" class="" value="010-1234-1234">
+			</div>
+			<div class="form-group d-flex justify-content-between align-items-center">
+				<label for="sms">SMS 발송</label>
+				<div class="custom-control custom-checkbox custom-control-inline pl-0 mr-0">
+					<input class="styled-checkbox check-box temperature" type="checkbox" value="value1" checked="">
+					<label for="styled-checkbox-1">발송동의</label>
+				</div>
+			</div>
+
+			<div class="action-submit d-flex justify-content-center form-group">
+				<input type="submit" name="submit" class="btn btn-default" value="등록하기">
+				<input type="submit" class="cancel" value="취소" data-fancybox-close>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="info_user_popup" class="page_popup">
+	<div class="panel-title">
+		<h2>관리자 상세보기</h2>
+	</div>
+	<div class="panel-body">
+		<form action="" method="" class="form_add_user">
+			<div class="form-group">
+				<label for="name">아이디</label>
+				<p>Alpha</p>
+			</div>
+			<div class="form-group justify-content-between align-items-center">
+				<label for="text_name">비밀 번호</label>
+				<input type="password" name="password" class="password" value="0123456789">
+			</div>
+			<div class="form-group d-flex justify-content-between align-items-center">
+				<label for="confirm-password">비밀 번호 확인</label>
+				<input type="password" name="confirm-password" class="password" value="0123456789">
+			</div>
+			<div class="form-group d-flex justify-content-between align-items-center">
+				<label for="name">이름</label>
+				<input type="text" name="name" class="" value="신용종">
+			</div>
+			<div class="form-group d-flex justify-content-between align-items-center">
+				<label for="select">직책</label>
+				<select class="select-option" name="select">
+					<option>직책선택</option>
+					<option>직책선택</option>
+					<option>직책선택</option>
+					<option>직책선택</option>
+					<option>직책선택</option>
+				</select>
+			</div>
+			<div class="form-group d-flex justify-content-between align-items-center">
+				<label for="tel">전화번호</label>
+				<input type="tel" name="tel" class="" value="010-1234-1234">
+			</div>
+			<div class="form-group d-flex justify-content-between align-items-center">
+				<label for="sms">SMS 발송</label>
+				<div class="custom-control custom-checkbox custom-control-inline pl-0 mr-0">
+					<input class="styled-checkbox check-box temperature" type="checkbox" value="value1" checked="">
+					<label for="styled-checkbox-1">발송동의</label>
+				</div>
+			</div>
+
+			<div class="action-submit d-flex justify-content-center form-group">
+				<input type="submit" name="submit" class="btn btn-default" value="수정하기">
+				<input type="submit" class="cancel" value="취소" data-fancybox-close>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+
+</html>

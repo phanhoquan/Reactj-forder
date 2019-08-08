@@ -1,0 +1,1397 @@
+.system-page {
+	&.case-2 {
+		.integrated-chart {
+			.box-content {
+				.parameter {
+					&--sunlight {
+						.flowLine01 {
+							.arrowLine02 {
+								left: 108px;
+							}
+						}
+
+						// line vertical step
+						.flowLine05 {
+							top: 132px;
+							left: -120px;
+
+							@include ie11() {
+								top: 134px;
+							}
+
+							@include firefox() {
+								top: 136px;
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								top: 130px;
+								left: -116px;
+							}
+
+							.flowLineWrap {
+								width: 262px;
+								height: 15px;
+
+								@include breakpoint(maxdesktop19in) {
+									width: 253px;
+								}
+
+								.arrowLine11 {
+									width: 100%;
+								}
+							}
+						}
+
+						.flowLine15 {
+							top: 122px;
+							left: -120px;
+							@include rotate(90deg);
+
+							@include firefox() {
+								top: 124px;
+								left: -120px;
+							}
+
+							@include breakpoint(lgxxxxmax) {
+								top: 118px;
+								left: -116px;
+
+								@include ie11() {
+									top: 118px;
+								}
+
+								@include firefox() {
+									top: 122px;
+									left: -118px;
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								@include ie11() {
+									top: 121px;
+								}
+							}
+
+							.flowLineWrap {
+								width: 262px;
+								height: 15px;
+
+								@include breakpoint(lgxxxxmax) {
+									width: 254px;
+
+									@include ie11() {
+										// width: 118px;
+									}
+
+									@include firefox() {
+										width: 258px;
+									}
+								}
+
+								.arrowLine12 {
+									width: 100%;
+									top: 0;
+									left: 0;
+									z-index: 0;
+									position: relative;
+
+									.arrowLineWrap {
+										width: 100%;
+
+										.arrowLine_list {
+											.line {
+												&--1 {
+													width: 100%;
+												}
+
+												&--2A {
+													position: absolute;
+													width: 100%;
+
+													@include ie11() {
+														left: 0;
+													}
+
+													.lineCont::after {
+														background-image: none;
+
+														@include ie11() {
+															background-image: "";
+														}
+													}
+
+													.lineIE {
+														@include ie11 {
+															background-image: none;
+														}
+													}
+
+													.lineEDGE {
+														@include ieEdge {
+															background-image: none;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+
+						&--line {
+							&.step1 {
+								height: 280px;
+								z-index: 9;
+
+								@include ie11() {
+									height: 283px;
+								}
+
+								@include firefox() {
+									height: 285px;
+								}
+							}
+
+							&.step2 {
+								top: 477px;
+								height: 270px;
+								z-index: 8;
+
+								@include ie11() {
+									top: 479px;
+									height: 274px;
+								}
+
+								@include firefox() {
+									top: 481px;
+									height: 273px;
+								}
+							}
+
+							&.step3 {
+								top: 737px;
+								height: 270px;
+								z-index: 7;
+
+								@include ie11() {
+									top: 742px;
+									height: 272px;
+								}
+
+								@include firefox() {
+									top: 743px;
+									height: 274px;
+								}
+							}
+
+							&.step4 {
+								top: 997px;
+								height: 270px;
+								z-index: 6;
+
+								@include ie11() {
+									top: 1004px;
+									height: 273px;
+								}
+
+								@include firefox() {
+									top: 1005px;
+									height: 274px;
+								}
+							}
+
+							&.step5 {
+								top: 1257px;
+								height: 270px;
+								z-index: 5;
+
+								@include ie11() {
+									top: 1267px;
+									height: 273px;
+								}
+
+								@include firefox() {
+									top: 1268px;
+									height: 273px;
+								}
+							}
+
+							&.step6 {
+								top: 1517px;
+								height: 270px;
+								z-index: 4;
+
+								@include ie11() {
+									top: 1529px;
+									height: 274px;
+								}
+
+								@include firefox() {
+									top: 1531px;
+									height: 273px;
+								}
+							}
+
+							&.step7 {
+								top: 1776px;
+								height: 270px;
+								z-index: 3;
+
+								@include ie11() {
+									top: 1791px;
+									height: 274px;
+								}
+
+								@include firefox() {
+									top: 1793px;
+									height: 274px;
+								}
+							}
+
+							&.step8 {
+								top: 2036px;
+								height: 270px;
+								z-index: 2;
+
+								@include ie11() {
+									top: 2053px;
+									height: 275px;
+								}
+
+								@include firefox() {
+									top: 2056px;
+									height: 273px;
+								}
+							}
+
+							&.step9 {
+								top: 2296px;
+								height: 270px;
+								z-index: 1;
+
+								@include ie11() {
+									top: 2316px;
+									height: 274px;
+								}
+
+								@include firefox() {
+									top: 2318px;
+									height: 274px;
+								}
+							}
+
+							@include breakpoint(lgxmax) {
+								&.step1 {
+									height: 277px;
+
+									@include ie11() {
+										height: 280px;
+									}
+
+									@include firefox() {
+										height: 281px;
+									}
+								}
+
+								&.step2 {
+									top: 473px;
+									height: 267px;
+
+									@include ie11() {
+										top: 476px;
+										height: 271px;
+									}
+
+									@include firefox() {
+										top: 478px;
+										height: 271px;
+									}
+								}
+
+								&.step3 {
+									top: 730px;
+									height: 266px;
+
+									@include ie11() {
+										top: 736px;
+										height: 271px;
+									}
+
+									@include firefox() {
+										top: 738px;
+										height: 271px;
+									}
+								}
+
+								&.step4 {
+									top: 986px;
+									height: 267px;
+
+									@include ie11() {
+										top: 996px;
+										height: 271px;
+									}
+
+									@include firefox() {
+										top: 997px;
+										height: 271px;
+									}
+								}
+
+								&.step5 {
+									top: 1243px;
+									height: 266px;
+
+									@include ie11() {
+										top: 1256px;
+										height: 272px;
+									}
+
+									@include firefox() {
+										top: 1258px;
+										height: 271px;
+									}
+								}
+
+								&.step6 {
+									top: 1498px;
+									height: 268px;
+
+									@include ie11() {
+										top: 1517px;
+										height: 272px;
+									}
+
+									@include firefox() {
+										top: 1518px;
+										height: 271px;
+									}
+								}
+
+								&.step7 {
+									top: 1756px;
+									height: 266px;
+
+									@include ie11() {
+										top: 1777px;
+										height: 272px;
+									}
+
+									@include firefox() {
+										top: 1777px;
+										height: 271px;
+									}
+								}
+
+								&.step8 {
+									top: 2012px;
+									height: 267px;
+
+									@include ie11() {
+										top: 2037px;
+										height: 272px;
+									}
+
+									@include firefox() {
+										top: 2037px;
+										height: 271px;
+									}
+								}
+
+								&.step9 {
+									top: 2269px;
+									height: 267px;
+
+									@include ie11() {
+										top: 2297px;
+										height: 272px;
+									}
+
+									@include firefox() {
+										top: 2298px;
+										height: 271px;
+									}
+								}
+							}
+
+							@include breakpoint(lgxxxxmax) {
+								&.step1 {
+									height: 273px;
+
+									@include ie11() {
+										height: 277px;
+									}
+
+									@include firefox() {
+										height: 278px;
+									}
+								}
+
+								&.step2 {
+									top: 469px;
+									height: 266px;
+
+									@include ie11() {
+										top: 474px;
+										height: 266px;
+									}
+
+									@include firefox() {
+										top: 474px;
+										height: 268px;
+									}
+								}
+
+								&.step3 {
+									top: 723px;
+									height: 264px;
+
+									@include ie11() {
+										top: 729px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 731px;
+										height: 267px;
+									}
+								}
+
+								&.step4 {
+									top: 976px;
+									height: 265px;
+
+									@include ie11() {
+										top: 986px;
+										height: 267px;
+									}
+
+									@include firefox() {
+										top: 987px;
+										height: 268px;
+									}
+								}
+
+								&.step5 {
+									top: 1230px;
+									height: 264px;
+
+									@include ie11() {
+										top: 1242px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 1244px;
+										height: 267px;
+									}
+								}
+
+								&.step6 {
+									top: 1483px;
+									height: 266px;
+
+									@include ie11() {
+										top: 1499px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 1500px;
+										height: 268px;
+									}
+								}
+
+								&.step7 {
+									top: 1737px;
+									height: 265px;
+
+									@include ie11() {
+										top: 1755px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 1756px;
+										height: 267px;
+									}
+								}
+
+								&.step8 {
+									top: 1990px;
+									height: 266px;
+
+									@include ie11() {
+										top: 2012px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 2013px;
+										height: 267px;
+									}
+								}
+
+								&.step9 {
+									top: 2244px;
+									height: 266px;
+
+									@include ie11() {
+										top: 2268px;
+										height: 269px;
+									}
+
+									@include firefox() {
+										top: 2269px;
+										height: 267px;
+									}
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								&.step1 {
+									height: 274px;
+
+									@include ie11() {
+										height: 275px;
+									}
+
+									@include firefox() {
+										height: 276px;
+									}
+								}
+
+								&.step2 {
+									top: 435px;
+									height: 265px;
+
+									@include ie11() {
+										height: 266px;
+									}
+
+									@include firefox() {
+										top: 437px;
+										height: 265px;
+									}
+								}
+
+								&.step3 {
+									top: 689px;
+
+									@include ie11() {
+										height: 266px;
+									}
+
+									@include firefox() {
+										top: 691px;
+										height: 265px;
+									}
+								}
+
+								&.step4 {
+									top: 941px;
+
+									@include ie11() {
+										top: 943px;
+										height: 265px;
+									}
+
+									@include firefox() {
+										top: 945px;
+										height: 265px;
+									}
+								}
+
+								&.step5 {
+									top: 1196px;
+
+									@include ie11() {
+										top: 1197px;
+										height: 266px;
+									}
+
+									@include firefox() {
+										top: 1199px;
+										height: 265px;
+									}
+								}
+
+								&.step6 {
+									top: 1448px;
+
+									@include ie11() {
+										top: 1451px;
+										height: 266px;
+									}
+
+									@include firefox() {
+										top: 1453px;
+										height: 265px;
+									}
+								}
+
+								&.step7 {
+									top: 1702px;
+
+									@include ie11() {
+										top: 1705px;
+										height: 266px;
+									}
+
+									@include firefox() {
+										top: 1707px;
+										height: 265px;
+									}
+								}
+
+								&.step8 {
+									top: 1955px;
+
+									@include ie11() {
+										top: 1959px;
+										height: 265px;
+									}
+
+									@include firefox() {
+										top: 1961px;
+										height: 265px;
+									}
+								}
+
+								&.step9 {
+									top: 2209px;
+									height: 265px;
+
+									@include ie11() {
+										top: 2213px;
+										height: 266px;
+									}
+
+									@include firefox() {
+										top: 2214px;
+										height: 265px;
+									}
+								}
+							}
+						}
+					}
+
+					&--ess {
+
+						// line vertical step
+						.flowLine06 {
+							top: 133px;
+							left: -120px;
+
+							@include ie11() {
+								top: 135px;
+								left: -120px;
+							}
+
+							@include firefox() {
+								top: 135px;
+								left: -119px;
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								top: 130px;
+								left: -117px;
+
+								@include ie11() {
+									top: 132px;
+								}
+
+								@include firefox() {
+									top: 131px;
+								}
+							}
+
+							.flowLineWrap {
+								width: 262px;
+								height: 15px;
+
+								@include breakpoint(maxdesktop19in) {
+									width: 255px;
+
+									@include ie11() {
+										width: 257px;
+									}
+
+									@include firefox() {
+										width: 256px;
+									}
+								}
+
+								.arrowLine13 {
+									width: 100%;
+								}
+							}
+						}
+
+						.flowLine16 {
+							top: 122px;
+							left: -120px;
+							@include rotate(90deg);
+
+							@include ie11() {
+								top: 125px;
+								left: -121px;
+							}
+
+							@include firefox() {
+								top: 124px;
+								left: -119px;
+							}
+
+							@include breakpoint(lgxxxxmax) {
+								top: 120px;
+								left: -118px;
+
+								@include ie11() {
+									top: 124px;
+									left: -119px
+								}
+
+								@include firefox() {
+									top: 121px;
+									left: -117px
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								top: 118px;
+								left: -116px;
+
+								@include ie11() {
+									top: 121px;
+									left: -117px;
+								}
+
+								@include firefox() {
+									top: 120px;
+								}
+							}
+
+							.flowLineWrap {
+								width: 262px;
+								height: 15px;
+
+								@include breakpoint(lgxxxxmax) {
+									width: 258px;
+
+									@include ie11() {
+										width: 260px;
+									}
+
+									@include firefox() {
+										width: 258px;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 254px;
+
+									@include ie11() {
+										width: 256px;
+									}
+								}
+
+								.arrowLine14 {
+									width: 100%;
+									top: 0;
+									left: 0;
+									z-index: 0;
+									position: relative;
+
+									.arrowLineWrap {
+										width: 100%;
+
+										.arrowLine_list {
+											.line {
+												&--1 {
+													width: 100%;
+												}
+
+												&--2A {
+													position: absolute;
+													width: 100%;
+
+													@include ie11() {
+														left: 0;
+													}
+
+													.lineCont::after {
+														background-image: none;
+
+														@include ie11() {
+															background-image: "";
+														}
+													}
+
+													.lineIE {
+														@include ie11 {
+															background-image: none;
+														}
+													}
+
+													.lineEDGE {
+														@include ieEdge {
+															background-image: none;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+
+						&--line {
+							height: 65.8%;
+
+							&.step1 {
+								height: 280px;
+								top: 207px;
+								z-index: 9;
+
+								@include ie11() {
+									height: 285px;
+								}
+
+								@include firefox() {
+									height: 283px;
+								}
+							}
+
+							&.step2 {
+								top: 476px;
+								height: 270px;
+								z-index: 8;
+
+								@include ie11() {
+									top: 481px;
+									height: 276px;
+								}
+
+								@include firefox() {
+									top: 479px;
+									height: 273px;
+								}
+							}
+
+							&.step3 {
+								top: 737px;
+								height: 270px;
+								z-index: 7;
+
+								@include ie11() {
+									top: 745px;
+									height: 275px;
+								}
+
+								@include firefox() {
+									top: 742px;
+									height: 273px;
+								}
+							}
+
+							&.step4 {
+								top: 998px;
+								height: 270px;
+								z-index: 6;
+
+								@include ie11() {
+									top: 1010px;
+									height: 275px;
+								}
+
+								@include firefox() {
+									top: 1004px;
+									height: 273px;
+								}
+							}
+
+							&.step5 {
+								top: 1257px;
+								height: 270px;
+								z-index: 5;
+
+								@include ie11() {
+									top: 1274px;
+									height: 275px;
+								}
+
+								@include firefox() {
+									top: 1266px;
+									height: 274px;
+								}
+							}
+
+							&.step6 {
+								top: 1516px;
+								height: 270px;
+								z-index: 4;
+
+								@include ie11() {
+									top: 1539px;
+									height: 275px;
+								}
+
+								@include firefox() {
+									top: 1529px;
+									height: 273px;
+								}
+							}
+
+							&.step7 {
+								top: 1776px;
+								height: 270px;
+								z-index: 3;
+
+								@include ie11() {
+									top: 1803px;
+									height: 275px;
+								}
+
+								@include firefox() {
+									top: 1792px;
+									height: 273px;
+								}
+							}
+
+							&.step8 {
+								top: 2036px;
+								height: 270px;
+								z-index: 2;
+
+								@include ie11() {
+									top: 2068px;
+									height: 275px;
+								}
+
+								@include firefox() {
+									top: 2054px;
+									height: 273px;
+								}
+							}
+
+							&.step9 {
+								top: 2296px;
+								height: 270px;
+								z-index: 1;
+
+								@include ie11() {
+									top: 2332px;
+									height: 275px;
+								}
+
+								@include firefox() {
+									top: 2316px;
+									height: 273px;
+								}
+							}
+
+							@include breakpoint(lgxmax) {
+								&.step1 {
+									height: 277px;
+
+									@include ie11() {
+										height: 283px;
+									}
+
+									@include firefox() {
+										height: 281px;
+									}
+								}
+
+								&.step2 {
+									height: 269px;
+
+									@include ie11() {
+										top: 479px;
+										height: 273px;
+									}
+
+									@include firefox() {
+										top: 476px;
+										height: 271px;
+									}
+								}
+
+								&.step3 {
+									top: 729px;
+									height: 268px;
+
+									@include ie11() {
+										top: 740px;
+										height: 274px;
+									}
+
+									@include firefox() {
+										top: 736px;
+										height: 272px;
+									}
+								}
+
+								&.step4 {
+									top: 985px;
+									height: 269px;
+
+									@include ie11() {
+										top: 1002px;
+										height: 274px;
+									}
+
+									@include firefox() {
+										top: 996px;
+										height: 271px;
+									}
+								}
+
+								&.step5 {
+									top: 1242px;
+									height: 267px;
+
+									@include ie11() {
+										top: 1264px;
+										height: 274px;
+									}
+
+									@include firefox() {
+										top: 1256px;
+										height: 272px;
+									}
+								}
+
+								&.step6 {
+									top: 1498px;
+									height: 269px;
+
+									@include ie11() {
+										top: 1527px;
+										height: 273px;
+									}
+
+									@include firefox() {
+										top: 1517px;
+										height: 271px;
+									}
+								}
+
+								&.step7 {
+									top: 1756px;
+									height: 267px;
+
+									@include ie11() {
+										top: 1789px;
+										height: 274px;
+									}
+
+									@include firefox() {
+										top: 1777px;
+										height: 272px;
+									}
+								}
+
+								&.step8 {
+									top: 2011px;
+									height: 269px;
+
+									@include ie11() {
+										top: 2051px;
+										height: 273px;
+									}
+
+									@include firefox() {
+										top: 2037px;
+										height: 270px;
+									}
+								}
+
+								&.step9 {
+									top: 2268px;
+									height: 268px;
+
+									@include ie11() {
+										top: 2313px;
+										height: 273px;
+									}
+
+									@include firefox() {
+										top: 2297px;
+										height: 271px;
+									}
+								}
+							}
+
+							@include breakpoint(lgxxxxmax) {
+								&.step1 {
+									height: 273px;
+
+									@include ie11() {
+										height: 279px;
+									}
+
+									@include firefox() {
+										height: 277px;
+									}
+
+								}
+
+								&.step2 {
+									height: 266px;
+									top: 469px;
+
+									@include ie11() {
+										top: 475px;
+										height: 269px;
+									}
+
+									@include firefox() {
+										top: 473px;
+										height: 267px;
+									}
+								}
+
+								&.step3 {
+									top: 723px;
+									height: 265px;
+
+									@include ie11() {
+										top: 733px;
+										height: 270px;
+									}
+
+									@include firefox() {
+										top: 729px;
+										height: 267px;
+									}
+								}
+
+								&.step4 {
+									top: 976px;
+									height: 266px;
+
+									@include ie11() {
+										top: 992px;
+										height: 270px;
+									}
+
+									@include firefox() {
+										top: 986px;
+										height: 268px;
+									}
+								}
+
+								&.step5 {
+									top: 1230px;
+									height: 264px;
+
+									@include ie11() {
+										top: 1250px;
+										height: 270px;
+									}
+
+									@include firefox() {
+										top: 1243px;
+										height: 266px;
+									}
+								}
+
+								&.step6 {
+									top: 1483px;
+									height: 266px;
+
+									@include ie11() {
+										top: 1508px;
+										height: 271px;
+									}
+
+									@include firefox() {
+										top: 1499px;
+										height: 267px;
+									}
+								}
+
+								&.step7 {
+									top: 1737px;
+									height: 264px;
+
+									@include ie11() {
+										top: 1767px;
+										height: 271px;
+									}
+
+									@include firefox() {
+										top: 1755px;
+										height: 268px;
+									}
+								}
+
+								&.step8 {
+									top: 1989px;
+									height: 266px;
+
+									@include ie11() {
+										top: 2026px;
+										height: 270px;
+									}
+
+									@include firefox() {
+										top: 2012px;
+										height: 268px;
+									}
+								}
+
+								&.step9 {
+									top: 2244px;
+									height: 266px;
+
+									@include ie11() {
+										top: 2284px;
+										height: 271px;
+									}
+
+									@include firefox() {
+										top: 2316px;
+										height: 273px;
+									}
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								&.step1 {
+									top: 171px;
+									height: 275px;
+
+									@include ie11() {
+										height: 277px;
+									}
+								}
+
+								&.step2 {
+									top: 434px;
+
+									@include ie11() {
+										top: 437px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 436px;
+										height: 264px;
+									}
+								}
+
+								&.step3 {
+									top: 689px;
+									height: 264px;
+
+									@include ie11() {
+										top: 693px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 690px;
+									}
+								}
+
+								&.step4 {
+									top: 942px;
+									height: 265px;
+
+									@include ie11() {
+										top: 949px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 944px;
+									}
+								}
+
+								&.step5 {
+									top: 1195px;
+									height: 265px;
+
+									@include ie11() {
+										top: 1205px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 1198px;
+										height: 264px;
+									}
+								}
+
+								&.step6 {
+									top: 1449px;
+									height: 264px;
+
+									@include ie11() {
+										top: 1461px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 1452px;
+										height: 264px;
+									}
+								}
+
+								&.step7 {
+									top: 1702px;
+									height: 265px;
+
+									@include ie11() {
+										top: 1717px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 1706px;
+										height: 265px;
+									}
+								}
+
+								&.step8 {
+									top: 1959px;
+									height: 265px;
+
+									@include ie11() {
+										top: 1973px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 1960px;
+										height: 264px;
+									}
+								}
+
+								&.step9 {
+									top: 2210px;
+									height: 264px;
+
+									@include ie11() {
+										top: 2229px;
+										height: 268px;
+									}
+
+									@include firefox() {
+										top: 2213px;
+										height: 265px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

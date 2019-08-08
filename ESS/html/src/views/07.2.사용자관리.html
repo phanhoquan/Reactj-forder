@@ -1,0 +1,155 @@
+@@include('modules/header.html', { 	"title": "07.2.사용자관리",
+									"class": "",
+									"addClass": "@@include('head/head-management.html')",
+									"current-menu-monitoring": "",
+									"current-menu-system": "",
+									"current-menu-driving": "",
+									"current-menu-status": "",
+										"active1": "",
+										"active2": "",
+										"active3": "",
+										"active4": "",
+									"current-menu-statistics": "",
+										"active5": "",
+										"active6": "",
+										"active7": "",
+										"active8": "",
+										"active9": "",
+										"active10": "",
+									"current-menu-management": "current-menu-item",
+										"active11": "",
+										"active12": "is-active",
+										"active13": ""})
+
+<div id="page-body" class="page-body statistics-page">
+	<div class="row">
+		<div class="col-12 management">
+			<div class="datatable rounded">
+				<div class="chart_title border-black">
+					<p class="p-0 m-0 text-left">사용자관리</p>
+				</div>
+				<div class="operation-status">
+					<div class="d-flex justify-content-between">
+						<div class="button-lenght">
+							<select name="" id="">
+								<option value="">5</option>
+								<option value="">10</option>
+								<option value="">15</option>
+								<option value="">20</option>
+							</select>
+							<p>개씩 보기</p>
+						</div>
+						<div class="button-download">
+							<a href="javascript:void(0)" data-fancybox="" data-src="#add_user_popup">사용자 추가</a>
+						</div>
+					</div>
+
+					<div class="table-responsive" width="100%">
+						<table class="table table-striped table-bordered table-hover custom-datatable" id="custom-dataTables">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>이름</th>
+									<th>직책</th>
+									<th>권한</th>
+									<th>전화번호</th>
+									<th>SMS 발송여부</th>
+									<th>상세보기</th>
+									<th>삭제</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>12264-45</td>
+									<td>신용종</td>
+									<td>대표이사</td>
+									<td>최고관리자</td>
+									<td>010-1111-****</td>
+									<td>ⓨ</td>
+									<td><a href="javascript:void(0)" class="view-details" data-fancybox="" data-src="#info_user_popup">상세보기</a></td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>12264-45</td>
+									<td>홍*동</td>
+									<td>대표이사</td>
+									<td>최고관리자</td>
+									<td>010-1111-****</td>
+									<td>ⓨ</td>
+									<td><a href="javascript:void(0)" class="view-details" data-fancybox="" data-src="#info_user_popup">상세보기</a></td>
+									<td><a href="javascript:void(0)" class="delete">삭제</a></td>
+								</tr>
+								<tr>
+									<td>12264-45</td>
+									<td>홍*동</td>
+									<td>대표이사</td>
+									<td>최고관리자</td>
+									<td>010-1111-****</td>
+									<td></td>
+									<td><a href="javascript:void(0)" class="view-details" data-fancybox="" data-src="#info_user_popup">상세보기</a></td>
+									<td><a href="javascript:void(0)" class="delete">삭제</a></td>
+								</tr>
+								<tr>
+									<td>12264-45</td>
+									<td>홍*동</td>
+									<td>대표이사</td>
+									<td>최고관리자</td>
+									<td>010-1111-****</td>
+									<td></td>
+									<td><a href="javascript:void(0)" class="view-details" data-fancybox="" data-src="#info_user_popup">상세보기</a></td>
+									<td><a href="javascript:void(0)" class="delete">삭제</a></td>
+								</tr>
+								<tr>
+									<td>12264-45</td>
+									<td>홍*동</td>
+									<td>대표이사</td>
+									<td>최고관리자</td>
+									<td>010-1111-****</td>
+									<td></td>
+									<td><a href="javascript:void(0)" class="view-details" data-fancybox="" data-src="#info_user_popup">상세보기</a></td>
+									<td><a href="javascript:void(0)" class="delete">삭제</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="float-right">
+							<nav aria-label="Page navigation example">
+								<ul class="pagination">
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+											<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+										</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link previous" href="#" aria-label="Previous">
+											<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+										</a>
+									</li>
+									<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">4</a></li>
+									<li class="page-item"><a class="page-link" href="#">5</a></li>
+									<li class="page-item"><a class="page-link" href="#">6</a></li>
+									<li class="page-item"><a class="page-link" href="#">7</a></li>
+									<li class="page-item"><a class="page-link" href="#">8</a></li>
+									<li class="page-item"><a class="page-link" href="#">9</a></li>
+									<li class="page-item"><a class="page-link" href="#">10</a></li>
+									<li class="page-item">
+										<a class="page-link next" href="#" aria-label="Next">
+											<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+										</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+											<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('modules/footer.html', {"addJs": "@@include('footer/script-management-users.html')"})

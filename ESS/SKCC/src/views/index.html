@@ -1,0 +1,224 @@
+@@include('modules/header.html', {"title": "Home SK C&C", "class": "scrollindex"})
+
+<div id="page-body" class="page-body main-page">
+	<div class="container-fluid">
+		<div class="row page-index">
+			<div class="banner-menu">
+				@@include('modules/banner-menu.html', {"class": "active"})
+			</div><!-- End Banner Menu -->
+			<div class="main-wrap d-flex">
+				<div class="navbar-left">
+					@@include('modules/navbar-left.html')
+				</div><!-- End Siderbar left -->
+
+				<div class="main-content">
+					@@include('modules/main-content.html')
+				</div><!-- End Main Content -->
+			</div>
+		</div>
+	</div>
+
+	@@include('modules/footer.html')
+	<script>
+		/**
+		 * ---------------------------------------
+		 * This demo was created using amCharts 4.
+		 *
+		 * For more information visit:
+		 * https://www.amcharts.com/
+		 *
+		 * Documentation is available at:
+		 * https://www.amcharts.com/docs/v4/
+		 * ---------------------------------------
+		 */
+
+		// Use themes
+		am4core.useTheme(am4themes_animated);
+
+		// Create chart instance
+		var chart = am4core.create("chartdiv", am4charts.XYChart);
+		//chart.paddingRight = 120;
+
+		chart.data = [{
+			"hour": "",
+			"kw1": 6050,
+			"kw2": 4500,
+			"wm": '',
+		}, {
+			"hour": "0:00",
+			"kw1": 8050,
+			"kw2": 7100,
+			"wm": 3800
+		}, {
+			"hour": "1:00",
+			"kw1": 5500,
+			"kw2": 4500,
+			"wm": 5400
+		}, {
+			"hour": "2:00",
+			"kw1": 4500,
+			"kw2": 3800,
+			"wm": 4500
+		}, {
+			"hour": "3:00",
+			"kw1": 8050,
+			"kw2": 3000,
+			"wm": 2200
+		}, {
+			"hour": "4:00",
+			"kw1": 4800,
+			"kw2": 3500,
+			"wm": 3100
+		}, {
+			"hour": "5:00",
+			"kw1": 7100,
+			"kw2": 3700,
+			"wm": 5100
+		}, {
+			"hour": "6:00",
+			"kw1": 9000,
+			"kw2": 3500,
+			"wm": 3500
+		}, {
+			"hour": "7:00",
+			"kw1": 8400,
+			"kw2": 3450,
+			"wm": 6100
+		}, {
+			"hour": "8:00",
+			"kw1": 5500,
+			"kw2": 3000,
+			"wm": 3500
+		}, {
+			"hour": "9:00",
+			"kw1": 6000,
+			"kw2": 4500,
+			"wm": 7000
+		}, {
+			"hour": "10:00",
+			"kw1": 6600,
+			"kw2": 3000,
+			"wm": 4500
+		}, {
+			"hour": "11:00",
+			"kw1": 4500,
+			"kw2": 7000,
+			"wm": 9000
+		}, {
+			"hour": "12:00",
+			"kw1": 5000,
+			"kw2": 4050,
+			"wm": 6500
+		}, {
+			"hour": "13:00",
+			"kw1": 8000,
+			"kw2": 3950,
+			"wm": 9000
+		}, {
+			"hour": "14:00",
+			"kw1": 6900,
+			"kw2": 3500,
+			"wm": 9000
+		}];
+
+		// Create axes
+		var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+		//remove horizontal grid
+		categoryAxis.renderer.grid.template.disabled = true;
+		categoryAxis.renderer.grid.template.location = 0;
+
+		categoryAxis.dataFields.category = "hour";
+		categoryAxis.renderer.minGridDistance = 30;
+		//color for categoryAxis
+		categoryAxis.renderer.line.strokeOpacity = 1;
+		categoryAxis.renderer.line.strokeWidth = 1;
+		categoryAxis.renderer.line.stroke = am4core.color("#e1e1e1");
+		// edit label
+		categoryAxis.renderer.labels.template.fill = am4core.color("#0c0d0f");
+		categoryAxis.renderer.labels.template.fontSize = 10;
+		// start and end series
+		categoryAxis.startLocation = 0.5;
+		categoryAxis.endLocation = 1.5;
+
+		// Create value axis
+		var valueAxisLineChart = chart.yAxes.push(new am4charts.ValueAxis());
+		// set distance between grid
+		valueAxisLineChart.renderer.minGridDistance = 20;
+		//color for horizontal grid
+		valueAxisLineChart.renderer.grid.template.strokeOpacity = 1;
+		valueAxisLineChart.renderer.grid.template.stroke = am4core.color("#e1e1e1");
+		valueAxisLineChart.renderer.grid.template.strokeWidth = 1;
+		// edit label
+		valueAxisLineChart.renderer.labels.template.fill = am4core.color("#0c0d0f");
+		valueAxisLineChart.renderer.labels.template.fontSize = 10;
+		//color for valueAxis
+		valueAxisLineChart.renderer.line.strokeOpacity = 1;
+		valueAxisLineChart.renderer.line.strokeWidth = 1;
+		valueAxisLineChart.renderer.line.stroke = am4core.color("#e1e1e1");
+
+
+
+		var valueAxisBarChart = chart.yAxes.push(new am4charts.ValueAxis());
+		//position of valueAxis
+		valueAxisBarChart.renderer.opposite = true;
+		//color for horizontal grid
+		valueAxisBarChart.renderer.grid.template.strokeOpacity = 0;
+		//color for valueAxis
+		valueAxisBarChart.renderer.line.strokeOpacity = 1;
+		valueAxisBarChart.renderer.line.strokeWidth = 1;
+		valueAxisBarChart.renderer.line.stroke = am4core.color("#e1e1e1");
+		// edit label
+		valueAxisBarChart.renderer.labels.template.fill = am4core.color("#0c0d0f");
+		valueAxisBarChart.renderer.labels.template.fontSize = 10;
+
+		var seriesBarChart = chart.series.push(new am4charts.ColumnSeries());
+		seriesBarChart.zIndex = 1;
+		seriesBarChart.dataFields.categoryX = "hour";
+		seriesBarChart.dataFields.valueY = "wm";
+		seriesBarChart.name = "발전량";
+		seriesBarChart.fill = am4core.color("#67b067");
+		//Tooltip contents
+		seriesBarChart.tooltipText = "{valueY.value}"
+		seriesBarChart.yAxis = valueAxisBarChart;
+		seriesBarChart.columns.template.width = 15;
+		seriesBarChart.columns.template.stroke = am4core.color("#67b067");
+		seriesBarChart.columns.template.fill = am4core.color("#67b067");
+		seriesBarChart.tensionX = 0;
+
+		var seriesLineChart02 = chart.series.push(new am4charts.LineSeries());
+		seriesLineChart02.zIndex = 3;
+		seriesLineChart02.dataFields.categoryX = "hour";
+		seriesLineChart02.dataFields.valueY = "kw2";
+		//Tooltip contents
+		seriesLineChart02.tooltipText = "{valueY.value}";
+		seriesLineChart02.name = "일사량";
+		seriesLineChart02.fill = am4core.color("#4e519b");
+		//seriesLineChart02.name = "Series 2";
+		//seriesLineChart02.sequencedInterpolation = true;
+		//edit line series
+		seriesLineChart02.strokeWidth = 2;
+		seriesLineChart02.stroke = am4core.color("#4e519b");
+		seriesLineChart02.tensionX = 0.8;
+
+		chart.scrollbarX = new am4core.Scrollbar();
+
+		// add cursor
+		chart.cursor = new am4charts.XYCursor();
+
+		chart.legend = new am4charts.Legend();
+		chart.legend.useDefaultMarker = true;
+
+		let marker = chart.legend.markers.template.children.getIndex(0);
+		marker.cornerRadius(12, 12, 12, 12);
+		marker.strokeWidth = 0;
+		marker.strokeOpacity = 0;
+		marker.zIndex = 2;
+		// marker.width = 15;
+		// marker.height = 15;
+		marker.stroke = am4core.color("#ccc");
+		chart.legend.position = "top";
+		chart.legend.align = "right";
+		chart.legend.labelColor = "red";
+		chart.legend.marginTop = -17;
+		chart.legend.contentAlign = "right";
+	</script>

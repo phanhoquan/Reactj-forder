@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<meta name="format-detection" content="telephone=no">
+
+	<title>@@title</title>
+
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/fancyapps/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/jquery.mCustomScrollbar/css/jquery.mCustomScrollbar.min.css">
+	@@addClass
+
+	<script type="text/javascript" src="lib/jquery/js/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui/ui/jquery-ui.js"></script>
+	<script type="text/javascript" src="lib/jquery.mCustomScrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/html5shiv/js/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<!-- Alert pupup -->
+	<div id="alert_detail_popup" class="page_popup">
+		<div class="panel-title">
+			<h2 class="title">Confirm</h2>
+		</div>
+		<div class="panel-body">
+			<div class="error"><img src="images/icon-alert.png" class=" mr-3 align-middle"><span>로그아웃하시겠습니까?</span>
+			</div>
+			<div class="action-submit d-flex justify-content-center form-group">
+				<input type="submit" name="apply" class="btn btn-default" value="확인">
+				<input type="submit" class="cancel" value="취소" data-fancybox-close>
+			</div>
+		</div>
+	</div>
+
+	<!-- event notification -->
+	<div id="event-notification_popup" class="event_popup">
+		<div class="panel-title">
+			<h2>이벤트 알림</h2>
+		</div>
+		<div class="panel-body">
+			<div class="event_popup--item event-pcs2 event-5-col">
+				<h2>PCS 2</h2>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>rack 이상</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>rack trip</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module 저전압 </span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module 전압불평형</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module 전압불평형</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>battery 과전압</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>battery 저전압</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module 전류 불평형</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>R-M 통신오류</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>R=M 통신오류</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module PCB 저열</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>module PCB 저열</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>R-s 통신 오류</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>rack 충전 과전류</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>rack 충전 과전류</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>DC 스위치1 센서 이상</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_on_s.png" class="pr-2"><span>DC 스위치2 센서 이상</span>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="event_popup--item event-pms2 event-6-col">
+				<h2>PMS 4</h2>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack string 전류 불평형</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>module 저열 </span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>Fan 이상</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>module 저전압</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>module 과전압 </span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>cell 충전 동작 limit</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack 전류 센서 이상 </span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack fuse rail</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack 과전압 </span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>cell 방전 동작 limit</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>module PCB 저열</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack string 전압 불평형</span>
+				</div>
+				<div class="item">
+					<img src="images/bell_orange_s.png" class="pr-2"><span>rack 전압 센싱 이상</span>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="action-submit d-flex justify-content-center form-group">
+				<input type="submit" name="submit" class="btn btn-default" value="확인">
+				<input type="submit" class="cancel" value="취소" data-fancybox-close>
+			</div>
+		</div>
+	</div>
+
+	<!-- 정보 수정 -->
+	<div id="form-edit_info_detail_popup" class="page_popup">
+		<div class="panel-title d-flex justify-content-between">
+			<h2>정보 수정</h2>
+			<i id="close_form-edit_info">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+					<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+				</svg>
+			</i>
+		</div>
+		<div class="panel-body">
+			<form action="" method="" class="form_edit_info">
+				<div class="form-group">
+					<label for="name">아이디</label>
+					<p>jini1237</p>
+				</div>
+				<div class="form-group">
+					<label for="text_name">이름</label>
+					<input type="text" name="text-name" class="text_name" value="김가나">
+				</div>
+				<div class="form-group">
+					<label for="select">직책</label>
+					<select class="select-option" name="select">
+						<option>직책선택</option>
+						<option>직책선택</option>
+						<option>직책선택</option>
+						<option>직책선택</option>
+						<option>직책선택</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="tel">전화번호</label>
+					<input type="tel" name="tel" class="" value="010-1234-1234">
+				</div>
+				<div class="form-group">
+					<label for="password">비밀 번호</label>
+					<input type="password" name="password" class="password" value="0123456789">
+				</div>
+				<div class="form-group">
+					<label for="confirm-password">비밀 번호 확인</label>
+					<input type="password" name="confirm-password" class="password" value="0123456789">
+				</div>
+				<div class="action-submit d-flex justify-content-center form-group">
+					<input type="submit" name="submit" class="btn btn-default mr-2" value="수정">
+					<input type="submit" class="cancel" name="cancel" id="cancel_dialog" class="btn btn-default ml-2" value="취소">
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 인조이웍스 본사 -->
+</head>
+
+<body class="@@class">
+	<div id="wrapper">
+
+		<header class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-6 pl-0 pr-2 header-right">
+						<a href="index.html" class="logo d-flex align-items-center">
+							<div class="logo__image">
+								<img src="images/logo.png" alt="" />
+							</div>
+							<div class="logo__title">
+								<h1 class="site-title">PV + ESS System</h1>
+								<p class="site-sub m-0">인조이컴퍼니</p>
+							</div>
+						</a>
+						<!--
+							.event-notification--none -> don't show image
+							.event-notification--red -> show image notification_re.png
+							.event-notification--grey -> show image notification_gy.png
+							.event-notification--green -> show image notification_gre.png
+							.event-notification--orange -> show image notification_or.png
+						-->
+						<div class="event-notification event-notification--none position-absolute d-flex justify-content-center align-items-center">
+							<a href="javascript:void(0)" id="event-notification" class="event-notification_popup" data-src="#event-notification_popup">
+								<img class="img-notice" src="images/notification_noevent.png" />
+							</a>
+						</div>
+						<!-- <a href="javascript:void(0)" class="event-notification_popup position-absolute" data-fancybox="" data-src="#event-notification_popup">
+							<img class="img-notice position-absolute active" src="images/notification_no.png" />
+							<img class="img-notice position-absolute" src="images/notification_gy.png" />
+							<img class="img-notice position-absolute" src="images/notification_re.png" />
+							<img class="img-notice position-absolute" src="images/notification_or.png" />
+							<img class="img-notice position-absolute" src="images/notification_gre.png" />
+						</a> -->
+					</div><!-- End Logo Site -->
+					<div class="col-6 pr-0 pl-2 header-left">
+						<div class="top-header d-flex flex-row justify-content-end">
+							<div class="date-time d-flex flex-wrap align-items-center">
+								<p class="date-time--date">2018년 09월 18일</p>
+								<p class="date-time--time">15:01:12</p>
+							</div>
+							<div class="userLogin d-flex flex-wrap align-items-center">
+								<a href="javascript:void(0)" class="account" id="edit_info_detail_popup">신용종님</a>
+								<a href="javascript:void(0)" id="alert_detail" class="logout" data-src="#alert_detail_popup">로그아웃</a>
+							</div>
+						</div><!-- End Top Info -->
+						<nav class="nav-menu">
+							<ul class="nav-menu__main d-flex justify-content-end">
+								<li class="menu-item @@current-menu-monitoring">
+									<a href="index.html" class="d-flex justify-content-center align-items-center"><img class="icon-main" src="images/monitoring-icon.png" /><img
+										 class="icon-hover" src="images/monitoring-icon-hover.png" />모니터링</a>
+								</li>
+								<li class="menu-item @@current-menu-system">
+									<a href="02.계통흐름도2안.html" class="d-flex justify-content-center align-items-center">
+										<img class="icon-main" src="images/system-icon.png" /><img class="icon-hover" src="images/system-icon-hover.png" />계통
+										흐름도</a>
+								</li>
+								<li class="menu-item @@current-menu-driving">
+									<a href="04.운전.html" class="d-flex justify-content-center align-items-center"><img class="icon-main" src="images/driving-icon.png" /><img
+										 class="icon-hover" src="images/driving-icon-hover.png" />운전</a>
+								</li>
+								<li class="menu-item @@current-menu-status menu-has-child">
+									<a href="05.1.발전현황.html" class="d-flex justify-content-center align-items-center"><img class="icon-main" src="images/status-icon.png" /><img
+										 class="icon-hover" src="images/status-icon-hover.png" />현황</a>
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a class="@@active1" href="05.1.발전현황.html">발전 현황</a>
+										</li>
+										<li class="menu-item">
+											<a class="@@active2" href="05.2.운영현황.html">운영 현황</a>
+										</li>
+										<li class="menu-item">
+											<a class="@@active3" href="05.3.장비현황.html">장비 현황</a>
+										</li>
+										<li class="menu-item">
+											<a class="@@active4" href="05.4.이벤트현황.html">이벤트 현황</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item @@current-menu-statistics menu-has-child">
+									<a href="06.1.발전통계.html" class="d-flex justify-content-center align-items-center"><img class="icon-main" src="images/statistics-icon.png" /><img
+										 class="icon-hover" src="images/statistics-icon-hover.png" />통계</a>
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a class="@@active5" href="06.1.발전통계.html">발전 통계</a>
+										</li>
+										<li class="menu-item">
+											<a class="@@active6" href="06.2.운영통계.html">운영 통계</a>
+										</li>
+										<li class="menu-item">
+											<a class="@@active7" href="06.3.수익통계.html">수익 통계</a>
+										</li>
+										<li class="menu-item">
+											<a class="@@active8" href="06.4.이벤트통계.html">이벤트 통계</a>
+										</li>
+										<li class="menu-item">
+											<a class="@@active9" href="06.5.운전통계.html">운전 통계</a>
+										</li>
+										<li class="menu-item">
+											<a class="@@active10" href="06.6.장비통계.html">장비 통계</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item @@current-menu-management menu-has-child">
+									<a href="07.1.접속관리.html" class="d-flex justify-content-center align-items-center"><img class="icon-main" src="images/management-icon.png" /><img
+										 class="icon-hover" src="images/management-icon-hover.png" />관리</a>
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a class="@@active11" href="07.1.접속관리.html">접속 관리</a>
+										</li>
+										<li class="menu-item">
+											<a class="@@active12" href="07.2.사용자관리.html">사용자 관리</a>
+										</li>
+										<li class="menu-item">
+											<a class="@@active13" href="07.3.운휴및시스템관리.html">운휴 및 시스템 관리</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav><!-- End Menu -->
+					</div><!-- End Header Right -->
+				</div>
+			</div>
+		</header>

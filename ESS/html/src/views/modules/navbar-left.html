@@ -1,0 +1,193 @@
+<!-- sidebar left -->
+<div class="flex-column box pr-2">
+
+	<div class="box__weather rounded">
+		<div class="box_title">
+			<p>기상현황</p>
+		</div>
+		<div class="box__weather__content">
+			<div class="d-flex align-self-center align-items-end pb-2">
+				<img src="images/L0001.png" alt="">
+				<img src="images/L0002.png" alt="">
+				<img src="images/L0003.png" alt="">
+				<img src="images/L0004.png" alt="">
+				<img src="images/L0005.png" alt="">
+				<img src="images/L0006.png" alt="">
+				<img src="images/L0007.png" alt="">
+				<img src="images/L0008.png" alt="">
+				<img class="active" src="images/L0009.png" alt="">
+				<img src="images/L0010.png" alt="">
+				<img src="images/L0011.png" alt="">
+				<h4>흐림<span>15:00 기준</span></h4>
+			</div>
+			<div class="d-flex justify-content-between">
+				<div class="col-6 p-0 weatherleft">
+					<div class="col-6 p-0 weathersub">일출</div>
+					<div class="col-6 p-0 weathervalue">07:30 <span></span></div>
+				</div>
+				<div class="col-6 p-0 weatherright">
+					<div class="col-6 p-0 weathersub">일몰</div>
+					<div class="col-6 p-0 weathervalue">17:21 <span></span></div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between">
+				<div class="col-6 p-0 weatherleft">
+					<div class="col-6 p-0 weathersub">경사 일사량</div>
+					<div class="col-6 p-0 weathervalue">428.4 <span>W/m<sup>2</sup></span> </div>
+				</div>
+				<div class="col-6 p-0 weatherright">
+					<div class="col-6 p-0 weathersub">수평 일사량</div>
+					<div class="col-6 p-0 weathervalue">428.4 <span>W/m<sup>2</sup></span></div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between">
+				<div class="col-6 p-0 weatherleft">
+					<div class="col-6 p-0 weathersub">모듈온도</div>
+					<div class="col-6 p-0 weathervalue">20.1 <span><sup>o</sup>C</span></div>
+				</div>
+				<div class="col-6 p-0 weatherright">
+					<div class="col-6 p-0 weathersub">대기온도</div>
+					<div class="col-6 p-0 weathervalue">20.1 <span><sup>o</sup>C</span></div>
+				</div>
+			</div>
+		</div>
+	</div><!-- End Weather Section -->
+
+	<div class="box__solarinformation rounded">
+		<div class="box_title">
+			<p>태양광 정보</p>
+		</div>
+		<div class="box__solarinformation__content">
+			<h3>태양광 발전현황 <span>(단위 : kWh)</span>
+				<a href="javascript:void(0)" class="tooltipCustom">
+					<img class="popupBtn" src="images/fa-circle.png" alt="">
+					<div class="mode_popupbox" style="display: none;">
+						<h2>가동률 산식</h2>
+						<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+							<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+						<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+						<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+					</div>
+				</a>
+			</h3>
+			<div class="box_black d-flex justify-content-between text-center mb-1">
+				<div class="col-7 p-0 today">
+					<h4 class="title-top">금일</h4>
+					<p>132465.7 <span class="increase "><span class="light">(</span> <i class="fa fa-caret-up"></i> 64%<span class="light">)</span></span></p>
+				</div>
+				<div class="col-5 p-0 todo">
+					<h4>전일</h4>
+					<p>123456.7</p>
+				</div>
+			</div>
+			<div class="box_black d-flex justify-content-between text-center mb-1 ">
+				<div class="col-7 p-0 today">
+					<h4 class="title-top">금일 10시-16시</h4>
+					<p>132465.7 <span class="primary-light"><span class="light">(</span> - 21%<span class="light">)</span></span></p>
+				</div>
+				<div class="col-5 p-0 todo">
+					<h4 class="title-top">전일 10시-16시</h4>
+					<p>123456.7</p>
+				</div>
+			</div>
+			<div class="box_black d-flex justify-content-between text-center">
+				<div class="col-7 p-0 today">
+					<h4 class="title-top">금월</h4>
+					<p>132465.7 <span class="reduction "><span class="light">(</span> <i class="fa fa-caret-down"></i> 89%<span class="light">)</span></span></p>
+				</div>
+				<div class="col-5 p-0 todo">
+					<h4 class="title-top">전월</h4>
+					<p>123456.7</p>
+				</div>
+			</div>
+
+			<h3>발전 수익 <span>(단위 : 천원)</span>
+				<a href="javascript:void(0)" class="tooltipCustom">
+					<img class="popupBtn" src="images/fa-circle.png" alt="">
+					<div class="mode_popupbox" style="display: none;">
+						<h2>가동률 산식</h2>
+						<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+							<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+						<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+						<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+					</div>
+				</a>
+
+			</h3>
+			<div class="box_black_revenue d-flex justify-content-between align-items-center">
+				<div class="col-5 p-0 today border-0">
+					<h4>금일</h4>
+				</div>
+				<div class="col-7 revenue text-right">
+					<p>1,970,000</p>
+				</div>
+			</div>
+			<div class="box_black_revenue d-flex justify-content-between align-items-center">
+				<div class="col-5 p-0 today border-0">
+					<h4>금일</h4>
+				</div>
+				<div class="col-7 revenue text-right">
+					<p>90,512,000</p>
+				</div>
+			</div>
+
+			<h3 class="no-sup">계약유형 : 고정가
+				<a href="javascript:void(0)" class="tooltipCustom">
+					<img class="popupBtn" src="images/fa-circle.png" alt="">
+					<div class="mode_popupbox" style="display: none;">
+						<h2>가동률 산식</h2>
+						<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+							<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+						<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+						<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+					</div>
+				</a>
+			</h3>
+			<div class="box_black_odd d-flex justify-content-between align-items-center">
+				<div class="contract_type">
+					<h4>SMP + REC</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>185 <span class="unit">원/kw</span></p>
+				</div>
+			</div>
+			<div class="box_black_even d-flex justify-content-between align-items-center">
+				<div class="contract_type">
+					<h4>SMP 단가</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>185 <span class="unit">원/kw</span></p>
+				</div>
+
+			</div>
+			<div class="box_black_odd d-flex justify-content-between align-items-center">
+				<div class=" contract_type">
+					<h4>REC 단가</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>85 <span class="unit">원/kw</span></p>
+				</div>
+
+			</div>
+			<div class="box_black_even d-flex justify-content-between align-items-center">
+				<div class=" contract_type">
+					<h4>RE 가중치 (ESS)</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>5.123 <span class="unit"></span></p>
+				</div>
+
+			</div>
+			<div class="box_black_odd d-flex justify-content-between align-items-center">
+				<div class="contract_type">
+					<h4>REC 가중치 (PV)</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>5.123 <span class="unit"></span></p>
+				</div>
+
+			</div>
+		</div>
+	</div><!-- End Solar Info Section -->
+
+</div><!-- end sidebar_left -->

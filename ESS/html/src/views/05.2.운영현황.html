@@ -1,0 +1,223 @@
+@@include('modules/header.html', { "title": "05.2.운영 현황",
+									"class": "",
+									"addClass": "@@include('head/head-status.html')",
+									"current-menu-monitoring": "",
+									"current-menu-system": "",
+									"current-menu-driving": "",
+									"current-menu-status": "current-menu-item",
+										"active1": "",
+										"active2": "is-active",
+										"active3": "",
+										"active4": "",
+									"current-menu-statistics": "",
+										"active5": "",
+										"active6": "",
+										"active7": "",
+										"active8": "",
+										"active9": "",
+										"active10": "",
+									"current-menu-management": "",
+										"active11": "",
+										"active12": "",
+										"active13": ""})
+
+<div id="page-body" class="page-body development-status mb-3">
+	<div class="d-flex py-2 justify-content-start w-100 group-generation">
+		<div class="w14">
+			<div class="power_automatic box-rounded rounded number-stats d-flex align-items-center">
+				<div class="item w-100">
+					<img src="images/shape-01.png" alt="운전모드(상태)" title="운전모드(상태)">
+					<p>운전모드(상태)</p>
+					<div class="stats-number">
+						<span class="stats-count">자동</span><span class="suffix">(정상)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w14">
+			<div class="today_power_generation box-rounded rounded number-stats d-flex align-items-center" data-number="5532"
+			 data-duration="2000" data-decimal=",">
+				<div class="item w-100">
+					<img src="images/1_icon.png" alt="금일 발전량" title="금일 발전량">
+					<p>금일 발전량</p>
+					<div class="stats-number">
+						<span class="stats-count"></span><span class="suffix">Kwh</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w14">
+			<div class="today_power_generation_hours box-rounded rounded number-stats d-flex align-items-center" data-number="5532"
+			 data-duration="2000" data-decimal=",">
+				<div class="item w-100">
+					<img src="images/facility-icon.png" alt="금일 발전량" title="금일 발전량">
+					<p>금일 (10시~16시) 발전량</p>
+					<div class="stats-number">
+						<span class="stats-count"></span><span class="suffix">Kwh</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w14">
+			<div class="today-charge box-rounded rounded number-stats d-flex align-items-center" data-number="2890"
+			 data-duration="2000" data-decimal=",">
+				<div class="item w-100">
+					<img src="images/shape-03.png" alt="금일 충전량" title="금일 충전량">
+					<p>금일 충전량</p>
+					<div class="stats-number">
+						<span class="stats-count"></span><span class="suffix">Kwh</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w14">
+			<div class="total-discharge box-rounded rounded number-stats d-flex align-items-center" data-number="708"
+			 data-duration="2000" data-decimal=",">
+				<div class="item w-100">
+					<img src="images/shape-06.png" alt="총 방전량" title="총 방전량">
+					<p>금일 방전량</p>
+					<div class="stats-number">
+						<span class="stats-count"></span><span class="suffix">Kwh</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w14">
+			<div class="total-charge box-rounded rounded number-stats d-flex align-items-center" data-number="119911"
+			 data-duration="2000" data-decimal=",">
+				<div class="item w-100">
+					<img src="images/33.png" alt="총 충전량" title="총 충전량">
+					<p>총 충전량</p>
+					<div class="stats-number">
+						<span class="stats-count"></span><span class="suffix">Kwh</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w14">
+			<div class="total-discharge box-rounded  rounded number-stats d-flex align-items-center" data-number="110018"
+			 data-duration="2000" data-decimal=",">
+				<div class="item w-100">
+					<img src="images/21.png" alt="총 충전량" title="총 충전량">
+					<p>총 방전량</p>
+					<div class="stats-number">
+						<span class="stats-count"></span><span class="suffix">Kwh</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ess-charge-chart rounded">
+		<div class="chart_title">
+			<p>운영현황 차트 <span>운영 현황 차트를 1시간 단위로 확인할 수 있습니다.</span></p>
+		</div>
+		<div class="box-content col-12">
+			<div class="w-100 pl-3">
+				<div id="openrationChart" class="amchart" style="height: 260px"></div>
+			</div>
+		</div>
+	</div>
+	<div class="datatable rounded">
+		<div class="chart_title">
+			<p>운영 현황<span>운영 현황 정보를 15분 단위로 확인 할 수 있습니다.</span></p>
+		</div>
+		<div class="operation-status">
+			<div class="d-flex justify-content-between">
+				<div class="button-lenght">
+					<select name="" id="">
+						<option value="">5</option>
+						<option value="">10</option>
+						<option value="">15</option>
+					</select>
+					<p>개씩 보기</p>
+				</div>
+			</div>
+			<div class="table-responsive" width="100%">
+				<table class="table table-striped table-bordered table-hover custom-datatable">
+					<thead>
+						<tr>
+							<th>발생시간</th>
+							<th>충전량</th>
+							<th>SOC</th>
+							<th>총전량</th>
+							<th>방전량</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2018-01-01 03:30:47</td>
+							<td>50,000</td>
+							<td>90%</td>
+							<td>25,121</td>
+							<td>24,121</td>
+						</tr>
+						<tr>
+							<td>2018-01-02 03:15:47</td>
+							<td>50,000</td>
+							<td>90%</td>
+							<td>25,121</td>
+							<td>24,121</td>
+						</tr>
+						<tr>
+							<td>2018-01-03 01:30:47</td>
+							<td>50,000</td>
+							<td>90%</td>
+							<td>25,121</td>
+							<td>24,121</td>
+						</tr>
+						<tr>
+							<td>2018-01-04 02:30:47</td>
+							<td>50,000</td>
+							<td>90%</td>
+							<td>25,121</td>
+							<td>24,121</td>
+						</tr>
+						<tr>
+							<td>2018-01-03 01:30:47</td>
+							<td>50,000</td>
+							<td>90%</td>
+							<td>25,121</td>
+							<td>24,121</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="float-right">
+					<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+								</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link previous" href="#" aria-label="Previous">
+									<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+								</a>
+							</li>
+							<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">4</a></li>
+							<li class="page-item"><a class="page-link" href="#">5</a></li>
+							<li class="page-item"><a class="page-link" href="#">6</a></li>
+							<li class="page-item"><a class="page-link" href="#">7</a></li>
+							<li class="page-item"><a class="page-link" href="#">8</a></li>
+							<li class="page-item"><a class="page-link" href="#">9</a></li>
+							<li class="page-item"><a class="page-link" href="#">10</a></li>
+							<li class="page-item">
+								<a class="page-link next" href="#" aria-label="Next">
+									<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+								</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('modules/footer.html', {"addJs": "@@include('footer/script-status-operation.html')"})

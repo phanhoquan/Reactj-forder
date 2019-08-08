@@ -1,0 +1,414 @@
+@@include('modules/header.html', { "title": "04.운전",
+"class": "",
+"addClass": "@@include('head/head-driving.html')",
+"current-menu-monitoring": "",
+"current-menu-system": "",
+"current-menu-driving": "current-menu-item",
+"current-menu-status": "",
+"active1": "",
+"active2": "",
+"active3": "",
+"active4": "",
+"current-menu-statistics": "",
+"active5": "",
+"active6": "",
+"active7": "",
+"active8": "",
+"active9": "",
+"active10": "",
+"current-menu-management": "",
+"active11": "",
+"active12": "",
+"active13": ""})
+
+<div id="page-body" class="page-body driving-page">
+	<div class="container-fluid">
+		<div class="row mb-3">
+			<div class="col-7 col-left">
+				<div class="row h-100">
+					<div class="table-left col-6 pr-2">
+						<div class="box-content-state rounded h-100">
+							<div class="box_title">
+								<p>PCS#2 현황</p>
+							</div>
+							<div class="box-content">
+								<div class="box-state-table  mb-2 table-pcs">
+									<table class="table table-bordered table-header m-0">
+										<tbody>
+											<tr>
+												<td>
+													<p>PCS상태:</p>
+												</td>
+												<td class="checkbox-square">
+													<ul class="d-flex checkbox p-0">
+														<li class="stop">
+															<a href="javascript:void(0)">정지</a>
+														</li>
+														<li class="waiting">
+															<a href="javascript:void(0)">대기</a>
+														</li>
+														<li class="ready">
+															<a href="javascript:void(0)">준비</a>
+														</li>
+														<li class="driving">
+															<a href="javascript:void(0)">운전</a>
+														</li>
+													</ul>
+												</td>
+												<td rowspan="2" class="icon">
+													<p>PCS알람</p>
+													<div class="group-icon">
+														<a href="javascript:void(0)" class="icon-list"><img src="images/bell_orange.png" alt="bell_orange" title="bell_orange"></a>
+														<a href="javascript:void(0)" class="icon-list active"><img src="images/bell_on.png" alt="Bell On" title="Bell On"></a>
+														<a href="javascript:void(0)" class="icon-list"><img src="images/bell_on_y.png" alt="Bell On" title="Bell On"></a>
+
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p>충방전 상태:</p>
+												</td>
+												<td class="checkbox-square">
+													<ul class="d-flex checkbox p-0 charge-discharge">
+														<li class="charge">
+															<a href="javascript:void(0)">충전</a>
+														</li>
+														<li class="group-checkbox discharge active">
+															<a href="javascript:void(0)">방전</a>
+														</li>
+														<li class="group-checkbox waiting">
+															<a href="javascript:void(0)">대기</a>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="box-state-table">
+									<table class="table table-bordered mb-0">
+										<tbody>
+											<tr>
+												<td>
+													<p>유효전력:</p>
+												</td>
+												<td class="text-right"><span class="value">12345.6</span><span class="unit">Kw</span></td>
+												<td>
+													<p>주파수:</p>
+												</td>
+												<td class="text-right"><span class="value">60</span><span class="unit">Hz</span></td>
+											</tr>
+											<tr>
+												<td>
+													<p>무효전력:</p>
+												</td>
+												<td class="text-right"><span class="value">0</span><span class="unit">kVar</span></td>
+												<td>
+													<p>역률:</p>
+												</td>
+												<td class="text-right"><span class="value">1.00</span><span class="unit"></span></td>
+											</tr>
+											<tr>
+												<td class="align-top">
+													<p>AC 전압:</p>
+												</td>
+												<td class="text-right">
+													<span class="value">380.2</span><span class="unit">V</span><br />
+													<span class="value">381.2</span><span class="unit">V</span><br />
+													<span class="value">382.6</span><span class="unit">V</span>
+												</td>
+												<td class="align-top">
+													<p>AC 전류:</p>
+												</td>
+												<td class="text-right ">
+													<span class="value">51.5</span><span class="unit">A</span><br />
+													<span class="value">52.5</span><span class="unit">A</span><br />
+													<span class="value">53.5</span><span class="unit">A</span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p>DC 전압:</p>
+												</td>
+												<td class="text-right"><span class="value">700.5</span><span class="unit">V</span></td>
+												<td>
+													<p>DC 전류:</p>
+												</td>
+												<td class="text-right"><span class="value">155.3</span><span class="unit">A</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div><!-- End -->
+					</div>
+					<div class="table-right col-6 pl-2">
+						<div class="box-content-state rounded h-100">
+							<div class="box_title">
+								<p>BMS#2 현황</p>
+							</div>
+							<div class="box-content">
+								<div class="box-state-table  mb-2 table-bms">
+									<table class="table table-bordered table-header m-0">
+										<tbody>
+											<tr>
+												<td>
+													<p>BAT상태:</p>
+												</td>
+												<td class="checkbox-square">
+													<ul class="d-flex checkbox p-0">
+														<li class="charge">
+															<a href="javascript:void(0)">충전</a>
+														</li>
+														<li class="discharge">
+															<a href="javascript:void(0)">방전</a>
+														</li>
+														<li class="waiting">
+															<a href="javascript:void(0)">대기</a>
+														</li>
+													</ul>
+												</td>
+												<td rowspan="2" class="icon">
+													<p>PCS알람</p>
+													<div class="group-icon">
+														<a href="javascript:void(0)" class="icon-list"><img src="images/bell_orange.png" alt="bell_orange" title="bell_orange"></a>
+														<a href="javascript:void(0)" class="icon-list"><img src="images/bell_on.png" alt="Bell On" title="Bell On"></a>
+														<a href="javascript:void(0)" class="icon-list  active"><img src="images/bell_on_y.png" alt="Bell On"
+															 title="Bell On"></a>
+
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p>컨택터:</p>
+												</td>
+												<td class="checkbox-square">
+													<ul class="d-flex checkbox p-0">
+														<li class="stop">
+															<a href="javascript:void(0)">열림</a>
+														</li>
+														<li class="driving">
+															<a href="javascript:void(0)">닫힘</a>
+														</li>
+														<li class="waiting active">
+															<a href="javascript:void(0)">대기</a>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="box-state-table">
+									<table class="table table-bordered mb-0">
+										<tbody>
+											<tr>
+												<td>
+													<p>DC 전압:</p>
+												</td>
+												<td class="text-right"><span class="value">908.6</span><span class="unit">V</span></td>
+												<td>
+													<p>DC 전류:</p>
+												</td>
+												<td class="text-right"><span class="value">-552.5</span><span class="unit">A</span></td>
+											</tr>
+											<tr>
+												<td>
+													<p>최대 셀 전압:</p>
+												</td>
+												<td class="text-right"><span class="value">3.40</span><span class="unit">V</span></td>
+												<td>
+													<p>모듈 최대 온도:</p>
+												</td>
+												<td class="text-right"><span class="value">30.9</span><span class="unit">℃</span></td>
+											</tr>
+											<tr>
+												<td>
+													<p>최소 셀 전압:</p>
+												</td>
+												<td class="text-right"><span class="value">3.40</span><span class="unit">V</span></td>
+												<td>
+													<p>모듈 최소 온도:</p>
+												</td>
+												<td class="text-right"><span class="value">21.6</span><span class="unit">℃</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div><!-- End -->
+					</div>
+				</div>
+			</div><!-- End Main Content -->
+			<div class="col-5 col-right">
+				<div class="box-content-state rounded">
+					<div class="box_title d-flex">
+						<p>운전 상태 <span class="text-small">현재상태</span></p>
+						<!-- Has having class show-discharge will show 충전 -->
+						<p class="btn-discharge show-discharge" href="javascript:void(0)">충전</p>
+					</div>
+					<div class="box-content box-chart justify-content-between pt-0 px-0 d-flex align-self-center">
+						<div class="box-amchart-left w-50 mt-3 ml-3">
+							<div class="box-ellipse">
+								<div id="amchart-gage"></div>
+							</div>
+						</div>
+						<div class="box-progress-right w-50 justify-content-between pr-3 align-self-center">
+							<div class="state-progress soc" data-percent="96">
+								<div class="progress-title">SOC</div>
+								<div class="progress">
+									<div class="progress-bar state-progress-bar" role="progressbar"></div>
+								</div>
+								<div class="progress-value"></div>
+							</div>
+							<div class="state-progress soh mb-0" data-percent="21">
+								<div class="progress-title">SOH</div>
+								<div class="progress">
+									<div class="progress-bar state-progress-bar" role="progressbar"></div>
+								</div>
+								<div class="progress-value"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box-content-state rounded bgSection-content box-system mt-2">
+					<div class="box_title system d-flex">
+						<div class="d-flex">
+							<p>시스템 </p>
+							<a href="javascript:void(0)" class="tooltipCustom ml-1">
+								<img class="popupBtn" src="images/fa-circle.png" alt="">
+								<div class="mode_popupbox" style="display: none;">
+									<h2>가동률 산식</h2>
+									<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+										<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+									<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+									<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+								</div>
+							</a>
+						</div>
+						<div class="select-option">
+							<select>
+								<option value="1">1</option>
+								<option value="2" selected>2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</div>
+						<div class="search"><a href="#">검색</a></div>
+					</div>
+					<div class="box-content justify-content-between pb-2">
+						<div class="box-content-top">
+							<div class="row">
+								<div class="box-setting col-7">
+									<div class="title d-flex">
+										<img class="align-self-center mr-2" src="images/icon-look.png">
+										<span>운전모드 설정</span>
+									</div>
+									<div class="box-group d-flex">
+										<div class="box-item setting active">
+											<a class="d-flex" href="javascript:void(0)" title="수동모드">
+												<div class="w-100 align-self-center">
+													<img src="images/setting.png" class="img-hide">
+													<img src="images/icon-setting.png" class="img-show">
+													<p>수동모드</p>
+												</div>
+											</a>
+										</div>
+										<div class="box-item Shape active">
+											<a class="d-flex" href="javascript:void(0)" title="자동모드">
+												<div class="w-100 align-self-center">
+													<img src="images/automatic-mode.png" class="img-hide">
+													<img src="images/automatic-icon.png" alt="" class="img-show">
+													<p>자동모드</p>
+												</div>
+											</a>
+										</div>
+										<div class="box-item apply">
+											<a class="d-flex" href="javascript:void(0)" title="적용">
+												<div class="w-100 align-self-center pt">
+													<img src="images/icon-check.png" class="img-show">
+													<img src="images/apply.png" class="img-hide">
+													<p>적용</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="title d-flex mt-3">
+										<img class="align-self-center mr-2" src="images/icon-flass.png">
+										<span>충/방전 출력 값</span>
+									</div>
+									<div class="box-charge d-flex">
+										<div class="input-result">
+											<div class="capacity-result"><input type="text" value="26210.1"></div>
+											<div class="capacity">※ 설비 용량 : 2,000 kW</div>
+										</div>
+										<div class="box-group-btn d-flex">
+											<div class="box-item">
+												<a class="active align-self-center charge" href="javascript:void(0)" title="충전">충전</a>
+											</div>
+											<div class="box-item">
+												<a class="align-self-center discharge" href="javascript:void(0)" title="방전">방전</a>
+											</div>
+											<div class="box-item">
+												<a class="align-self-center waiting" href="javascript:void(0)" title="대기">대기</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="box-charge box-right col-5">
+									<div class="box-pcs">
+										<div class="title">
+											<p>PCS#2</p>
+										</div>
+										<div class="box-left d-flex">
+											<div class="box-item">
+												<a class="align-self-center btn-reset" href="javascript:void(0)" title="Reset"><img src="images/icon-reset.png">
+													<p>Reset</p>
+												</a>
+											</div>
+											<div class="box-item">
+												<a class="align-self-center btn-start" href="javascript:void(0)" title="Start"><img src="images/icon-start.png">
+													<p>Start</p>
+												</a>
+											</div>
+											<div class="box-item">
+												<a class="align-self-center btn-stop" href="javascript:void(0)" title="Stop"><img src="images/icon-stop.png">
+													<p>Stop</p>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="box-pms">
+										<div class="title">
+											<p>BMS#2</p>
+										</div>
+										<div class="d-flex">
+											<div class="box-item">
+												<a class="align-self-center btn-reset" href="javascript:void(0)" title="Reset"><img src="images/icon-reset.png">
+													<p>Reset</p>
+												</a>
+											</div>
+											<div class="box-item">
+												<a class="align-self-center btn-close" href="javascript:void(0)" title="Close"><img src="images/icon-close.png">
+													<p>Close</p>
+												</a>
+											</div>
+											<div class="box-item">
+												<a class="align-self-center btn-open" href="javascript:void(0)" title="Open"><img src="images/icon-open.png">
+													<p>Open</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('modules/footer.html', {"addJs": "@@include('footer/script-driving.html')"})

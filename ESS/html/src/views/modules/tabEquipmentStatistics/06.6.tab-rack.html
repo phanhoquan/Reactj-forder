@@ -1,0 +1,182 @@
+<div class="ess-charge-chart rounded mt-2">
+	<div class="chart_title">
+		<p>Pack 장비 통계 차트</p>
+	</div>
+	<div class="box-content">
+		<div class="w-100 amChartline">
+			<div id="statisticsChartrack" class="amchart" style="height: 300px"></div>
+		</div>
+	</div>
+
+</div>
+<div class="datatable rounded">
+	<div class="chart_title border-black">
+		<p class="p-0 m-0 text-left">Pack 장비 통계<span class="text-danger">※ * 표시된 항목만 선택이 가능합니다.</span></p>
+	</div>
+	<div class="operation-status">
+		<div class="d-flex justify-content-between">
+			<div class="button-lenght">
+				<select name="" id="">
+					<option value="">5</option>
+					<option value="">10</option>
+					<option value="">15</option>
+					<option value="">20</option>
+				</select>
+				<p>개씩 보기</p>
+			</div>
+			<div class="button-download">
+				<a href="javascript:void(0)">엑셀 다운</a>
+				<a href="javascript:void(0)">CSV 다운</a>
+			</div>
+		</div>
+
+		<div class="table-responsive" width="100%">
+			<table class="table custom-datatable-06 table-custom" id="custom-dataTables">
+				<thead>
+					<tr>
+						<th>시간</th>
+						<th>BCP</th>
+						<th>RACK</th>
+						<th>최소 전압</th>
+						<th>최대 전압</th>
+						<th>최소 온도</th>
+						<th>최대 온도</th>
+						<th>*전압</th>
+						<th>*전류</th>
+						<th class="blue">*SOC</th>
+						<th class="yellow">*SOH</th>
+						<th>충전 제한 값</th>
+						<th>방전 제한 값</th>
+						<th>전압 최대 위치(모듈/셀)</th>
+						<th>전압 최소 ...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>01</td>
+						<td>1</td>
+						<td>1</td>
+						<td>12345.6</td>
+						<td>54.21</td>
+						<td>123.4</td>
+						<td>123.4</td>
+						<td>41,674</td>
+						<td>12345.6</td>
+						<td class="blue">123.4</td>
+						<td class="yellow">90.05</td>
+						<td>700.25</td>
+						<td>700.25</td>
+						<td>5/11</td>
+						<td>6/11</td>
+					</tr>
+					<tr>
+						<td>02</td>
+						<td>1</td>
+						<td>1</td>
+						<td>12345.6</td>
+						<td>54.21</td>
+						<td>123.4</td>
+						<td>123.4</td>
+						<td>41,674</td>
+						<td>12345.6</td>
+						<td class="blue">123.4</td>
+						<td class="yellow">90.05</td>
+						<td>700.25</td>
+						<td>700.25</td>
+						<td>5/11</td>
+						<td>6/11</td>
+					</tr>
+					<tr>
+						<td>03</td>
+						<td>1</td>
+						<td>1</td>
+						<td>12345.6</td>
+						<td>54.21</td>
+						<td>123.4</td>
+						<td>123.4</td>
+						<td>41,674</td>
+						<td>12345.6</td>
+						<td class="blue">123.4</td>
+						<td class="yellow">90.05</td>
+						<td>700.25</td>
+						<td>700.25</td>
+						<td>5/11</td>
+						<td>6/11</td>
+					</tr>
+					<tr>
+						<td>04</td>
+						<td>1</td>
+						<td>1</td>
+						<td>12345.6</td>
+						<td>54.21</td>
+						<td>123.4</td>
+						<td>123.4</td>
+						<td>41,674</td>
+						<td>12345.6</td>
+						<td class="blue">123.4</td>
+						<td class="yellow">90.05</td>
+						<td>700.25</td>
+						<td>700.25</td>
+						<td>5/11</td>
+						<td>6/11</td>
+					</tr>
+					<tr>
+						<td>05</td>
+						<td>1</td>
+						<td>1</td>
+						<td>12345.6</td>
+						<td>54.21</td>
+						<td>123.4</td>
+						<td>123.4</td>
+						<td>41,674</td>
+						<td>12345.6</td>
+						<td class="blue">123.4</td>
+						<td class="yellow">90.05</td>
+						<td>700.25</td>
+						<td>700.25</td>
+						<td>5/11</td>
+						<td>6/11</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<div class="float-right">
+			<nav aria-label="Page navigation example">
+				<ul class="pagination">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+						</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link previous" href="#" aria-label="Previous">
+							<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+						</a>
+					</li>
+					<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">4</a></li>
+					<li class="page-item"><a class="page-link" href="#">5</a></li>
+					<li class="page-item"><a class="page-link" href="#">6</a></li>
+					<li class="page-item"><a class="page-link" href="#">7</a></li>
+					<li class="page-item"><a class="page-link" href="#">8</a></li>
+					<li class="page-item"><a class="page-link" href="#">9</a></li>
+					<li class="page-item"><a class="page-link" href="#">10</a></li>
+					<li class="page-item">
+						<a class="page-link next" href="#" aria-label="Next">
+							<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+						</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>

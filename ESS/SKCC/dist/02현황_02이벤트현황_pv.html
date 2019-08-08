@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<meta name="format-detection" content="telephone=no">
+
+	<title>02현황_02이벤트현황_pv</title>
+
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body class="">
+	<div id="wrapper">
+
+		<header class="header">
+			<img src="images/logo.png" alt="">
+			<h2>PV - SK E&S</h2>
+			<h3>현재시각</h3>
+			<p class="time">2019-05-25 13:15:30</p>
+			<h3>날씨</h3>
+			<img src="images/weather.png" alt="">
+			<p>흐림 20.1℃ 15:00기준</p>
+			<div class="btn-logout ml-auto">
+				<a href="javascript:void(0)">신용종님</a>
+				<a href="javascript:void(0)" class="active">로그아웃</a>
+			</div>
+		</header>
+
+<div id="page-body" class="page-body main-page">
+	<div class="container-fluid">
+		<div class="row page-index">
+			<div class="banner-menu">
+				<div class="nav-left">
+	<div class="lights">
+		<img src="images/bg-light.png" alt="">
+		<p>이벤트 확인 <img src="images/icon-right.png" alt=""></p>
+	</div>
+
+	<nav class="nav flex-column">
+		<ul class="parent">
+			<li class="child">
+				<a href="javascript:void(0)">
+					<img src="images/tv.png" alt="">
+					<p>모니터링</p>
+					<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+				</a>
+			</li>
+			<li class="child active">
+				<a href="javascript:void(0)">
+					<img src="images/status.png" alt="">
+					<p>현황</p>
+					<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+				</a>
+				<ul class="dropdown-menu">
+					<li class="grandChild ">
+						<a tabindex="-1" href="02현황_02운영현황_pv.html">
+							<p>운영 현황</p>
+							<img class="icon-menu ml-auto none" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>장비별 현황</p>
+							<img class="icon-menu ml-auto none" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild active">
+						<a tabindex="-1" href="02현황_02이벤트현황_pv.html">
+							<p>이벤트 현황</p>
+							<img class="icon-menu ml-auto none" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>손실률 현황</p>
+							<img class="icon-menu ml-auto none" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>일사량 및 기상정보</p>
+							<img class="icon-menu ml-auto none" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="child">
+				<a href="javascript:void(0)">
+					<img src="images/control.png" alt="">
+					<p>제어</p>
+					<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+				</a>
+				<ul class="dropdown-menu">
+					<li class="grandChild active">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>운영 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>장비별 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>이벤트 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>손실률 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>일사량 및 기상정보</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="child">
+				<a href="javascript:void(0)">
+					<img src="images/charts.png" alt="">
+					<p>통계</p>
+					<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+				</a>
+				<ul class="dropdown-menu">
+					<li class="grandChild active">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>운영 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>장비별 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>이벤트 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>손실률 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>일사량 및 기상정보</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="child">
+				<a href="javascript:void(0)">
+					<img src="images/setting.png" alt="">
+					<p>관리</p>
+					<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+				</a>
+				<ul class="dropdown-menu">
+					<li class="grandChild active">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>운영 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>장비별 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>이벤트 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>손실률 현황</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+					<li class="grandChild">
+						<a tabindex="-1" href="javascript:void(0)">
+							<p>일사량 및 기상정보</p>
+							<img class="icon-menu ml-auto" src="images/icon-right.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+			</div><!-- End Banner Menu -->
+			<div class="d-flex">
+				<div class="event-status">
+					<div class="page-content">
+						<div class="box-custom">
+							<div class="box-custom-title">
+								<p>이벤트 현황</p>
+							</div>
+							<div class="part d-flex justify-content-around box-padding">
+								<div class="warning-box box-0 col-2">
+									<h2>PVC</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+
+								<div class="warning-box box-1 col-2">
+									<h2>PVI</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+
+								<div class="warning-box box-3 col-2">
+									<h2>PVS</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+
+								<div class="warning-box box-4 col-2">
+									<h2>TRS</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+
+								<div class="warning-box box-5 col-2">
+									<h2>ACB</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+
+								<div class="warning-box box-6 col-2">
+									<h2>VCB</h2>
+									<div class="warning-txt">
+										<p class="box-yellow">경고 : 01</p>
+										<p class="box-red">고장 : 11</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex justify-content-between equipment-bar part b-p part-2">
+							<div class=" d-flex align-items-center tablink">
+								<div class="title">장비</div>
+								<ul class="nav nav-pills equipment-bar__tab" role="tablist">
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link" id="pills-All-tab" data-toggle="pill" href="#pills-tab-All" role="tab" aria-controls="pills-All"
+										 aria-selected="false">All</a>
+									</li>
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link" id="pills-PVC-tab" data-toggle="pill" href="#pills-tab-PVC" role="tab" aria-controls="pills-PVC"
+										 aria-selected="false">PVC</a>
+									</li>
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link" id="pills-PVI-tab" data-toggle="pill" href="#pills-tab-PVI" role="tab" aria-controls="pills-PVI"
+										 aria-selected="false">PVI</a>
+									</li>
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link" id="pills-PVS-tab" data-toggle="pill" href="#pills-tab-PVS" role="tab" aria-controls="pills-PVS"
+										 aria-selected="false">PVS</a>
+									</li>
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link" id="pills-ACB-tab" data-toggle="pill" href="#pills-tab-ACB" role="tab" aria-controls="pills-ACB"
+										 aria-selected="false">ACB</a>
+									</li>
+									<li class="equipment-bar__tab--item">
+										<a class="nav-link active" id="pills-VCB-tab" data-toggle="pill" href="#pills-tab-VCB" role="tab"
+										 aria-controls="pills-VCB" aria-selected="true">VCB</a>
+									</li>
+								</ul>
+							</div><!-- End Equipment Bar -->
+							<!-- <div class="search">
+								<a href="javascript:void(0)">검색</a>
+							</div> -->
+						</div>
+						<div class="part b-p part-3">
+							<div class="equipment d-flex">
+								<div class="block e-name d-flex align-items-center tablink">
+									<div class="title">기기번호</div>
+									<form action="">
+										<div class="equip-name form-group d-flex">
+											<div class="form-group d-flex">
+												<select class="select-option" id="exampleSelect1">
+													<option>수위</option>
+													<option>Warming</option>
+													<option>Fault</option>
+												</select>
+											</div>
+
+											<div class="form-group d-flex">
+												<select class="select-option" id="exampleSelect2">
+													<option>상태</option>
+													<option>발생</option>
+													<option>진행중</option>
+													<option>종료</option>
+												</select>
+											</div>
+
+											<div class="form-group d-flex">
+												<select class="select-option" id="exampleSelect3">
+													<option>장비번호</option>
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+
+											<div class="search">
+												<a href="javascript:void(0)">검색</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="tab-content p-0">
+							<div class="tab-pane fade" id="pills-tab-ALL" role="tabpanel" aria-labelledby="pills-ALL-tab">
+								
+							</div>
+							<div class="tab-pane fade" id="pills-tab-PVC" role="tabpanel" aria-labelledby="pills-PVC-tab">
+								
+							</div>
+							<div class="tab-pane fade" id="pills-tab-PVI" role="tabpanel" aria-labelledby="pills-PVI-tab">
+								
+							</div>
+							<div class="tab-pane fade" id="pills-tab-PVS" role="tabpanel" aria-labelledby="pills-PVS-tab">
+								
+							</div>
+							<div class="tab-pane fade" id="pills-tab-ACB" role="tabpanel" aria-labelledby="pills-ACB-tab">
+								
+							</div>
+							<div class="tab-pane fade show active" id="pills-tab-VCB" role="tabpanel" aria-labelledby="pills-VCB-tab">
+								<div class="table-form table-custom">
+	<div class="txt">
+		<p>이벤트 상세 <span>*운영 현황 차트를 1시간 단위로 확인 할 수 있습니다.</span></p>
+	</div>
+	<div class="table-responsive table-mr">
+		<table class="table table-striped table-bordered nowrap custome-datatable">
+			<thead>
+				<tr>
+					<th>발생 시간</th>
+					<th>종료 시간</th>
+					<th>기기</th>
+					<th>수위</th>
+					<th>이벤트명</th>
+					<th class="wid100">이벤트 메세지</th>
+					<th>상태</th>
+					<th class="wid90">조치원인</th>
+					<th class="wid90">조치 담당자</th>
+					<th class="wid107">조치 내용</th>
+					<th>이벤트 상세</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:47</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-red">발생</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:48</td>
+					<td>2018-01-12 03:30:47</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>휴먼에러</td>
+					<td>이설</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:46</td>
+					<td>2018-01-12 03:30:48</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td>종료</td>
+					<td>기타</td>
+					<td>우태석</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:44</td>
+					<td>2018-01-12 03:30:45</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td>종료</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:45</td>
+					<td>2018-01-12 03:30:47</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-red">발생</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:47</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>기타</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:54</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>휴먼에러</td>
+					<td>이설</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:55</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>휴먼에러</td>
+					<td>이설</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:53</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>기타</td>
+					<td>우태석</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:51</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td>종료</td>
+					<td>기타</td>
+					<td>이설</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:52</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-red">발생</td>
+					<td>기타</td>
+					<td>우태석</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:49</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>-</td>
+					<td>우태석</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:50</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td>종료</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:50</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td>종료</td>
+					<td>휴먼에러</td>
+					<td>이설</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:47</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td>발생</td>
+					<td>기타</td>
+					<td>우태석</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:48</td>
+					<td>2018-01-12 03:30:47</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-red">발생</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:46</td>
+					<td>2018-01-12 03:30:48</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:44</td>
+					<td>2018-01-12 03:30:45</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td>종료</td>
+					<td>기타</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:45</td>
+					<td>2018-01-12 03:30:47</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>휴먼에러</td>
+					<td>이설</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:47</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:54</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td>발생</td>
+					<td>휴먼에러</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:55</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>휴먼에러</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:53</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td>발생</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:51</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:52</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:49</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-yellow">진행중</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:50</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-red">발생</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+				<tr class="gradeX">
+					<td>2018-01-12 03:30:50</td>
+					<td>2018-01-12 03:30:46</td>
+					<td>PCS #1</td>
+					<td>Fault</td>
+					<td>Batt 저전압</td>
+					<td>종지 전압</td>
+					<td class="color-red">발생</td>
+					<td>-</td>
+					<td>-</td>
+					<td>이벤트가 발생...</td>
+					<td>
+						<input type="button" name="" id="view" value="보기">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+							</div>
+						</div>
+					</div><!-- End Main Content -->
+				</div>
+			</div>
+			<!-- Begin Footer -->
+<footer></footer><!-- End Footer -->
+
+</div><!-- End page-body -->
+
+<script type="text/javascript" src="js/vendor.js"></script>
+<script type="text/javascript" src="lib/amchart4/core.js"></script>
+<script type="text/javascript" src="lib/amchart4/charts.js"></script>
+<script type="text/javascript" src="lib/amchart4/animated.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
+		</div>
+	</div>

@@ -1,0 +1,3920 @@
+.system-page {
+	padding: 10px 20px 0px;
+
+	.pl-line {
+		padding-left: 53px;
+	}
+
+	.pr-line {
+		padding-right: 53px;
+	}
+
+	.integrated-chart {
+		height: 100%;
+
+		.box-content {
+			padding: 0px 10px;
+
+			.box-info-top {
+				max-width: 190px;
+				margin-top: 94px;
+				z-index: 1;
+
+				&--item {
+					background-color: $bgRow-black1;
+					font-size: 12px;
+					font-weight: $light;
+					padding: 5px 10px 5px 15px;
+					align-items: baseline;
+
+					&:nth-child(2n) {
+						background-color: $bgRow-black2;
+					}
+
+					.name {
+						font-size: 12px;
+						font-weight: $light;
+						color: $colorWhite-6;
+					}
+
+					.data {
+						font-weight: $medium;
+						font-size: 14px;
+
+						.unit {
+							font-size: 12px;
+							font-weight: $light;
+							color: $colorWhite-8;
+							min-width: 24px;
+							display: inline-block;
+							margin-left: 7px;
+						}
+
+						&.off {
+							color: $data-off;
+						}
+					}
+
+					@include breakpoint(lgxxxmax) {
+						.name {
+							font-size: 10px;
+						}
+
+						.data {
+							font-size: 14px;
+
+							.unit {
+								font-size: 8px;
+								min-width: 18px;
+							}
+						}
+					}
+
+					@include breakpoint(lgxxxxmax) {
+						padding: 12px;
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						padding: 5px;
+
+						.name {
+							font-size: 11px;
+						}
+
+						.data {
+							font-size: 11px;
+
+							.unit {
+								font-size: 9px;
+								min-width: 14px;
+							}
+						}
+					}
+				}
+			}
+
+			&__power {
+				-ms-flex: 0 0 64px;
+				flex: 0 0 48px;
+				max-width: 48px;
+
+				&__top {
+					width: 200px;
+					text-align: center;
+					position: absolute;
+					top: -102px;
+					left: calc(50% - 100px);
+
+					.title--power {
+						position: absolute;
+						left: -55px;
+						top: 16px;
+						font-weight: 400;
+						color: $colorWhite-8;
+
+						strong {
+							font-size: 20px;
+							margin: 0;
+						}
+
+						.unit {
+							font-size: 12px;
+							font-weight: 100;
+							color: $colorWhite-8;
+							margin-left: 4px;
+						}
+					}
+				}
+			}
+
+			&__sunlight,
+			&__ess {
+				margin-top: 60px;
+			}
+
+			.parameter {
+				padding: 22px 12px;
+
+				&--sunlight {
+					height: calc(100% - 36px);
+
+					&__vcb {
+						right: 55px;
+						width: 236px;
+
+						.parameter__content__lists {
+							margin: 0;
+							min-height: auto;
+						}
+
+						h3 {
+							display: inline-block;
+							width: 100%;
+							font-size: 15px;
+							font-weight: 500;
+							color: #ffffff;
+							right: 0;
+							top: calc(37px / 2 - 9px);
+						}
+
+						.reverse {
+							.parameter__content__lists--item {
+								background-color: $bgRow-blue2;
+
+								&:nth-child(2n) {
+									background-color: $bgRow-blue1;
+								}
+							}
+						}
+					}
+
+					.flowLine02 {
+						top: calc(9.5rem + 36px);
+						left: 81.5px;
+
+						@include breakpoint(lgsmax) {
+							top: calc(9.5rem + 36px);
+						}
+
+						@include breakpoint(lgxxxxmax) {
+							top: calc(9.5rem + 36px);
+						}
+
+						@include breakpoint(maxdesktop19in) {
+							top: calc(9.5rem + 6px);
+
+							@include firefox() {
+								top: calc(9.5rem + 5px);
+							}
+						}
+
+						.flowLineWrap {
+							width: 473.5px;
+							height: 15px;
+
+							.arrowLine03 {
+								width: 32.2%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 33.2%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 32.1%;
+
+									@include ie11() {
+										width: 33.4%;
+									}
+
+									@include firefox() {
+										width: 32.2%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 31.89%;
+
+									@include ie11() {
+										width: 33%;
+									}
+
+									@include firefox() {
+										width: 32.2%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 31.8%;
+
+									@include ie11() {
+										width: 32.6%;
+									}
+
+									@include firefox() {
+										width: 31.6%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 31.3%;
+
+									@include ie11() {
+										width: 32.4%;
+									}
+
+									@include firefox() {
+										width: 31.2%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 30.8%;
+
+									@include ie11() {
+										width: 31.8%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 29.2%;
+
+									@include ie11() {
+										width: 30.4%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 28.7%;
+
+									@include ie11() {
+										width: 30%;
+									}
+
+									@include firefox() {
+										width: 28.8%;
+									}
+								}
+							}
+
+							.arrowLine04 {
+								width: 24.4%;
+								margin-left: 70px;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 23%;
+								}
+
+								@include firefox() {
+									width: 24.2%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 24.4%;
+
+									@include ie11() {
+										width: 23%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 24.8%;
+
+									@include ie11() {
+										width: 23.2%;
+									}
+
+									@include firefox() {
+										width: 24.4%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 23%;
+
+									@include ie11() {
+										width: 22.2%;
+									}
+
+									@include firefox() {
+										width: 22.9%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 21%;
+
+									@include ie11() {
+										width: 21%;
+									}
+
+									@include firefox() {
+										width: 21%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 20.4%;
+
+									@include ie11() {
+										width: 18.8%;
+									}
+
+									@include firefox() {
+										width: 20.4%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 18.7%;
+
+									@include ie11() {
+										width: 17.4%;
+									}
+
+									@include firefox() {
+										width: 18.6%;
+									}
+								}
+							}
+
+							.arrowLine06 {
+								width: 13.8%;
+								margin-left: 70px;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 14%;
+								}
+
+								@include firefox() {
+									width: 14%;
+								}
+
+								@include breakpoint(lgsmax) {
+									@include ie11() {
+										width: 13.8%;
+									}
+
+									@include firefox() {
+										width: 13.6%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 13.4%;
+
+									@include ie11() {
+										width: 13.4%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 13.2%;
+
+									@include ie11() {
+										width: 13.4%;
+									}
+
+									@include firefox() {
+										width: 13.4%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 12.6%;
+
+									@include ie11() {
+										width: 12.8%;
+									}
+
+									@include firefox() {
+										width: 12.8%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 12.6%;
+
+									@include ie11() {
+										width: 12.6%;
+									}
+
+									@include firefox() {
+										width: 12.6%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 10%;
+
+									@include ie11() {
+										width: 12%;
+									}
+
+									@include firefox() {
+										width: 12.2%;
+									}
+								}
+							}
+						}
+					}
+
+					.flowLine03 {
+						top: 52px;
+						left: 81.5px;
+						@include rotate(0deg);
+
+						.flowLineWrap {
+							width: 293.5px;
+							height: 15px;
+
+							.arrowLine07 {
+								width: 52%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 53.8%;
+								}
+
+								@include firefox() {
+									width: 51.8%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 51.8%;
+
+									@include ie11() {
+										width: 54%;
+									}
+
+									@include firefox() {
+										width: 52%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 50.8%;
+
+									@include ie11() {
+										width: 53.4%;
+									}
+
+									@include firefox() {
+										width: 51.6%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									@include ie11() {
+										width: 52.4%;
+									}
+
+									@include firefox() {
+										width: 50.8%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 50.4%;
+
+									@include ie11() {
+										width: 52.2%;
+									}
+
+									@include firefox() {
+										width: 50%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 49.2%;
+
+									@include ie11() {
+										width: 50.8%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 47.8%;
+
+									@include ie11() {
+										width: 50%;
+									}
+
+									@include firefox() {
+										width: 47%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 47%;
+
+									@include ie11() {
+										width: 49%;
+									}
+								}
+							}
+
+							.arrowLine08 {
+								width: 24.4%;
+								margin-left: 70px;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 21.7%;
+								}
+
+								@include firefox() {
+									width: 24%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 24.2%;
+
+									@include ie11() {
+										width: 21.4%;
+									}
+
+									@include firefox() {
+										width: 24%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 23%;
+
+									@include ie11() {
+										width: 21%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 22%;
+
+									@include ie11() {
+										width: 21%;
+									}
+
+									@include firefox() {
+										width: 23%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 22.6%;
+
+									@include ie11() {
+										width: 21.6%;
+									}
+
+									@include firefox() {
+										width: 23.4%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									@include ie11() {
+										width: 20.8%;
+									}
+
+									@include firefox() {
+										width: 22.4%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 20.4%;
+
+									@include ie11() {
+										width: 18%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 21%;
+
+									@include ie11() {
+										width: 17%;
+									}
+								}
+							}
+						}
+					}
+
+					.flowLine04 {
+						top: 52px;
+						left: 81.5px;
+						@include rotate(0deg);
+
+						.flowLineWrap {
+							width: 293.5px;
+							height: 15px;
+
+							.arrowLine09 {
+								width: 52%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 53.8%;
+								}
+
+								@include firefox() {
+									width: 51.8%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 51.8%;
+
+									@include ie11() {
+										width: 54%;
+									}
+
+									@include firefox() {
+										width: 52%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 51.4%;
+
+									@include ie11() {
+										width: 53.4%;
+									}
+
+									@include firefox() {
+										width: 51.6%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									@include ie11() {
+										width: 52.4%;
+									}
+
+									@include firefox() {
+										width: 50.8%
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 50.4%;
+
+									@include ie11() {
+										width: 52.2%;
+									}
+
+									@include firefox() {
+										width: 50%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 49.2%;
+
+									@include ie11() {
+										width: 50.8%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 47.8%;
+
+									@include ie11() {
+										width: 50%;
+									}
+
+									@include firefox() {
+										width: 47%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 47%;
+
+									@include ie11() {
+										width: 49%;
+									}
+								}
+							}
+
+							.arrowLine10 {
+								width: 24.4%;
+								margin-left: 70px;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 21.7%;
+								}
+
+								@include firefox() {
+									width: 24%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 24.2%;
+
+									@include ie11() {
+										width: 21.4%;
+									}
+
+									@include firefox() {
+										width: 24%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 24%;
+
+									@include ie11() {
+										width: 21%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 22%;
+
+									@include ie11() {
+										width: 21%;
+									}
+
+									@include firefox() {
+										width: 23%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 22.6%;
+
+									@include ie11() {
+										width: 21.6%;
+									}
+
+									@include firefox() {
+										width: 23.4%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									@include ie11() {
+										width: 20.8%;
+									}
+
+									@include firefox() {
+										width: 22.4%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 20.4%;
+
+									@include ie11() {
+										width: 18%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 21%;
+
+									@include ie11() {
+										width: 17%;
+									}
+								}
+							}
+						}
+					}
+
+					.flowLine05 {
+						top: 262px;
+						left: -250px;
+						@include rotate(90deg);
+
+						@include firefox() {
+							top: 267px;
+							left: -251px;
+						}
+
+						@include breakpoint(lgxmax) {
+							top: 260px;
+							left: -247px;
+
+							@include ie11() {
+								top: 264px;
+								left: -249px;
+							}
+
+							@include firefox() {
+								top: 265px;
+								left: -250px;
+							}
+						}
+
+						@include breakpoint(lgxxxxmax) {
+							top: 258px;
+							left: -244px;
+
+							@include ie11() {
+								top: 260px;
+								left: -246px;
+							}
+
+							@include firefox() {
+								top: 261px;
+								left: -246px;
+							}
+						}
+
+						@include breakpoint(maxdesktop19in) {
+							@include ie11() {
+								top: 258px;
+								left: -244px;
+							}
+
+							@include firefox() {
+								top: 259px;
+								left: -245px;
+							}
+						}
+
+						.flowLineWrap {
+							width: 522px;
+							height: 15px;
+
+							@include firefox() {
+								width: 526px;
+							}
+
+							@include breakpoint(lgxmax) {
+								width: 515px;
+
+								@include ie11() {
+									width: 521px;
+								}
+
+								@include firefox() {
+									width: 522px
+								}
+							}
+
+							@include breakpoint(lgxxxxmax) {
+								width: 509px;
+
+								@include ie11() {
+									width: 514px;
+								}
+
+								@include firefox() {
+									width: 515px
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								@include ie11() {
+									width: 510px;
+								}
+
+								@include firefox() {
+									width: 513px;
+								}
+							}
+
+							.arrowLine11 {
+								width: 50%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+											&--1 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							.arrowLine12 {
+								width: 50%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+											&--1 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					&--line {
+						width: 21px;
+						height: 56.4%;
+						top: 207px;
+						z-index: 0;
+						overflow: hidden;
+
+						@include ie11() {
+							height: 57%;
+						}
+
+						@include ieEdge() {
+							height: 57%;
+						}
+
+						@include firefox() {
+							height: 57%;
+						}
+
+						&--image {
+							height: 100%;
+
+							.mt-mid {
+								margin-top: 238px;
+
+								@include ie11() {
+									margin-top: 240px;
+								}
+
+								@include ieEdge() {
+									margin-top: 240px;
+								}
+
+								@include firefox() {
+									margin-top: 242px;
+								}
+							}
+
+							.mt-bot {
+								margin-top: 239px;
+
+								@include ie11() {
+									margin-top: 242px;
+								}
+
+								@include ieEdge() {
+									margin-top: 242px;
+								}
+
+								@include firefox() {
+									margin-top: 241px;
+								}
+							}
+						}
+
+						@include breakpoint(lgxmax) {
+							&--image {
+								.mt-mid {
+									margin-top: 235px;
+								}
+
+								.mt-bot {
+									margin-top: 236px;
+								}
+
+								@include ie11() {
+									.mt-mid {
+										margin-top: 238px;
+									}
+
+									.mt-bot {
+										margin-top: 239px;
+									}
+								}
+
+								@include firefox() {
+									.mt-mid {
+										margin-top: 239px;
+									}
+
+									.mt-bot {
+										margin-top: 239px;
+									}
+								}
+							}
+						}
+
+						@include breakpoint(lgxxxxmax) {
+							&--image {
+								.mt-mid {
+									margin-top: 232px;
+								}
+
+								.mt-bot {
+									margin-top: 233px;
+								}
+
+								@include ie11() {
+									.mt-mid {
+										margin-top: 235px;
+									}
+
+									.mt-bot {
+										margin-top: 235px;
+									}
+								}
+
+								@include firefox() {
+									.mt-mid {
+										margin-top: 235px;
+									}
+
+									.mt-bot {
+										margin-top: 237px;
+									}
+								}
+							}
+						}
+
+						@include breakpoint(maxdesktop19in) {
+							top: 171px;
+							height: 59.2%;
+
+							&--image {
+								.mt-mid {
+									margin-top: 234px;
+								}
+
+								.mt-bot {
+									margin-top: 232px;
+								}
+
+								@include ie11() {
+									.mt-mid {
+										margin-top: 233px;
+									}
+
+									.mt-bot {
+										margin-top: 233px;
+									}
+								}
+
+								@include firefox() {
+									.mt-mid {
+										margin-top: 235px;
+									}
+
+									.mt-bot {
+										margin-top: 232px;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&--power {
+					margin: 0;
+					padding: 0 !important;
+
+					.flowLine01 {
+						top: 65px;
+						right: calc(50% - 126px);
+						z-index: 0;
+						@include rotate(90deg);
+
+						@include breakpoint(maxdesktop19in) {
+							top: 48px;
+							right: calc(50% - 111px);
+						}
+
+						.flowLineWrap {
+							width: 250px;
+							height: 15px;
+
+							@include breakpoint(maxdesktop19in) {
+								width: 220px;
+							}
+
+							.arrowLine01 {
+								width: 36.7%;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								@include ie11() {
+									width: 32.5%;
+								}
+
+								@include breakpoint(lgxmax) {
+									@include ie11() {
+										width: 32.5%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 39%;
+
+									@include ie11() {
+										width: 34%;
+									}
+								}
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+											&--1 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							.arrowLine02 {
+								width: 35%;
+								margin-left: 52px;
+								top: 0;
+								right: 0;
+								z-index: 0;
+								position: relative;
+
+								@include ie11() {
+									width: 40%;
+									margin-left: 42px;
+								}
+
+								@include breakpoint(lgxmax) {
+									@include ie11() {
+										width: 40%;
+										margin-left: 42px;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 30%;
+									margin-left: 46px;
+
+									@include ie11() {
+										width: 35%;
+										margin-left: 36px;
+									}
+								}
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+											&--1 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					.clock-middle {
+						width: 70px;
+						position: absolute;
+						top: 26%;
+						@include rotate(90deg);
+
+						@include ie11() {
+							top: 26%;
+
+							.mbIe {
+								margin-bottom: -21px;
+							}
+						}
+					}
+				}
+
+				&--ess {
+					height: calc(100% - 36px);
+					padding-left: 12px;
+
+					.flowLine06 {
+						top: 263px;
+						left: -249px;
+						@include rotate(90deg);
+						z-index: -1;
+
+						@include firefox() {
+							top: 266px;
+							left: -251px;
+						}
+
+						@include breakpoint(lgxmax) {
+							top: 260px;
+							left: -247px;
+
+							@include ie11() {
+								top: 266px;
+								left: -252px;
+							}
+
+							@include firefox() {
+								top: 264px;
+								left: -249px;
+							}
+						}
+
+						@include breakpoint(lgxxxxmax) {
+							top: 257px;
+							left: -243px;
+
+							@include ie11() {
+								top: 262px;
+								left: -248px;
+							}
+
+							@include firefox() {
+								top: 260px;
+								left: -245px;
+							}
+						}
+
+						@include breakpoint(maxdesktop19in) {
+							top: 258px;
+							left: -244px;
+
+							@include ie11() {
+								top: 260px;
+								left: -245px;
+							}
+
+							@include firefox() {
+								top: 258px;
+								left: -243px;
+							}
+						}
+
+						.flowLineWrap {
+							width: 520px;
+							height: 15px;
+
+							@include firefox() {
+								width: 525px;
+							}
+
+							@include breakpoint(lgxmax) {
+								width: 516px;
+
+								@include ie11() {
+									width: 525px;
+								}
+
+								@include firefox() {
+									width: 520px;
+								}
+							}
+
+							@include breakpoint(lgxxxxmax) {
+								width: 509px;
+
+								@include ie11() {
+									width: 518px;
+								}
+
+								@include firefox() {
+									width: 512px;
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								width: 510px;
+
+								@include ie11() {
+									width: 513px;
+								}
+
+								@include firefox() {
+									width: 510px;
+								}
+							}
+
+							.arrowLine13 {
+								width: 50%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+											&--1 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							.arrowLine14 {
+								width: 50%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+											&--1 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					&--line {
+						width: 21px;
+						height: 56.4%;
+						top: 207px;
+						z-index: 0;
+						overflow: hidden;
+						z-index: 1;
+
+						@include firefox() {
+							height: 57%;
+						}
+
+						@include ie11() {
+							height: 57%;
+						}
+
+						@include ieEdge() {
+							height: 57%;
+						}
+
+						&--image {
+							height: 100%;
+
+							.mt-mid {
+								margin-top: 238px;
+
+								@include ie11() {
+									margin-top: 242px;
+								}
+
+								@include firefox() {
+									margin-top: 241px;
+								}
+							}
+
+							.mt-bot {
+								margin-top: 239px;
+
+								@include ie11() {
+									margin-top: 244px;
+								}
+
+								@include ieEdge() {
+									margin-top: 243px;
+								}
+
+								@include firefox() {
+									margin-top: 241px;
+								}
+							}
+						}
+
+						@include breakpoint(lgxmax) {
+							&--image {
+								.mt-mid {
+									margin-top: 235px;
+								}
+
+								.mt-bot {
+									margin-top: 237px;
+								}
+
+								@include ie11() {
+									.mt-mid {
+										margin-top: 240px;
+									}
+
+									.mt-bot {
+										margin-top: 242px;
+									}
+								}
+
+								@include firefox() {
+									.mt-mid {
+										margin-top: 238px;
+									}
+
+									.mt-bot {
+										margin-top: 239px;
+									}
+								}
+							}
+						}
+
+						@include breakpoint(lgxxxxmax) {
+							&--image {
+								.mt-mid {
+									margin-top: 232px;
+								}
+
+								.mt-bot {
+									margin-top: 234px;
+								}
+
+								@include ie11() {
+									.mt-mid {
+										margin-top: 237px;
+									}
+
+									.mt-bot {
+										margin-top: 237px;
+									}
+								}
+
+								@include firefox() {
+									.mt-mid {
+										margin-top: 234px;
+									}
+
+									.mt-bot {
+										margin-top: 236px;
+									}
+								}
+							}
+						}
+
+						@include breakpoint(maxdesktop19in) {
+							top: 171px;
+							height: 59.4%;
+
+							&--image {
+								.mt-mid {
+									margin-top: 233px;
+								}
+
+								.mt-bot {
+									margin-top: 233px;
+								}
+
+								@include ie11() {
+									.mt-mid {
+										margin-top: 235px;
+									}
+
+									.mt-bot {
+										margin-top: 235px;
+									}
+								}
+
+								@include firefox() {
+									.mt-mid {
+										margin-top: 233px;
+									}
+
+									.mt-bot {
+										margin-top: 232px;
+									}
+								}
+							}
+						}
+					}
+
+					.flowLine07 {
+						top: calc(9.5rem + 37px);
+						right: 104.5px;
+						@include rotate(180deg);
+
+						@include firefox() {
+							top: calc(9.5rem + 38px);
+						}
+
+						@include breakpoint(lgxmax) {
+							top: calc(9.5rem + 37px);
+						}
+
+						@include breakpoint(maxdesktop19in) {
+							top: calc(9.5rem + 7px);
+						}
+
+						.flowLineWrap {
+							width: 575px;
+							height: 15px;
+
+							.arrowLine15 {
+								width: 40%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							.arrowLine16 {
+								width: 32.7%;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 31.2%;
+								}
+
+								@include firefox() {
+									width: 32.5%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 32.808%;
+
+									@include ie11() {
+										width: 32%;
+									}
+
+									@include firefox() {
+										width: 32.4%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 32.7%;
+
+									@include ie11() {
+										width: 31%;
+									}
+
+									@include firefox() {
+										width: 32.6%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 32.1%;
+
+									@include ie11() {
+										width: 30.6%;
+									}
+
+									@include firefox() {
+										width: 31.8%;
+									}
+								}
+
+								@include breakpoint(lgxxmax) {
+									@include ie11() {
+										width: 30.4%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 31.4%;
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									@include ie11() {
+										width: 29.6%;
+									}
+
+									@include firefox() {
+										width: 31%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 30.6%;
+
+									@include ie11() {
+										width: 28.6%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									@include ie11() {
+										width: 27.6%;
+									}
+								}
+							}
+
+							.arrowLine17 {
+								width: 15%;
+								margin-left: 70px;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include breakpoint(lgmax) {
+									width: 14.6%;
+
+									@include ie11() {
+										width: 16.6%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 14.6%;
+
+									@include ie11() {
+										width: 16.2%;
+									}
+
+									@include firefox() {
+										width: 14.6%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 14.8%;
+
+									@include ie11() {
+										width: 15.8%;
+									}
+
+									@include firefox() {
+										width: 14.4%;
+									}
+								}
+
+								@include breakpoint(lgxxmax) {
+									@include ie11() {
+										width: 15.8%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 14.6%;
+
+									@include firefox() {
+										width: 14.4%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 14.3%;
+
+									@include ie11() {
+										width: 15.2%;
+									}
+
+									@include firefox() {
+										width: 13.3%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 13.2%;
+
+									@include ie11() {
+										width: 14.2%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in1) {
+									width: 13.3%;
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									@include ie11() {
+										width: 14.6%;
+									}
+								}
+							}
+						}
+					}
+
+					.flowLine08 {
+						top: calc(9.5rem + 36px);
+						left: -67.5px;
+						@include rotate(0deg);
+
+						@include breakpoint(lgsmax) {
+							top: calc(9.5rem + 36px);
+
+							@include firefox() {
+								top: calc(9.5rem + 35px);
+							}
+						}
+
+						@include breakpoint(maxdesktop19in) {
+							top: calc(9.5rem + 6px);
+
+							@include firefox() {
+								top: calc(9.5rem + 5px);
+							}
+						}
+
+						.flowLineWrap {
+							width: 393.5px;
+							height: 15px;
+
+							.arrowLine18 {
+								width: 35.84%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 35.6%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 35.76%;
+
+									@include ie11() {
+										width: 35.52%;
+									}
+
+									@include firefox() {
+										width: 35.52%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 35.28%;
+
+									@include ie11() {
+										width: 35.2%;
+									}
+
+									@include firefox() {
+										width: 35.4%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 34.725%;
+
+									@include ie11() {
+										width: 34.8%;
+									}
+
+									@include firefox() {
+										width: 34.6%;
+									}
+								}
+
+								@include breakpoint(lgxxmax) {
+									width: 34.4%;
+
+									@include ie11() {
+										width: 34.6%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 34.31%;
+								}
+
+								@include breakpoint(lgmax17) {
+									width: 34.225%;
+
+									@include ie11() {
+										width: 33.8%;
+									}
+
+									@include firefox() {
+										width: 33.8%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 33.6%;
+
+									@include firefox() {
+										width: 33.4%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 33.2%;
+
+									@include ie11() {
+										width: 33.2%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 32.4%;
+
+									@include ie11() {
+										width: 32.4%;
+									}
+								}
+							}
+
+							.arrowLine19 {
+								width: 22.64%;
+								margin-left: 70px;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 22.45%;
+								}
+
+								@include firefox() {
+									width: 22.5%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 22.48%;
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 22.1%;
+
+									@include ie11() {
+										width: 22%;
+									}
+
+									@include firefox() {
+										width: 21.8%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 21.41%;
+
+									@include ie11() {
+										width: 20.8%;
+									}
+								}
+
+								@include breakpoint(lgxxmax) {
+									width: 20.8%;
+
+									@include ie11() {
+										width: 20.6%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 20.085%;
+								}
+
+								@include breakpoint(lgmax17) {
+									width: 19.636%;
+
+									@include ie11() {
+										width: 19.4%;
+									}
+
+									@include firefox() {
+										width: 18.8%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 18.82%;
+
+									@include ie11() {
+										width: 18.6%;
+									}
+
+									@include firefox() {
+										width: 18.6%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 18.2%;
+
+									@include ie11() {
+										width: 17.8%;
+									}
+
+									@include firefox() {
+										width: 17.8%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 17%;
+
+									@include ie11() {
+										width: 17%;
+									}
+								}
+							}
+
+							.arrowLine20 {
+								width: 5.8%;
+								margin-left: 70px;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 6%;
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 6%;
+
+									@include firefox() {
+										width: 6.4%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									@include ie11() {
+										width: 6.6%;
+									}
+
+									@include firefox() {
+										width: 6.6%;
+									}
+								}
+
+								@include breakpoint(lgxxmax) {
+									@include ie11() {
+										width: 6.8%;
+									}
+								}
+
+								@include breakpoint(lgmax17) {
+									width: 6.6%;
+
+									@include ie11() {
+										width: 7%;
+									}
+
+									@include firefox() {
+										width: 7%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 7%;
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									@include firefox() {
+										width: 7.4%;
+									}
+
+									@include ie11() {
+										width: 7.2%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									@include ie11() {
+										width: 7.6%;
+									}
+								}
+							}
+						}
+					}
+
+					.flowLine09 {
+						top: 53px;
+						right: 104.5px;
+						@include rotate(180deg);
+
+						.flowLineWrap {
+							width: 575px;
+
+							.arrowLine21 {
+								width: 40%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							.arrowLine22 {
+								width: 32.7%;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 31.2%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 32.808%;
+
+									@include ie11() {
+										width: 31.4%;
+									}
+
+									@include firefox() {
+										width: 32.4%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 32.7%;
+
+									@include ie11() {
+										width: 31%;
+									}
+
+									@include firefox() {
+										width: 32.6%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 32.1%;
+
+									@include ie11() {
+										width: 30.6%;
+									}
+
+									@include firefox() {
+										width: 32.2%;
+									}
+								}
+
+								@include breakpoint(lgxxmax) {
+									@include ie11() {
+										width: 30.4%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 31.4%;
+
+									@include firefox() {
+										width: 31.4%;
+									}
+
+									@include ie11() {
+										width: 30%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 30.9%;
+
+									@include ie11() {
+										width: 29.2%;
+									}
+
+									@include firefox() {
+										width: 30.8%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 30.6%;
+
+									@include ie11() {
+										width: 28.8%;
+									}
+
+									@include firefox() {
+										width: 30%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 29.4%;
+
+									@include ie11() {
+										width: 27.6%;
+									}
+								}
+							}
+
+							.arrowLine23 {
+								width: 15%;
+								margin-left: 70px;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 16.6%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 14.8%;
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 14.6%;
+
+									@include ie11() {
+										width: 16.2%;
+									}
+
+									@include firefox() {
+										width: 14.6%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 14.8%;
+
+									@include ie11() {
+										width: 15.6%;
+									}
+								}
+
+								@include breakpoint(lgxxmax) {
+									@include ie11() {
+										width: 15.8%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 13.8%;
+
+									@include firefox() {
+										width: 13.3%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 14%;
+
+									@include ie11() {
+										width: 15.2%;
+									}
+
+									@include firefox() {
+										width: 13.6%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									width: 13.2%;
+
+									@include ie11() {
+										width: 14.6%;
+									}
+
+									@include firefox() {
+										width: 13.2%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in1) {
+									width: 13.3%;
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 12.3%;
+
+									@include ie11() {
+										width: 14%;
+									}
+								}
+							}
+						}
+					}
+
+					.flowLine10 {
+						top: 53px;
+						right: 104.5px;
+						@include rotate(180deg);
+
+						.flowLineWrap {
+							width: 575px;
+
+							.arrowLine24 {
+								width: 40%;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							.arrowLine25 {
+								width: 32.7%;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 31.2%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 32.808%;
+
+									@include ie11() {
+										width: 31.4%;
+									}
+
+									@include firefox() {
+										width: 32.4%;
+									}
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 32.7%;
+
+									@include ie11() {
+										width: 31%;
+									}
+
+									@include firefox() {
+										width: 32.6%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 32.1%;
+
+									@include ie11() {
+										width: 30.6%;
+									}
+
+									@include firefox() {
+										width: 32.2%;
+									}
+								}
+
+								@include breakpoint(lgxxmax) {
+									@include ie11() {
+										width: 30.4%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 31.4%;
+
+									@include firefox() {
+										width: 31.4%;
+									}
+
+									@include ie11() {
+										width: 30%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 30.6%;
+
+									@include ie11() {
+										width: 29.2%;
+									}
+
+									@include firefox() {
+										width: 30.8%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									@include ie11() {
+										width: 28%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 29.4%;
+
+									@include ie11() {
+										width: 27.6%;
+									}
+								}
+							}
+
+							.arrowLine26 {
+								width: 15%;
+								margin-left: 70px;
+								top: 0px;
+								left: 0;
+								z-index: 0;
+								position: relative;
+
+								.arrowLineWrap {
+									width: 100%;
+
+									.arrowLine_list {
+										.line {
+
+											&--1,
+											&--0 {
+												width: 100%;
+											}
+
+											&--2A {
+												position: absolute;
+												width: 100%;
+
+												@include ie11() {
+													left: 0;
+												}
+
+												.lineCont::after {
+													background-image: none;
+
+													@include ie11() {
+														background-image: "";
+													}
+												}
+
+												.lineIE {
+													@include ie11 {
+														background-image: none;
+													}
+												}
+
+												.lineEDGE {
+													@include ieEdge {
+														background-image: none;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								@include ie11() {
+									width: 16.6%;
+								}
+
+								@include breakpoint(lgmax) {
+									width: 14.8%;
+								}
+
+								@include breakpoint(lgsmax) {
+									width: 14.6%;
+
+									@include ie11() {
+										width: 16.2%;
+									}
+
+									@include firefox() {
+										width: 14.6%;
+									}
+								}
+
+								@include breakpoint(lgxmax) {
+									width: 14.8%;
+
+									@include ie11() {
+										width: 15.6%;
+									}
+								}
+
+								@include breakpoint(lgxxmax) {
+									@include ie11() {
+										width: 15.8%;
+									}
+								}
+
+								@include breakpoint(lgxxxmax) {
+									width: 13.8%;
+
+									@include firefox() {
+										width: 13.3%;
+									}
+								}
+
+								@include breakpoint(lgxxxxmax) {
+									width: 14%;
+
+									@include ie11() {
+										width: 15.2%;
+									}
+
+									@include firefox() {
+										width: 13.6%;
+									}
+								}
+
+								@include breakpoint(maxdesktop19in) {
+									@include ie11() {
+										width: 15.6%;
+									}
+								}
+
+								@include breakpoint(maxdesktop18in1) {
+									width: 13.3%;
+								}
+
+								@include breakpoint(maxdesktop18in) {
+									width: 12.3%;
+
+									@include ie11() {
+										width: 14%;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&__content {
+					.box-detail {
+						margin: 0;
+					}
+
+					&--small {
+						.parameter__content--image {
+							min-height: 45px;
+							margin-top: 25px;
+						}
+					}
+
+					&__lists {
+						min-height: 135px;
+					}
+
+					&--image {
+						margin-top: 40px;
+						margin-bottom: 25px;
+
+						.img-tool {
+							height: 64px;
+							margin-bottom: -22px;
+
+							&.active {
+								height: 64px;
+							}
+
+							@include ie11() {
+								position: absolute;
+								left: calc(50% - 32px);
+								bottom: 0;
+							}
+						}
+
+						.battery-box {
+							width: 100%;
+							height: 64px;
+							margin-bottom: -22px;
+
+							.img-tool {
+								margin: 0 auto;
+							}
+
+							.bat-icon {
+								width: 80px;
+								top: calc(50% - 30px);
+								left: calc(50% - 42px);
+							}
+
+							.skills-container {
+								height: 23px;
+								width: 34px;
+								top: calc(50% - 13px);
+								left: calc(50% - 20.5px);
+
+								.skills {
+									height: 100%;
+									@include background("../images/battery-skills-bg.png", center, repeat);
+								}
+							}
+
+							@include ie11() {
+								margin-top: 5px !important;
+
+								.bat-icon {
+									left: calc(50% - 30px);
+								}
+
+								.skills-container {
+									left: calc(50% - 9px);
+								}
+							}
+						}
+
+						img.mb-8 {
+							margin-bottom: -10px;
+
+							@include breakpoint(lgsmax) {
+								@include firefox() {
+									margin-bottom: -12px;
+								}
+							}
+						}
+
+						img.mb-6 {
+							margin-bottom: -6px;
+							margin-top: 16px !important;
+
+							@include ie11() {
+								margin-bottom: -6px;
+							}
+
+							@include ieEdge() {
+								margin-bottom: -6px;
+								margin-top: 14px !important;
+							}
+
+							@include firefox() {
+								margin-bottom: -6px;
+								margin-top: 14px !important;
+							}
+
+							@include breakpoint(lgsmax) {
+								margin-bottom: 0px;
+
+								@include ie11() {
+									margin-bottom: -8px;
+								}
+
+								@include ieEdge() {
+									margin-bottom: -6px;
+								}
+
+								@include firefox() {
+									margin-bottom: -20px;
+									margin-top: 3px !important;
+								}
+							}
+
+							@include breakpoint(lgxmax) {
+								@include ie11() {
+									margin-bottom: -8px;
+								}
+
+								@include ieEdge() {
+									margin-bottom: -4px;
+								}
+
+								@include firefox() {
+									margin-bottom: -7px;
+								}
+							}
+
+							@include breakpoint(lgxxxxmax) {
+								margin-bottom: -12px;
+
+								@include ie11() {
+									margin-bottom: -5px;
+								}
+
+								@include ieEdge() {
+									margin-bottom: -11px;
+									margin-top: 16px !important;
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								@include ie11() {
+									margin-bottom: -3px;
+								}
+
+								@include ieEdge() {
+									margin-bottom: -10px;
+								}
+
+								@include firefox() {
+									margin-bottom: -8px;
+								}
+							}
+						}
+
+						img.mcb-7 {
+							margin-bottom: -7px;
+
+							@include firefox() {
+								margin-bottom: -8px;
+							}
+
+							@include breakpoint(lgxmax) {
+								@include firefox() {
+									margin-bottom: -7px;
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								margin-bottom: -6px;
+							}
+						}
+
+						img.mcb-8 {
+							margin-bottom: -7px;
+
+							@include firefox() {
+								margin-bottom: -8px;
+							}
+
+							@include breakpoint(lgsmax) {
+								@include firefox() {
+									margin-bottom: -7px;
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								margin-bottom: -6px;
+							}
+						}
+
+						&.first {
+							margin-top: 95px;
+
+							@include breakpoint(maxdesktop19in) {
+								margin-top: 66px;
+							}
+
+							@include ie11() {
+								.battery-box {
+									margin-top: 70px !important;
+								}
+							}
+						}
+
+						&.m-empty {
+							margin-top: 0;
+							min-height: 32px;
+
+							@include ie11() {
+								min-height: 38px;
+							}
+
+							@include breakpoint(lgsmax) {
+								min-height: 36px;
+
+								@include ieEdge() {
+									min-height: 38px;
+								}
+							}
+
+							@include breakpoint(lgxmax) {
+								min-height: 46px;
+
+								@include ie11() {
+									min-height: 39px;
+								}
+
+								@include ieEdge() {
+									min-height: 43px;
+								}
+
+								@include firefox() {
+									min-height: 35px;
+								}
+							}
+
+							@include breakpoint(lgxxxxmax) {
+								min-height: 46px;
+
+								@include ieEdge() {
+									min-height: 43px;
+								}
+
+								@include firefox() {
+									min-height: 43px;
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								margin-top: -6px;
+								min-height: 48px;
+
+								@include ieEdge() {
+									min-height: 46px;
+									margin-left: 4px;
+								}
+							}
+						}
+
+						.mbImgIeL {
+							margin-bottom: 22px;
+
+							@include ie11() {
+								position: absolute;
+								bottom: 0;
+								left: calc(50% - 26px);
+							}
+						}
+
+						@include ie11() {
+							.mbDotIe {
+								position: absolute;
+								bottom: 0;
+								left: calc(50% - 21px);
+							}
+
+							.mbDotIe2 {
+								position: absolute;
+								bottom: 0;
+								left: calc(50% - 5px);
+							}
+
+							.mbImgIeR1 {
+								position: absolute;
+								bottom: 0;
+								right: calc(50% - 31px);
+							}
+
+							.mbImgIeR2 {
+								position: absolute;
+								bottom: 0;
+								right: calc(50% - 42px);
+							}
+
+							.mbImgIeTRL {
+								position: absolute;
+								bottom: 0;
+								right: calc(50% - 47px);
+							}
+
+							.mbImgIeTRR {
+								position: absolute;
+								bottom: 0;
+								right: calc(50% - 23px);
+							}
+						}
+					}
+
+					@include breakpoint(lgsmax) {
+						@include ieEdge() {
+							&--image {
+								min-height: 110px;
+							}
+						}
+
+						@include ie11() {
+							&--image {
+								min-height: 110px;
+							}
+						}
+					}
+
+					@include breakpoint(lgxmax) {
+						&--image {
+							min-height: 110px;
+						}
+					}
+
+					@include breakpoint(lgxxxxmax) {
+						&--image {
+							margin-top: 30px;
+						}
+
+						h3 {
+							font-size: 10px;
+						}
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						&--image {
+							margin-top: 30px;
+						}
+
+						h3 {
+							font-size: 10px;
+						}
+					}
+
+					&.col-TR {
+						min-width: 111.09px;
+					}
+
+					&__lists {
+						&--item {
+							padding: 5px 12px 5px 15px;
+
+							.name {
+								font-size: 13px;
+							}
+
+							.data {
+								font-size: 14px;
+								font-weight: $regular;
+
+								.unit {
+									font-size: 10px;
+									margin-left: 7px;
+									min-width: 22px;
+								}
+							}
+
+							@include breakpoint(lgsmax) {
+								.name {
+									font-size: 11px;
+								}
+
+								.data {
+									font-size: 14px;
+									font-weight: $regular;
+
+									.unit {
+										font-size: 8px;
+										margin-left: 2px;
+										min-width: 12px;
+									}
+								}
+							}
+
+							@include breakpoint(maxdesktop19in) {
+								.name {
+									font-size: 9px;
+								}
+
+								.data {
+									font-size: 10px;
+									font-weight: $regular;
+
+									.unit {
+										font-size: 8px;
+										margin-left: 2px;
+										min-width: 12px;
+									}
+								}
+							}
+						}
+
+						&--item-small {
+							padding: 12px 15px;
+							background-color: $bgRow-blue4;
+
+							.unit {
+								font-size: 12px;
+								margin-left: 7px;
+								font-weight: $light;
+								color: $colorWhite-8;
+								min-width: 24px;
+								display: inline-block;
+								margin-left: 2px;
+							}
+						}
+
+						&.style-2-col {
+
+							.parameter__content__lists--item,
+							.parameter__content__lists--title {
+								padding: 10px 5px;
+							}
+
+						}
+					}
+
+					&--linePower {
+						margin-top: -54px;
+						min-height: 260px;
+
+						.dot-top {
+							margin-top: 0;
+						}
+
+						@include firefox {
+							margin-top: -53px;
+						}
+
+						@include ie11 {
+							.mbDotIe {
+								position: absolute;
+								bottom: 0;
+								left: calc(50% - 10px);
+							}
+						}
+
+						.lock-icon {
+							@include rotate(90deg);
+						}
+
+						@include breakpoint(lgxmax) {
+							min-height: 260px;
+						}
+
+						@include breakpoint(maxdesktop19in) {
+							min-height: 230px;
+
+							@include ie11() {
+								.mbDotIe {
+									left: calc(50% - 10.5px);
+								}
+							}
+
+							@include firefox() {
+								min-height: 229px;
+								left: -1;
+							}
+						}
+					}
+
+					@include breakpoint(maxdesktop19in) {
+						.box-detail {
+							.col-4 {
+								p {
+									font-size: 12px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			@include breakpoint(maxdesktop19in) {
+				.parameter {
+					padding: 16px 15px;
+				}
+			}
+		}
+	}
+}

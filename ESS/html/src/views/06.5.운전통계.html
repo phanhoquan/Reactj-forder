@@ -1,0 +1,258 @@
+@@include('modules/header.html', { 	"title": "06.5.운전통계",
+									"class": "",
+									"addClass": "@@include('head/head-statistics04.html')",
+									"current-menu-monitoring": "",
+									"current-menu-system": "",
+									"current-menu-driving": "",
+									"current-menu-status": "",
+										"active1": "",
+										"active2": "",
+										"active3": "",
+										"active4": "",
+									"current-menu-statistics": "current-menu-item",
+										"active5": "",
+										"active6": "",
+										"active7": "",
+										"active8": "",
+										"active9": "is-active",
+										"active10": "",
+									"current-menu-management": "",
+										"active11": "",
+										"active12": "",
+										"active13": ""})
+
+<div id="page-body" class="page-body status-page">
+	<div class="container-fluid">
+		<div class="period_bar d-flex justify-content-between">
+			<div class="term form-inline">
+				<div class="term__title">
+					<img src="images/time.png" alt="">
+					<p>기간</p>
+				</div>
+				<ul class="nav checkbox-square">
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link active" id="hourly" data-toggle="pill" href="" aria-selected="true">시간별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="glance" data-toggle="pill" href="">일별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="monthly" data-toggle="pill" href="">월별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="quarterly" data-toggle="pill" href="">기간별</a>
+					</li>
+					<li class="equipment-bar__tab--item">
+						<a class="nav-link" id="yearly" data-toggle="pill" href="">연별</a>
+					</li>
+				</ul>
+				<div class="term__title">
+					<img src="images/day.png" alt="">
+					<p>날짜</p>
+				</div>
+				<div class="input-group term__button" id="day">
+					<label for="" class="date d-flex">
+						<input type="text" class="form-control" placeholder="2019.01.02" id="date" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="month">
+					<label for="" class="month" data-date-format="yyyy.mm">
+						<input type="text" class="form-control" placeholder="2019.02" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="month-start">
+					<label for="" class="month" data-date-format="yyyy.mm">
+						<input type="text" class="form-control" placeholder="2019.02" name="date">
+						<p>~</p>
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="month-end">
+					<label for="" class="month" data-date-format="yyyy.mm">
+						<input type="text" class="form-control" placeholder="2019.02" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="year">
+					<label for="" class="yearly" data-date-format="yyyy">
+						<input type="text" class="form-control" placeholder="2019" name="date">
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="year-start">
+					<label for="" class="yearly" data-date-format="yyyy">
+						<input type="text" class="form-control" placeholder="2019" name="date">
+						<p>~</p>
+					</label>
+				</div>
+				<div class="input-group term__button hide" id="year-end">
+					<label for="" class="yearly" data-date-format="yyyy">
+						<input type="text" class="form-control" placeholder="2019" name="date">
+					</label>
+				</div>
+				<div class="term__title clock">
+					<img src="images/clock.png" alt="">
+					<p>시간</p>
+				</div>
+				<div class="term__button option" id="option">
+					<select class="form-control selectpicker" name="" id="" data-size="13">
+						<option value="">00시</option>
+						<option value="">01시</option>
+						<option value="">02시</option>
+						<option value="">03시</option>
+						<option value="">04시</option>
+						<option value="">05시</option>
+						<option value="">06시</option>
+						<option value="">07시</option>
+						<option value="">08시</option>
+						<option value="">08시</option>
+						<option value="">10시</option>
+						<option value="">11시</option>
+						<option value="">12시</option>
+						<option value="">13시</option>
+						<option value="">14시</option>
+						<option value="">15시</option>
+						<option value="">16시</option>
+						<option value="">17시</option>
+						<option value="">18시</option>
+					</select>
+					<p>~</p>
+					<select class="form-control selectpicker" name="" id="" data-size="13">
+						<option value="">23시</option>
+						<option value="">24시</option>
+						<option value="">25시</option>
+						<option value="">26시</option>
+						<option value="">27시</option>
+						<option value="">28시</option>
+						<option value="">29시</option>
+						<option value="">30시</option>
+						<option value="">31시</option>
+						<option value="">32시</option>
+						<option value="">33시</option>
+						<option value="">34시</option>
+						<option value="">35시</option>
+						<option value="">36시</option>
+						<option value="">37시</option>
+						<option value="">38시</option>
+						<option value="">39시</option>
+						<option value="">40시</option>
+						<option value="">41시</option>
+					</select>
+				</div>
+			</div>
+			<div class="search">
+				<a href="javascript:void(0)">검색</a>
+			</div>
+		</div>
+		<div class="datatable rounded">
+			<div class="chart_title border-black">
+				<p>운전 통계</p>
+			</div>
+			<div class="operation-status">
+				<div class="d-flex justify-content-between">
+					<div class="button-lenght">
+						<select name="" id="">
+							<option value="">5</option>
+							<option value="">10</option>
+							<option value="">15</option>
+							<option value="">20</option>
+						</select>
+						<p>개씩 보기</p>
+					</div>
+					<div class="button-download">
+						<a href="javascript:void(0)">엑셀 다운</a>
+						<a href="javascript:void(0)">CSV 다운</a>
+					</div>
+				</div>
+				<div class="table-responsive" width="100%">
+					<table class="table table-striped table-bordered table-hover custom-datatable">
+						<thead>
+							<tr>
+								<th>발생시간</th>
+								<th>발전량</th>
+								<th>충전량</th>
+								<th>경사일사량</th>
+								<th>수평일사량</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="gradeX">
+								<td>2018-01-01 05:00:47</td>
+								<td>4,164</td>
+								<td>25,121</td>
+								<td>25,121</td>
+								<td>25,121</td>
+							</tr>
+							<tr class=" gradeX">
+								<td>2018-01-01 04:45:47</td>
+								<td>4,312</td>
+								<td>24,312</td>
+								<td>24,312</td>
+								<td>24,312</td>
+							</tr>
+							<tr class="gradeX">
+								<td>2018-01-01 04:30:47</td>
+								<td>5,654</td>
+								<td>55,654</td>
+								<td>55,654</td>
+								<td>55,654</td>
+							</tr>
+							<tr class=" gradeX">
+								<td>2018-01-01 04:15:47</td>
+								<td>4,674</td>
+								<td>41,674</td>
+								<td>41,674</td>
+								<td>41,674</td>
+							</tr>
+							<tr class="gradeX">
+								<td>2018-01-01 04:00:47</td>
+								<td>3,189</td>
+								<td>33,189</td>
+								<td>33,189</td>
+								<td>33,189</td>
+							</tr>
+
+						</tbody>
+					</table>
+					<div class="float-right">
+						<nav aria-label="Page navigation example">
+							<ul class="pagination">
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+										<span class="sr-only">preview</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+										<span class="sr-only">first</span>
+									</a>
+								</li>
+								<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item"><a class="page-link" href="#">6</a></li>
+								<li class="page-item"><a class="page-link" href="#">7</a></li>
+								<li class="page-item"><a class="page-link" href="#">8</a></li>
+								<li class="page-item"><a class="page-link" href="#">9</a></li>
+								<li class="page-item"><a class="page-link" href="#">10</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+										<span class="sr-only">last</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('modules/footer.html', {"addJs": "@@include('footer/script-statistics-driving.html')"})

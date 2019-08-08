@@ -1,0 +1,221 @@
+<!-- sidebar_right -->
+
+<div class="flex-column box pl-2">
+
+	<div class="box__essinformation rounded">
+		<div class="box_title">
+			<p>ESS 정보</p>
+		</div>
+		<div class="box__essinformation__content">
+			<h3>ESS 현황 <span>(단위 : kWh)</span>
+				<a href="javascript:void(0)" class="tooltipCustom">
+					<img class="popupBtn" src="images/fa-circle.png" alt="">
+					<div class="mode_popupbox right" style="display: none;">
+						<h2>가동률 산식</h2>
+						<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+							<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+						<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+						<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+					</div>
+				</a>
+			</h3>
+			<div class="box_black operatingrate">
+
+				<div class="d-flex justify-content-between align-items-center ">
+					<div class="col-3 p-0">
+						<h4 class="mr-auto"></h4>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="bg-primary-dark">충전량</p>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="bg-reduction-light">방전량</p>
+					</div>
+				</div>
+
+				<div class="d-flex justify-content-between align-items-center ">
+					<div class="col-3 p-0">
+						<h4>금일</h4>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="primary-dark">1,731</p>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="reduction-light">1,026</p>
+					</div>
+				</div>
+
+				<div class="d-flex justify-content-between align-items-center ">
+					<div class="col-3 p-0">
+						<h4>전일</h4>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="primary-dark">1,410</p>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="reduction-light">1,845</p>
+					</div>
+				</div>
+
+				<div class="d-flex justify-content-between align-items-center ">
+					<div class="col-3 p-0">
+						<h4>전월</h4>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="primary-dark">1,410</p>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="reduction-light">1,845</p>
+					</div>
+				</div>
+
+			</div>
+
+			<h3>ESS 가동률 <span>(단위 : %)</span>
+				<a href="javascript:void(0)" class="tooltipCustom">
+					<img class="popupBtn" src="images/fa-circle.png" alt="">
+					<div class="mode_popupbox right" style="display: none;">
+						<h2>가동률 산식</h2>
+						<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+							<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+						<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+						<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+					</div>
+				</a>
+			</h3>
+			<div class="box_black operatingrate">
+				<div class="d-flex justify-content-between align-items-center ">
+					<div class="col-3 p-0">
+						<h4 class="mr-auto"></h4>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="bg-primary-dark">충전량</p>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="bg-reduction-light">방전량</p>
+					</div>
+				</div>
+				<div class="d-flex justify-content-between align-items-center">
+					<div class="col-3 p-0">
+						<h4>금일</h4>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="primary-dark">99</p>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="reduction-light">99</p>
+					</div>
+				</div>
+				<div class="d-flex justify-content-between align-items-center ">
+					<div class="col-3 p-0">
+						<h4>전일</h4>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="primary-dark">100</p>
+					</div>
+					<div class="col-5 p-0 pl-0 pr-2">
+						<p class="reduction-light">95</p>
+					</div>
+				</div>
+			</div>
+
+			<h3 class="no-sup">PV + ESS 설정 및 정보
+				<a href="javascript:void(0)" class="tooltipCustom">
+					<img class="popupBtn" src="images/fa-circle.png" alt="">
+					<div class="mode_popupbox right" style="display: none;">
+						<h2>가동률 산식</h2>
+						<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+							<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+						<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+						<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+					</div>
+				</a>
+			</h3>
+			<div class="box_black_odd d-flex justify-content-between align-items-center setting">
+				<div class="mr-auto p-0 contract_type">
+					<h4>DoD 하한</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>3.0 <span class="unit">%</span></p>
+				</div>
+			</div>
+			<div class="box_black_even d-flex justify-content-between align-items-center">
+				<div class="mr-auto p-0 contract_type">
+					<h4>DoD 상한</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>97.0 <span class="unit">%</span></p>
+				</div>
+			</div>
+			<div class="box_black_odd d-flex justify-content-between align-items-center">
+				<div class="mr-auto p-0 contract_type">
+					<h4>PV ESS 추종 비율</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>41 <span class="unit">%</span></p>
+				</div>
+			</div>
+			<div class="box_black_even d-flex justify-content-between align-items-center">
+				<div class="mr-auto p-0 contract_type">
+					<h4>태양광 용량</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>12345.6 <span class="unit">kW</span></p>
+				</div>
+			</div>
+			<div class="box_black_odd d-flex justify-content-between align-items-center">
+				<div class="mr-auto p-0 contract_type">
+					<h4>ESS 용량</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>12345.6 <span class="unit">kW</span></p>
+				</div>
+			</div>
+			<div class="box_black_even d-flex justify-content-between align-items-center">
+				<div class="mr-auto p-0 contract_type">
+					<h4>BATT 용량</h4>
+				</div>
+				<div class="fixed_price text-right">
+					<p>12345.6 <span class="unit">kW</span></p>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between">
+				<h3 class="no-sup">ESS 상태 및 제어
+					<a href="javascript:void(0)" class="tooltipCustom">
+						<img class="popupBtn" src="images/fa-circle.png" alt="">
+						<div class="mode_popupbox right" style="display: none;">
+							<h2>가동률 산식</h2>
+							<p>ㆍ충전가동률 = 해당기간충전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100
+								<br>ㆍ방전가동률 = 해당기간방전량 / ((배터리설비용량 x DOD) x 해당기간가동일수) x 100</p>
+							<p>ㆍDOD = (설정된 충전상한 SOC - 설정된 방전하한 SOC) / 100</p>
+							<p>※ AC -&gt; DC 변환 시 전력 손실이 발생하기 때문에 충전가동률이 100이 넘어갈 경우 100으로 표시</p>
+						</div>
+					</a>
+				</h3>
+				<span class="pr-0 form-inline d-flex align-items-end">
+					<label for="">시스템 #</label>
+					<select name="" id="" class="form-control system">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</span>
+			</div>
+			<div class="control d-flex justify-content-between align-items-center text-center w-100">
+				<div class="box_black w-100 mr-1">
+					<img src="images/charge-icon.png" alt="">
+					<p class="charge">충전</p>
+				</div>
+				<div class="box_black w-100 mr-1">
+					<img src="images/automatic-icon.png" alt="">
+					<p class="automatic_mode">자동모드</p>
+				</div>
+				<div class="box_red w-100">
+					<img src="images/warning-icon.png" alt="">
+					<p class="emergency_stop">비상정지</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- End Essinformation section -->
+
+</div>
+<!-- end sidebar_right -->

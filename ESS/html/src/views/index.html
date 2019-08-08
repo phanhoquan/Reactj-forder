@@ -1,0 +1,374 @@
+@@include('modules/header.html', { "title": "01.모니터링",
+									"class": "",
+									"addClass": "@@include('head/head-index.html')",
+									"current-menu-monitoring": "current-menu-item",
+									"current-menu-system": "",
+									"current-menu-driving": "",
+									"current-menu-status": "",
+										"active1": "",
+										"active2": "",
+										"active3": "",
+										"active4": "",
+									"current-menu-statistics": "",
+										"active5": "",
+										"active6": "",
+										"active7": "",
+										"active8": "",
+										"active9": "",
+										"active10": "",
+									"current-menu-management": "",
+										"active11": "",
+										"active12": "",
+										"active13": ""})
+
+<div id="page-body" class="page-body main-page">
+	<div class="container-fluid">
+		<div class="row page-index">
+			<div class="col-2 col-xl-2 p-0">
+				@@include('modules/navbar-left.html')
+			</div><!-- End Siderbar left -->
+
+			<div class="col-8 col-xl-8 p-0 px-2">
+
+				<div class="integrated-chart rounded">
+					<div class="box_title">
+						<p>통합 흐름도</p>
+					</div>
+					<div class="box-content d-flex flex-row justify-content-between position-relative">
+
+						<div class="col box-content__sunlight p-0 pr-2">
+							<h2 class="title title--sun text-center w-100">태양광</h2>
+							<div class="parameter parameter--sunlight d-flex justify-content-between position-relative">
+
+								<!-- Arrow Line 01-->
+								<div id="arrowLine01" class="bdList arrowLine01 position-absolute">
+									<div class="arrowLineWrap">
+										<ul class="arrowLine_list p-0">
+											<!-- arrow Left to Right -->
+											<li class="line line--1 arrow-right"><span class="lineCont"><i class="lineIE"></i><i class="lineEDGE"></i></span></li>
+											<!-- arrow Right to Left -->
+											<li class="line line--2 line--2A arrow-right rotate-180"><span class="lineCont"><i class="lineIE"></i><i
+													 class="lineEDGE"></i></span></li>
+										</ul>
+									</div>
+								</div><!-- End Arrow Line 01-->
+
+								<!-- Arrow Line 02-->
+								<div id="arrowLine02" class="bdList arrowLine02 position-absolute">
+									<div class="arrowLineWrap">
+										<ul class="arrowLine_list p-0">
+											<!-- arrow Left to Right -->
+											<li class="line line--1 arrow-right"><span class="lineCont"><i class="lineIE"></i><i class="lineEDGE"></i></span></li>
+											<!-- arrow Right to Left -->
+											<li class="line line--2 line--2 line--2A arrow-right rotate-180"><span class="lineCont"><i class="lineIE"></i><i
+													 class="lineEDGE"></i></span></li>
+										</ul>
+									</div>
+								</div><!-- End Arrow Line 02-->
+
+								<!-- List 태양광 -->
+								<div class="parameter__content">
+
+									<div class="parameter__content--image d-flex flex-column justify-content-center align-items-center pr-3">
+										<img class="img-tool bl active" src="images/sunlight-icon-bl.png" alt="" />
+										<img class="img-tool gr" src="images/sunlight-icon-gr.png" alt="" />
+										<img class="img-tool or" src="images/sunlight-icon-or.png" alt="" />
+										<img class="img-tool re" src="images/sunlight-icon-re.png" alt="" />
+										<img class="mt-auto" src="images/dot.png" alt="">
+									</div>
+
+									<h3 class="text-center pr-3">태양광</h3>
+
+									<div class="parameter__content__lists style1 pr-3">
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">전압:</div>
+											<div class="data">12345.6<span class="unit">V</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">전류:</div>
+											<div class="data">12345.6<span class="unit">A</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">전력:</div>
+											<div class="data">12345.6<span class="unit">kW</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">역률:</div>
+											<div class="data">68.5<span class="unit">%</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">역률:</div>
+											<div class="data">68.5<span class="unit">%</span></div>
+										</div>
+									</div>
+
+								</div><!-- End List 태양광 -->
+
+								<!-- Box 인버터 -->
+								<div class="parameter__content">
+
+									<div class="parameter__content--image d-flex flex-column justify-content-center align-items-center pl-3">
+										<img class="img-tool bl" src="images/inverter-icon-bl.png" alt="" />
+										<img class="img-tool gr" src="images/inverter-icon-gr.png" alt="" />
+										<img class="img-tool or" src="images/inverter-icon-or.png" alt="" />
+										<img class="img-tool re active" src="images/inverter-icon-re.png" alt="" />
+										<img class="mt-auto" src="images/dot.png" alt="">
+									</div>
+
+									<h3 class="text-center pl-3">인버터</h3>
+
+									<div class="parameter__content__lists style1 pl-3">
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">전압:</div>
+											<div class="data">12345.6<span class="unit">V</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">전류:</div>
+											<div class="data">12345.6<span class="unit">A</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">전력:</div>
+											<div class="data">12345.6<span class="unit">kW</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">역률:</div>
+											<div class="data">68.5<span class="unit">%</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">역률:</div>
+											<div class="data">68.5<span class="unit">%</span></div>
+										</div>
+									</div>
+
+								</div><!-- End Box 인버터 -->
+							</div>
+						</div>
+
+						<!-- Box 송전전력 -->
+						<div class=" col-3 box-content__power p-0 px-2">
+							<h2 class="title title--power text-center w-100">송전전력 <strong>200,000</strong><span class="unit">kW</span></h2>
+
+							<div class="parameter parameter--power d-flex justify-content-center position-relative">
+
+								<!-- Arrow Line 03-->
+								<div id="arrowLine03" class="bdList arrowLine03 position-absolute">
+									<div class="arrowLineWrap">
+										<ul class="arrowLine_list p-0">
+											<!-- arrow Top to Bottom -->
+											<li class="line line--1 arrow-right"><span class="lineCont"><i class="lineIE"></i><i class="lineEDGE"></i></span></li>
+											<!-- arrow Bottom to Top -->
+											<li class="line line--2 line--2A arrow-right rotate-180"><span class="lineCont"><i class="lineIE"></i><i
+													 class="lineEDGE"></i></span></li>
+										</ul>
+									</div>
+								</div><!-- End Arrow Line 03-->
+
+								<div class="parameter__content parameter__content--power">
+
+									<div class="parameter__content--image d-flex flex-column justify-content-center align-items-center position-relative">
+										<img class="mbEDGE" src="images/icon-573.png" alt="" />
+										<img class="dot-top" src="images/dot.png" alt="">
+										<img class="mt-auto mbIE" src="images/dot.png" alt="">
+									</div>
+
+									<div class="parameter__content__lists">
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">ESS PCS:</div>
+											<div class="data">250<span class="unit">V</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">운전상태:</div>
+											<div class="data">자동<span class="unit"></span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">출력모드:</div>
+											<div class="data off">OFF<span class="unit"></span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">POWER:</div>
+											<div class="data">50.0<span class="unit">kWh</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">POWER:</div>
+											<div class="data">50.0<span class="unit">kWh</span></div>
+										</div>
+									</div>
+
+								</div><!-- End List -->
+
+							</div>
+						</div><!-- End Box 송전전력 -->
+
+						<div class="col box-content__ess p-0 pl-2">
+							<h2 class="title title--ess text-center w-100">ESS</h2>
+							<div class="parameter parameter--ess d-flex justify-content-between position-relative">
+
+								<!-- Arrow Line 04-->
+								<div id="arrowLine04" class="bdList arrowLine04 position-absolute">
+									<div class="arrowLineWrap">
+										<ul class="arrowLine_list p-0">
+											<!-- arrow Left to Right -->
+											<li class="line line--1 arrow-right"><span class="lineCont"><i class="lineIE"></i><i class="lineEDGE"></i></span></li>
+											<!-- arrow Right to Left -->
+											<li class="line line--2 line--2A arrow-right rotate-180"><span class="lineCont"><i class="lineIE"></i><i
+													 class="lineEDGE"></i></span></li>
+										</ul>
+									</div>
+								</div><!-- Arrow Line 04-->
+
+								<!-- Arrow Line 05-->
+								<div id="arrowLine05" class="bdList arrowLine05 position-absolute">
+									<div class="arrowLineWrap">
+										<ul class="arrowLine_list p-0">
+											<!-- arrow Left to Right -->
+											<li class="line line--1 arrow-right"><span class="lineCont"><i class="lineIE"></i><i class="lineEDGE"></i></span></li>
+											<!-- arrow Right to Left-->
+											<li class="line line--2 line--2A arrow-right rotate-180"><span class="lineCont"><i class="lineIE"></i><i
+													 class="lineEDGE"></i></span></li>
+										</ul>
+									</div>
+								</div><!-- End Arrow Line 05-->
+
+								<!-- List PCS -->
+								<div class="parameter__content">
+
+									<div class="parameter__content--image d-flex flex-column justify-content-center align-items-center pr-3">
+										<img class="img-tool bl" src="images/PCS-icon-bl.png" alt="" />
+										<img class="img-tool gr" src="images/PCS-icon-gr.png" alt="" />
+										<img class="img-tool or active" src="images/PCS-icon-or.png" alt="" />
+										<img class="img-tool re" src="images/PCS-icon-re.png" alt="" />
+										<img class="mt-auto" src="images/dot.png" alt="">
+									</div>
+
+									<h3 class="text-center pr-3">PCS</h3>
+
+									<div class="parameter__content__lists style2 pr-3">
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">ESS PCS:</div>
+											<div class="data">12345.6<span class="unit">kW</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">운전상태:</div>
+											<div class="data">자동<span class="unit"></span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">출력모드:</div>
+											<div class="data">ON<span class="unit"></span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">POWER:</div>
+											<div class="data">12345.6<span class="unit">kW</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">POWER:</div>
+											<div class="data">12345.6<span class="unit">kW</span></div>
+										</div>
+									</div>
+
+								</div><!-- End List PCS -->
+
+								<!-- List BATT -->
+								<div class="parameter__content">
+
+									<div class="box-detail box-detail--sunlight position-absolute">
+										<div class="d-flex flex-wrap text-center">
+											<div class="col-4 px-1"></div>
+											<div class="col-4 px-1">
+												<p>온도</p>
+											</div>
+											<div class="col-4 px-1">
+												<p>습도</p>
+											</div>
+
+											<div class="col-4 px-1">
+												<p>PCS실</p>
+											</div>
+											<div class="col-4 px-1">
+												<p>21.7 <span class="unit">℃</span></p>
+											</div>
+											<div class="col-4 px-1">
+												<p>36.0 <span class="unit">%</span></p>
+											</div>
+
+											<div class="col-4 px-1">
+												<p>BAT실</p>
+											</div>
+											<div class="col-4 px-1">
+												<p>17.0 <span class="unit">℃</span></p>
+											</div>
+											<div class="col-4 px-1">
+												<p>80.2 <span class="unit">%</span></p>
+											</div>
+										</div>
+									</div>
+
+									<div class="parameter__content--image d-flex flex-column justify-content-center align-items-center pl-3">
+										<div class="battery-box position-relative">
+											<img class="img-tool bl" src="images/BATT-icon-bg-bl.png" alt="" />
+											<img class="img-tool gr active" src="images/BATT-icon-bg-gr.png" alt="" />
+											<img class="img-tool or" src="images/BATT-icon-bg-or.png" alt="" />
+											<img class="img-tool re" src="images/BATT-icon-bg-re.png" alt="" />
+
+											<img class="bat-icon position-absolute" src="images/batt_out.png" alt="" />
+											<div class="skills-container position-absolute">
+												<div id="bat-skills" class="skills" style="width:80%"></div>
+											</div>
+										</div>
+										<img class="mt-auto" src="images/dot.png" alt="">
+									</div>
+
+									<h3 class="text-center pl-3">BATT</h3>
+
+									<div class="parameter__content__lists style2 pl-3">
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">BATT:</div>
+											<div class="data">12345.6<span class="unit">kW</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">TEMP:</div>
+											<div class="data">19<span class="unit"><sup>o</sup>C</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">SOC:</div>
+											<div class="data">45<span class="unit">%</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">잔존량:</div>
+											<div class="data">12345.6<span class="unit">kWh</span></div>
+										</div>
+										<div class="parameter__content__lists--item d-flex justify-content-between">
+											<div class="name">잔존량:</div>
+											<div class="data">12345.6<span class="unit">kWh</span></div>
+										</div>
+									</div>
+
+								</div><!-- End List BATT -->
+							</div>
+
+						</div><!-- End Box ESS -->
+
+					</div>
+				</div><!-- End 통합 흐름도 -->
+
+				<div class="ess-charge-chart rounded">
+					<div class="box_title">
+						<p>태양광 발전량, ESS 충방전량</p>
+					</div>
+
+					<div class="box-content1 d-flex flex-row justify-content-between">
+						<div class="essChart_canvas w-100 ">
+							<div id="flow-chart" class="flow-chart"></div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- End Main Content -->
+
+			<div class="col-2 col-xl-2 p-0">
+				@@include('modules/navbar-right.html')
+			</div><!-- End Siderbar Right -->
+		</div>
+	</div>
+
+	@@include('modules/footer.html', {"addJs": "@@include('footer/script-index.html')"})

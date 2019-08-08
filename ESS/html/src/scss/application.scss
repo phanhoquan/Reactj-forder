@@ -1,0 +1,22 @@
+@import "partials/variables";
+@import "partials/minxins";
+@import "partials/fonts";
+@import "partials/common";
+@import "partials/components";
+@import "partials/dev";
+
+
+@import "modules/header";
+@import "modules/sidebar";
+
+@import "modules/main_page";
+@import "modules/system_page";
+@import "modules/system_page_1case";
+@import "modules/system_page_2case";
+@import "modules/system_page_3case";
+@import "modules/system_page_4case";
+@import "modules/driving_page";
+@import "modules/status_page";
+@import "modules/statistics_page";
+@import "modules/management_page";
+@import "modules/login_page";

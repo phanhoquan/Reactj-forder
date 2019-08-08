@@ -1,0 +1,1414 @@
+.system-page {
+    &.case-3 {
+        .parameter__content--image img.mcb-7 {
+            @include breakpoint(lgxmax) {
+                margin-left: -12px;
+            }
+            @include breakpoint(lgmax17) {
+                margin-left: 5px;
+            }
+            @include breakpoint(lgxxxxmax) {
+                margin-left: -1px;
+                margin-left: 0;
+            }
+            @include breakpoint(maxdesktop19in) {
+                margin-right: -4px;
+            }
+            @include firefox() {
+                @include breakpoint(maxdesktop19in) {
+                    margin-right: -12px;
+                }
+                @include breakpoint(maxdesktop18in1) {
+                    margin-right: -17px;
+                }
+            }
+            @include breakpoint(maxdesktop18in) {
+                margin-right: 0;
+            }
+        }
+        .integrated-chart {
+            .box-content {
+                .parameter {
+                    .parameter--sunlight--line,
+                    .parameter--ess--line {
+                        height: 284px;
+                        &.step2 {
+                            top: 466px;
+                        }
+                        &.step3 {
+                            top: 725px;
+                            .mt-mid {
+                                margin-top: 242px;
+                            }
+                        }
+                        &.step4 {
+                            top: 988px;
+                        }
+                        &.step5 {
+                            top: 1247px;
+                        }
+                        &.step6 {
+                            top: 1506px;
+                        }
+                        &.step7 {
+                            top: 1765px;
+                        }
+                        &.step8 {
+                            top: 2024px;
+                            .mt-mid {
+                                margin-top: 242px;
+                            }
+                        }
+                        &.step9 {
+                            top: 2287px;
+                        }
+                        @include breakpoint(lgxmax) {
+                            &.step2 {
+                                top: 463px;
+                            }
+                            &.step3 {
+                                top: 718.5px;
+                                .mt-mid {
+                                    margin-top: 235px;
+                                }
+                            }
+                            &.step4 {
+                                top: 975px;
+                            }
+                            &.step5 {
+                                top: 1231px;
+                                .mt-mid {
+                                    margin-top: 238px;
+                                }
+                            }
+                            &.step6 {
+                                top: 1490px;
+                            }
+                            &.step7 {
+                                top: 1747px;
+                            }
+                            &.step8 {
+                                top: 2003px;
+                                .mt-mid {
+                                    margin-top: 235px;
+                                }
+                            }
+                            &.step9 {
+                                top: 2259px;
+                            }
+                        }
+                        @include breakpoint(lgxxxxmax) {
+                            height: 286px;
+                            &.step2 {
+                                top: 460px;
+                            }
+                            &.step3 {
+                                top: 712.5px;
+                                .mt-mid {
+                                    margin-top: 232px;
+                                }
+                            }
+                            &.step4 {
+                                top: 966px;
+                            }
+                            &.step5 {
+                                top: 1219px;
+                                .mt-mid {
+                                    margin-top: 232px;
+                                }
+                            }
+                            &.step6 {
+                                top: 1442px;
+                            }
+                            &.step7 {
+                                top: 1725px;
+                            }
+                            &.step8 {
+                                top: 1978px;
+                            }
+                            &.step9 {
+                                top: 2234px;
+                            }
+                        }
+                        @include breakpoint(maxdesktop19in) {
+                            &.step1 {
+                                .mt-mid {
+                                    margin-top: 231px;
+                                }
+                            }
+                            &.step2 {
+                                top: 423px;
+                            }
+                            &.step3 {
+                                top: 678px;
+                            }
+                            &.step4 {
+                                top: 931px;
+                                .mt-mid {
+                                    margin-top: 234px;
+                                }
+                            }
+                            &.step5 {
+                                top: 1186px;
+                            }
+                            &.step6 {
+                                top: 1440px;
+                                .mt-mid {
+                                    margin-top: 231px;
+                                }
+                            }
+                            &.step7 {
+                                top: 1692px;
+                                .mt-mid {
+                                    margin-top: 231px;
+                                }
+                            }
+                            &.step8 {
+                                top: 1944px;
+                                .mt-mid {
+                                    margin-top: 234px;
+                                }
+                            }
+                            &.step9 {
+                                top: 2199px;
+                            }
+                        }
+                        @include firefox() {
+                            height: 284px;
+                            &.step2 {
+                                top: 470px;
+                            }
+                            &.step3 {
+                                top: 733px;
+                            }
+                            &.step4 {
+                                top: 995px;
+                            }
+                            &.step5 {
+                                top: 1258px;
+                            }
+                            &.step6 {
+                                top: 1520px;
+                            }
+                            &.step7 {
+                                top: 1782px;
+                            }
+                            &.step8 {
+                                top: 2046px;
+                            }
+                            &.step9 {
+                                top: 2308px;
+                            }
+                            @include breakpoint(lgxmax) {
+                                &.step2 {
+                                    top: 466px;
+                                }
+                                &.step3 {
+                                    top: 725.5px;
+                                }
+                                &.step4 {
+                                    top: 985px;
+                                }
+                                &.step5 {
+                                    top: 1246px;
+                                }
+                                &.step6 {
+                                    top: 1507px;
+                                }
+                                &.step7 {
+                                    top: 1768px;
+                                }
+                                &.step8 {
+                                    top: 2028px;
+                                }
+                                &.step9 {
+                                    top: 2287px;
+                                }
+                            }
+                            @include breakpoint(lgxxxxmax) {
+                                height: 286px;
+                                &.step2 {
+                                    top: 462px;
+                                }
+                                &.step3 {
+                                    top: 718.5px;
+                                }
+                                &.step4 {
+                                    top: 975px;
+                                }
+                                &.step5 {
+                                    top: 1232px;
+                                }
+                                &.step6 {
+                                    top: 1489px;
+                                }
+                                &.step7 {
+                                    top: 1745px;
+                                }
+                                &.step8 {
+                                    top: 2001px;
+                                }
+                                &.step9 {
+                                    top: 2258px;
+                                }
+                            }
+                            @include breakpoint(maxdesktop19in) {
+                                &.step2 {
+                                    top: 425px;
+                                }
+                                &.step3 {
+                                    top: 679.5px;
+                                }
+                                &.step4 {
+                                    top: 935px;
+                                    .mt-mid {
+                                        margin-top: 231px;
+                                    }
+                                }
+                                &.step5 {
+                                    top: 1189px;
+                                }
+                                &.step6 {
+                                    top: 1443px;
+                                    .mt-mid {
+                                        margin-top: 231px;
+                                    }
+                                }
+                                &.step7 {
+                                    top: 1694px;
+                                    .mt-mid {
+                                        margin-top: 235px;
+                                    }
+                                }
+                                &.step8 {
+                                    top: 1950px;
+                                    .mt-mid {
+                                        margin-top: 231px;
+                                    }
+                                }
+                                &.step9 {
+                                    top: 2203px;
+                                }
+                            }
+                        }
+                        @include ie11() {
+                            &.step2 {
+                                top: 469px;
+                            }
+                            &.step3 {
+                                top: 730px;
+                                .mt-mid {
+                                    margin-top: 242px;
+                                }
+                            }
+                            &.step4 {
+                                top: 994px;
+                            }
+                            &.step5 {
+                                top: 1255px;
+                            }
+                            &.step6 {
+                                top: 1517px;
+                                .mt-mid {
+                                    margin-top: 243px;
+                                }
+                            }
+                            &.step7 {
+                                top: 1781px;
+                                .mt-mid {
+                                    margin-top: 243px;
+                                }
+                            }
+                            &.step8 {
+                                top: 2044px;
+                                .mt-mid {
+                                    margin-top: 242px;
+                                }
+                            }
+                            &.step9 {
+                                top: 2307px;
+                            }
+                            @include breakpoint(lgxmax) {
+                                &.step2 {
+                                    top: 466px;
+                                }
+                                &.step3 {
+                                    top: 725.5px;
+                                    .mt-mid {
+                                        margin-top: 240px;
+                                    }
+                                }
+                                &.step4 {
+                                    top: 987px;
+                                }
+                                &.step5 {
+                                    top: 1246px;
+                                    .mt-mid {
+                                        margin-top: 238px;
+                                    }
+                                }
+                                &.step6 {
+                                    top: 1506px;
+                                    .mt-mid {
+                                        margin-top: 238px;
+                                    }
+                                }
+                                &.step7 {
+                                    top: 1764px;
+                                }
+                                &.step8 {
+                                    top: 2028px;
+                                    .mt-mid {
+                                        margin-top: 238px;
+                                    }
+                                }
+                                &.step9 {
+                                    top: 2287px;
+                                }
+                            }
+                            @include breakpoint(lgxxxxmax) {
+                                height: 286px;
+                                &.step2 {
+                                    top: 463px;
+                                }
+                                &.step3 {
+                                    top: 718.5px;
+                                    .mt-mid {
+                                        margin-top: 237px;
+                                    }
+                                }
+                                &.step4 {
+                                    top: 977px;
+                                }
+                                &.step5 {
+                                    top: 1232px;
+                                    .mt-mid {
+                                        margin-top: 235px;
+                                    }
+                                }
+                                &.step6 {
+                                    top: 1488px;
+                                    .mt-mid {
+                                        margin-top: 235px;
+                                    }
+                                }
+                                &.step7 {
+                                    top: 1744px;
+                                    .mt-mid {
+                                        margin-top: 238px;
+                                    }
+                                }
+                                &.step8 {
+                                    top: 2003px;
+                                    .mt-mid {
+                                        margin-top: 235px;
+                                    }
+                                }
+                                &.step9 {
+                                    top: 2259px;
+                                }
+                            }
+                            @include breakpoint(maxdesktop19in) {
+                                &.step1 {
+                                    .mt-mid {
+                                        margin-top: 231px;
+                                    }
+                                }
+                                &.step2 {
+                                    top: 424px;
+                                }
+                                &.step3 {
+                                    top: 677px;
+                                }
+                                &.step4 {
+                                    top: 934px;
+                                    .mt-mid {
+                                        margin-top: 234px;
+                                    }
+                                }
+                                &.step5 {
+                                    top: 1189px;
+                                    .mt-mid {
+                                        margin-top: 231px;
+                                    }
+                                }
+                                &.step6 {
+                                    top: 1440px;
+                                    .mt-mid {
+                                        margin-top: 234px;
+                                    }
+                                }
+                                &.step7 {
+                                    top: 1695px;
+                                    .mt-mid {
+                                        margin-top: 234px;
+                                    }
+                                }
+                                &.step8 {
+                                    top: 1950px;
+                                    .mt-mid {
+                                        margin-top: 234px;
+                                    }
+                                }
+                                &.step9 {
+                                    top: 2204px;
+                                }
+                            }
+                        }
+                    }
+                    .parameter--ess--line {
+                        @include ie11() {
+                            &.step2 {
+                                top: 471px;
+                            }
+                            &.step3 {
+                                top: 734px;
+                                .mt-mid {
+                                    margin-top: 242px;
+                                }
+                            }
+                            &.step4 {
+                                top: 998px;
+                                .mt-mid {
+                                    margin-top: 244px;
+                                }
+                            }
+                            &.step5 {
+                                top: 1264px;
+                            }
+                            &.step6 {
+                                top: 1527px;
+                                .mt-mid {
+                                    margin-top: 243px;
+                                }
+                            }
+                            &.step7 {
+                                top: 1791px;
+                                .mt-mid {
+                                    margin-top: 243px;
+                                }
+                            }
+                            &.step8 {
+                                top: 2056px;
+                                .mt-mid {
+                                    margin-top: 244px;
+                                }
+                            }
+                            &.step9 {
+                                top: 2322px;
+                            }
+                            @include breakpoint(lgxmax) {
+                                &.step2 {
+                                    top: 468px;
+                                }
+                                &.step3 {
+                                    top: 728.5px;
+                                    .mt-mid {
+                                        margin-top: 240px;
+                                    }
+                                }
+                                &.step4 {
+                                    top: 991px;
+                                }
+                                &.step5 {
+                                    top: 1256px;
+                                    .mt-mid {
+                                        margin-top: 238px;
+                                    }
+                                }
+                                &.step6 {
+                                    top: 1515px;
+                                    .mt-mid {
+                                        margin-top: 241px;
+                                    }
+                                }
+                                &.step7 {
+                                    top: 1777px;
+                                }
+                                &.step8 {
+                                    top: 2041px;
+                                    .mt-mid {
+                                        margin-top: 242px;
+                                    }
+                                }
+                                &.step9 {
+                                    top: 2304px;
+                                }
+                            }
+                            @include breakpoint(lgxxxxmax) {
+                                height: 286px;
+                                &.step2 {
+                                    top: 464px;
+                                }
+                                &.step3 {
+                                    top: 721.5px;
+                                    .mt-mid {
+                                        margin-top: 237px;
+                                    }
+                                }
+                                &.step4 {
+                                    top: 980px;
+                                    .mt-mid {
+                                        margin-top: 238px;
+                                    }
+                                }
+                                &.step5 {
+                                    top: 1238px;
+                                    .mt-mid {
+                                        margin-top: 238px;
+                                    }
+                                }
+                                &.step6 {
+                                    top: 1498px;
+                                    .mt-mid {
+                                        margin-top: 235px;
+                                    }
+                                }
+                                &.step7 {
+                                    top: 1755px;
+                                    .mt-mid {
+                                        margin-top: 238px;
+                                    }
+                                }
+                                &.step8 {
+                                    top: 2014px;
+                                    .mt-mid {
+                                        margin-top: 239px;
+                                    }
+                                }
+                                &.step9 {
+                                    top: 2247px;
+                                }
+                            }
+                            @include breakpoint(maxdesktop19in) {
+                                &.step1 {
+                                    .mt-mid {
+                                        margin-top: 233px;
+                                    }
+                                }
+                                &.step2 {
+                                    top: 426px;
+                                }
+                                &.step3 {
+                                    top: 682px;
+                                }
+                                &.step4 {
+                                    top: 940px;
+                                    .mt-mid {
+                                        margin-top: 234px;
+                                    }
+                                }
+                                &.step5 {
+                                    top: 1195px;
+                                    .mt-mid {
+                                        margin-top: 234px;
+                                    }
+                                }
+                                &.step6 {
+                                    top: 1451px;
+                                    .mt-mid {
+                                        margin-top: 234px;
+                                    }
+                                }
+                                &.step7 {
+                                    top: 1706px;
+                                    .mt-mid {
+                                        margin-top: 234px;
+                                    }
+                                }
+                                &.step8 {
+                                    top: 1961px;
+                                    .mt-mid {
+                                        margin-top: 234px;
+                                    }
+                                }
+                                &.step9 {
+                                    top: 2216px;
+                                }
+                            }
+                        }
+                    }
+                    &--sunlight {
+                        .flowLine01 {
+                            .arrowLine02 {
+                                left: 108px;
+                            }
+                        }
+                        .flowLine02 {
+                            left: 98px;
+                            .flowLineWrap {
+                                width: 457px;
+                                .arrowLine03 {
+                                    width: 25.6%;
+                                    @include breakpoint(lgmax) {
+                                        @include ie11() {
+                                            width: 25.2%
+                                        }
+                                    }
+                                    @include breakpoint(lgsmax) {
+                                        width: 25.4%;
+                                        @include ie11() {
+                                            width: 25.2%;
+                                        }
+                                        @include firefox() {
+                                            width: 25.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxmax) {
+                                        width: 25%;
+                                        @include ie11() {
+                                            width: 24.8%;
+                                        }
+                                        @include firefox() {
+                                            width: 24.8%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxmax) {
+                                        width: 24.6%;
+                                        @include ie11() {
+                                            width: 24.8%;
+                                        }
+                                        @include firefox() {
+                                            width: 24.8%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxxmax) {
+                                        width: 24.5%;
+                                        @include ie11() {
+                                            width: 24.6%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxxxmax) {
+                                        width: 24%;
+                                        @include ie11() {
+                                            width: 23.8%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop19in) {
+                                        width: 22%;
+                                        @include ie11() {
+                                            width: 21.8%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop18in) {
+                                        width: 21.2%;
+                                        @include ie11() {
+                                            width: 21%;
+                                        }
+                                        @include firefox() {
+                                            width: 21.2%;
+                                        }
+                                    }
+                                }
+                                .arrowLine04 {
+                                    width: 16.7%;
+                                    margin-left: 0;
+                                    @include ie11() {
+                                        width: 16%;
+                                    }
+                                    @include breakpoint(lgmax) {
+                                        width: 16.6%;
+                                        @include ie11() {
+                                            width: 16.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgsmax) {
+                                        width: 16.4%;
+                                        @include ie11() {
+                                            width: 15.8%;
+                                        }
+                                        @include firefox() {
+                                            width: 16.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxmax) {
+                                        width: 15.7%;
+                                        @include ie11() {
+                                            width: 15.2%;
+                                        }
+                                        @include firefox() {
+                                            width: 15.6%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxmax) {
+                                        width: 15.12%;
+                                        @include ie11() {
+                                            width: 14.4%;
+                                        }
+                                        @include firefox() {
+                                            width: 15.2%;
+                                        }
+                                    }
+                                    @include breakpoint (lgxxxmax) {
+                                        width: 15%;
+                                        @include ie11() {
+                                            width: 13.6%;
+                                        }
+                                        @include firefox() {
+                                            width: 15%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxxxmax) {
+                                        width: 13.8%;
+                                        @include ie11() {
+                                            width: 13%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop19in) {
+                                        width: 13.6%;
+                                        @include ie11() {
+                                            width: 12.6%;
+                                        }
+                                        @include firefox() {
+                                            width: 13.4%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop18in) {
+                                        width: 12.8%;
+                                        @include ie11() {
+                                            width: 12.2%;
+                                        }
+                                        @include firefox() {
+                                            width: 12.8%;
+                                        }
+                                    }
+                                }
+                                .arrowLine05 {
+                                    width: 18.2%;
+                                    margin-left: 70px;
+                                    top: 0px;
+                                    left: 0;
+                                    z-index: 0;
+                                    position: relative;
+                                    @include ie11() {
+                                        width: 18.6%;
+                                    }
+                                    @include firefox() {
+                                        width: 18.2%;
+                                    }
+                                    @include breakpoint(lgmax) {
+                                        width: 17.7%;
+                                        @include ie11() {
+                                            width: 18.2%;
+                                        }
+                                        @include firefox() {
+                                            width: 18%;
+                                        }
+                                    }
+                                    @include breakpoint(lgsmax) {
+                                        width: 17.5%;
+                                        @include ie11() {
+                                            width: 18.2%;
+                                        }
+                                        @include firefox() {
+                                            width: 17.8%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxmax) {
+                                        width: 16.83%;
+                                        @include ie11() {
+                                            width: 17.6%;
+                                        }
+                                        @include firefox() {
+                                            width: 17%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxmax) {
+                                        width: 16.6%;
+                                        @include ie11() {
+                                            width: 19.2%;
+                                        }
+                                        @include firefox() {
+                                            width: 16.2%;
+                                        }
+                                    }
+                                    @include breakpoint (lgxxxmax) {
+                                        width: 16.34%;
+                                        @include ie11() {
+                                            width: 16.8%;
+                                        }
+                                        @include firefox() {
+                                            width: 16%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxxxmax) {
+                                        width: 15.3%;
+                                        @include ie11() {
+                                            width: 15.6%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop19in) {
+                                        width: 14.4%;
+                                        @include ie11() {
+                                            width: 15%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop18in) {
+                                        width: 13.26%;
+                                        @include ie11() {
+                                            width: 14%;
+                                        }
+                                        @include firefox() {
+                                            width: 13.2%;
+                                        }
+                                    }
+                                    .arrowLineWrap {
+                                        width: 100%;
+                                        .arrowLine_list {
+                                            .line {
+                                                &--1,
+                                                &--0 {
+                                                    width: 100%;
+                                                }
+                                                &--2A {
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    @include ie11() {
+                                                        left: 0;
+                                                    }
+                                                    .lineCont::after {
+                                                        background-image: none;
+                                                        @include ie11() {
+                                                            background-image: "";
+                                                        }
+                                                    }
+                                                    .lineIE {
+                                                        @include ie11 {
+                                                            background-image: none;
+                                                        }
+                                                    }
+                                                    .lineEDGE {
+                                                        @include ieEdge {
+                                                            background-image: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .arrowLine06 {
+                                    width: 9%;
+                                    @include ie11() {
+                                        width: 7.4%;
+                                    }
+                                    @include firefox() {
+                                        width: 8.8%;
+                                    }
+                                    @include breakpoint(lgmax) {
+                                        width: 9.2%;
+                                        @include ie11() {
+                                            width: 9.4%;
+                                        }
+                                        @include firefox() {
+                                            width: 9%;
+                                        }
+                                    }
+                                    @include breakpoint(lgsmax) {
+                                        width: 9%;
+                                        @include ie11() {
+                                            width: 9.4%;
+                                        }
+                                        @include firefox() {
+                                            width: 9.2%;
+                                            ;
+                                        }
+                                    }
+                                    @include breakpoint(lgxmax) {
+                                        width: 9.8%;
+                                        @include ie11() {
+                                            width: 9.6%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxmax) {
+                                        width: 10%;
+                                        @include ie11() {
+                                            width: 8%;
+                                        }
+                                        @include firefox() {
+                                            width: 10%;
+                                        }
+                                    }
+                                    @include breakpoint (lgxxxmax) {
+                                        width: 10.2%;
+                                        @include ie11() {
+                                            width: 10.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxxxmax) {
+                                        width: 10.8%;
+                                        @include ie11() {
+                                            width: 11%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop19in) {
+                                        width: 12.8%;
+                                        @include ie11() {
+                                            width: 11.4%;
+                                        }
+                                        @include firefox() {
+                                            width: 11%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop18in) {
+                                        width: 11.6%;
+                                    }
+                                }
+                            }
+                        }
+                        .flowLine03 {
+                            left: 98px;
+                            .flowLineWrap {
+                                width: 117.5px;
+                                .arrowLine07 {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .flowLine04 {
+                            left: 98px;
+                            .flowLineWrap {
+                                width: 117.5px;
+                                .arrowLine09 {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .flowLine05 {
+                            @include breakpoint(lgxmax) {
+                                @include firefox() {
+                                    left: -249px;
+                                }
+                            }
+                            @include breakpoint(lgxxxxmax) {
+                                @include firefox() {
+                                    left: -245px;
+                                }
+                            }
+                        }
+                        &--line {
+                            &--image {
+                                .mt-mid {}
+                            }
+                        }
+                    }
+                    &--power {}
+                    &--ess {
+                        .flowLine07 {
+                            right: 104.5px;
+                            @include breakpoint(lgxmax) {
+                                @include firefox() {
+                                    top: calc(9.5rem + 38px);
+                                }
+                            }
+                            @include breakpoint(lgxxxmax) {
+                                @include firefox() {
+                                    top: calc(9.5rem + 37px);
+                                }
+                            }
+                            @include breakpoint(maxdesktop19in) {
+                                @include firefox() {
+                                    top: calc(9.5rem + 8px);
+                                }
+                            }
+                            .flowLineWrap {
+                                width: 586px;
+                                .arrowLine15 {
+                                    width: 37%;
+                                    @include ie11() {
+                                        width: 37.5%;
+                                    }
+                                }
+                                .arrowLine16 {
+                                    width: 21.6%;
+                                    @include ie11() {
+                                        width: 21.2%;
+                                    }
+                                    @include firefox() {
+                                        width: 21.4%;
+                                    }
+                                    @include breakpoint(lgsmax) {
+                                        @include ie11() {
+                                            width: 20.8%
+                                        }
+                                        @include firefox() {
+                                            width: 20.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxmax) {
+                                        width: 21.2%;
+                                        @include ie11() {
+                                            width: 20.6%;
+                                        }
+                                        @include firefox() {
+                                            width: 21.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxmax) {
+                                        @include firefox() {
+                                            width: 21.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxxmax) {
+                                        @include ie11() {
+                                            width: 20.8%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop19in) {
+                                        width: 19.8%;
+                                        @include ie11() {
+                                            width: 19.4%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop18in) {
+                                        width: 19.6%;
+                                        @include ie11() {
+                                            width: 19%;
+                                        }
+                                    }
+                                }
+                                .arrowLine17 {
+                                    width: 14.2%;
+                                    margin-left: 0;
+                                    @include ie11() {
+                                        width: 11.2%;
+                                    }
+                                    @include firefox() {
+                                        width: 14.3%;
+                                    }
+                                    @include breakpoint(lgmax) {
+                                        width: 13.7%;
+                                        @include ie11() {
+                                            width: 11%;
+                                        }
+                                        @include firefox() {
+                                            width: 14.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgsmax) {
+                                        width: 13.9%;
+                                        @include ie11() {
+                                            width: 11.4%;
+                                        }
+                                        @include firefox() {
+                                            width: 14.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxmax) {
+                                        width: 14.8%;
+                                        @include ie11() {
+                                            width: 11.2%;
+                                        }
+                                        @include firefox() {
+                                            width: 14.4%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxmax) {
+                                        width: 13.4%;
+                                        @include ie11() {
+                                            width: 13.4%;
+                                        }
+                                        @include firefox() {
+                                            width: 13.4%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxxmax) {
+                                        width: 13.2%;
+                                        @include ie11() {
+                                            width: 10%;
+                                        }
+                                        @include firefox() {
+                                            width: 13.6%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop19in) {
+                                        width: 13.4%;
+                                        @include ie11() {
+                                            width: 9.6%;
+                                        }
+                                        @include firefox() {
+                                            width: 13.8%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop18in) {
+                                        width: 12.96%;
+                                        @include ie11() {
+                                            width: 9.2%;
+                                        }
+                                    }
+                                }
+                                .arrowLine20 {
+                                    width: 15.2%;
+                                    top: 0;
+                                    left: 0;
+                                    margin-left: 70px;
+                                    z-index: 0;
+                                    position: relative;
+                                    @include ie11() {
+                                        width: 17.8%;
+                                    }
+                                    .arrowLineWrap {
+                                        width: 100%;
+                                        .arrowLine_list {
+                                            .line {
+                                                &--1,
+                                                &--0 {
+                                                    width: 100%;
+                                                }
+                                                &--2A {
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    @include ie11() {
+                                                        left: 0;
+                                                    }
+                                                    .lineCont::after {
+                                                        background-image: none;
+                                                        @include ie11() {
+                                                            background-image: "";
+                                                        }
+                                                    }
+                                                    .lineIE {
+                                                        @include ie11 {
+                                                            background-image: none;
+                                                        }
+                                                    }
+                                                    .lineEDGE {
+                                                        @include ieEdge {
+                                                            background-image: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    @include breakpoint(lgmax) {
+                                        @include ie11() {
+                                            width: 17.8%;
+                                        }
+                                        @include firefox() {
+                                            width: 15.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgsmax) {
+                                        width: 15.2%;
+                                        @include ie11() {
+                                            width: 17.8%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxmax) {
+                                        width: 14.8%;
+                                        @include ie11() {
+                                            width: 17.6%;
+                                        }
+                                        @include firefox() {
+                                            width: 15%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxmax) {
+                                        width: 14.8%;
+                                        @include ie11() {
+                                            width: 19.2%;
+                                        }
+                                        @include firefox() {
+                                            width: 14.6%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxxmax) {
+                                        width: 14.4%;
+                                        @include ie11() {
+                                            width: 17.6%;
+                                        }
+                                        @include firefox() {
+                                            width: 14.4%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop19in) {
+                                        width: 13.8%;
+                                        @include ie11() {
+                                            width: 17.2%;
+                                        }
+                                        @include firefox() {
+                                            width: 13.6%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop18in) {
+                                        width: 13.2%;
+                                        @include ie11() {
+                                            width: 17.2%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .flowLine08 {
+                            left: -67.5px;
+                            @include breakpoint(lgsmax) {
+                                top: calc(9.5rem + 36px);
+                            }
+                            @include breakpoint(lgxxxmax) {
+                                @include firefox() {
+                                    top: calc(9.5rem + 35px);
+                                }
+                            }
+                            @include breakpoint(maxdesktop19in) {
+                                top: calc(9.5rem + 6px);
+                            }
+                            .flowLineWrap {
+                                width: 311.5px;
+                                .arrowLine18 {
+                                    width: 45%;
+                                    @include breakpoint(lgsmax) {
+                                        width: 44.996%;
+                                        @include ie11() {
+                                            width: 45%;
+                                        }
+                                        @include firefox() {
+                                            width: 44.4%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxmax) {
+                                        width: 44.94%;
+                                    }
+                                    @include breakpoint(lgxxmax) {
+                                        @include ie11() {
+                                            width: 44.6%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxxmax) {
+                                        width: 44.6%;
+                                        @include ie11() {
+                                            width: 44.4%;
+                                        }
+                                        @include firefox() {
+                                            width: 44.2%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop19in) {
+                                        width: 43.7%;
+                                        @include firefox() {
+                                            width: 43.9%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop18in) {
+                                        width: 43.4%;
+                                    }
+                                }
+                                .arrowLine19 {
+                                    width: 32.6%;
+                                    @include ie11() {
+                                        width: 32.2%;
+                                    }
+                                    @include breakpoint(lgsmax) {
+                                        width: 32%;
+                                        @include ie11() {
+                                            width: 31.4%;
+                                        }
+                                        @include firefox() {
+                                            width: 32%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxmax) {
+                                        width: 31%;
+                                        @include ie11() {
+                                            width: 30.8%;
+                                        }
+                                    }
+                                    @include breakpoint (lgxxmax) {
+                                        @include ie11() {
+                                            width: 31.2%;
+                                        }
+                                    }
+                                    @include breakpoint(lgxxxmax) {
+                                        width: 31%;
+                                        @include ie11() {
+                                            width: 30.4%;
+                                        }
+                                        @include firefox() {
+                                            width: 30.4%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop19in) {
+                                        width: 29%;
+                                        @include ie11() {
+                                            width: 28.2%;
+                                        }
+                                        @include firefox() {
+                                            width: 28.6%;
+                                        }
+                                    }
+                                    @include breakpoint(maxdesktop18in) {
+                                        width: 27.8%;
+                                    }
+                                }
+                            }
+                        }
+                        .flowLine09 {
+                            right: 104.5px;
+                            .flowLineWrap {
+                                width: 343.5px;
+                                .arrowLine21 {
+                                    width: 64%;
+                                    @include ie11() {
+                                        width: 65%;
+                                    }
+                                }
+                                .arrowLine22 {
+                                    width: 36%;
+                                    @include ie11() {
+                                        width: 35%;
+                                    }
+                                }
+                            }
+                        }
+                        .flowLine10 {
+                            right: 104.5px;
+                            .flowLineWrap {
+                                width: 343.5px;
+                                .arrowLine24 {
+                                    width: 64%;
+                                    @include ie11() {
+                                        width: 65%;
+                                    }
+                                }
+                                .arrowLine25 {
+                                    width: 36%;
+                                    @include ie11() {
+                                        width: 35%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__content {
+                        &--image {
+                            .mcb-8 {
+                                @include breakpoint(lgsmax) {
+                                    @include firefox() {
+                                        margin-bottom: -8px;
+                                    }
+                                }
+                                @include breakpoint(lgxxxmax) {
+                                    @include firefox() {
+                                        margin-bottom: -7px;
+                                    }
+                                }
+                            }
+                            @include ie11() {
+                                .mbImgIeTRL {
+                                    position: absolute;
+                                    bottom: 0;
+                                    right: calc(50% - 39px);
+                                }
+                                .mbImgIeTRR {
+                                    position: absolute;
+                                    bottom: 0;
+                                    right: calc(50% - 35px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

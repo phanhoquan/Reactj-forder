@@ -1,0 +1,162 @@
+<div class="ess-charge-chart rounded mt-2">
+	<div class="chart_title">
+		<p>BMS 장비 통계 차트</p>
+	</div>
+	<div class="box-content">
+		<div class="w-100 amChartline">
+			<div id="statisticsChartbms" class="amchart" style="height: 300px"></div>
+		</div>
+	</div>
+
+</div>
+<div class="datatable rounded">
+	<div class="chart_title border-black">
+		<p class="p-0 m-0 text-left">BMS 장비 통계</p>
+	</div>
+	<div class="operation-status">
+		<div class="d-flex justify-content-between">
+			<div class="button-lenght">
+				<select name="" id="">
+					<option value="">5</option>
+					<option value="">10</option>
+					<option value="">15</option>
+					<option value="">20</option>
+				</select>
+				<p>개씩 보기</p>
+			</div>
+			<div class="button-download">
+				<a href="javascript:void(0)">엑셀 다운</a>
+				<a href="javascript:void(0)">CSV 다운</a>
+			</div>
+		</div>
+
+		<div class="table-responsive" width="100%">
+			<table class="table table-striped table-bordered table-hover custom-datatable-06" id="custom-dataTables">
+				<thead>
+					<tr>
+						<th>시간</th>
+						<th>기기</th>
+						<th>최소 셀전압</th>
+						<th>최대 셀전압</th>
+						<th>최소 셀온도</th>
+						<th>최대 셀온도</th>
+						<th>전압</th>
+						<th>전류</th>
+						<th>SOC</th>
+						<th>SOH</th>
+						<th class="blue">충전 제한 값</th>
+						<th>방전 제한 값</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>01</td>
+						<td>BMS # 1</td>
+						<td>12345.6</td>
+						<td>54.21</td>
+						<td>123.4</td>
+						<td>123.4</td>
+						<td>41,674</td>
+						<td>12345.6</td>
+						<td>123.4</td>
+						<td>90.05</td>
+						<td class="blue">700.25</td>
+						<td>700.25</td>
+					</tr>
+					<tr>
+						<td>02</td>
+						<td>BMS # 2</td>
+						<td>12345.6</td>
+						<td>54.21</td>
+						<td>123.4</td>
+						<td>123.4</td>
+						<td>41,674</td>
+						<td>12345.6</td>
+						<td>123.4</td>
+						<td>90.05</td>
+						<td class="blue">700.25</td>
+						<td>700.25</td>
+					</tr>
+					<tr>
+						<td>03</td>
+						<td>BMS # 3</td>
+						<td>12345.6</td>
+						<td>54.21</td>
+						<td>123.4</td>
+						<td>123.4</td>
+						<td>41,674</td>
+						<td>12345.6</td>
+						<td>123.4</td>
+						<td>90.05</td>
+						<td class="blue">700.25</td>
+						<td>700.25</td>
+					</tr>
+					<tr>
+						<td>04</td>
+						<td>BMS # 4</td>
+						<td>12345.6</td>
+						<td>54.21</td>
+						<td>123.4</td>
+						<td>123.4</td>
+						<td>41,674</td>
+						<td>12345.6</td>
+						<td>123.4</td>
+						<td>90.05</td>
+						<td class="blue">700.25</td>
+						<td>700.25</td>
+					</tr>
+					<tr>
+						<td>05</td>
+						<td>BMS # 5</td>
+						<td>12345.6</td>
+						<td>54.21</td>
+						<td>123.4</td>
+						<td>123.4</td>
+						<td>41,674</td>
+						<td>12345.6</td>
+						<td>123.4</td>
+						<td>90.05</td>
+						<td class="blue">700.25</td>
+						<td>700.25</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="float-right">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link previous" href="#" aria-label="Previous">
+								<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link acitve" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><a class="page-link" href="#">6</a></li>
+						<li class="page-item"><a class="page-link" href="#">7</a></li>
+						<li class="page-item"><a class="page-link" href="#">8</a></li>
+						<li class="page-item"><a class="page-link" href="#">9</a></li>
+						<li class="page-item"><a class="page-link" href="#">10</a></li>
+						<li class="page-item">
+							<a class="page-link next" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
