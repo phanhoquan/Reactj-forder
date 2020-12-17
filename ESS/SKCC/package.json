@@ -14,7 +14,7 @@
 		"babel-preset-es2015": "^6.24.1",
 		"bootstrap": "^4.1.1",
 		"browser-sync": "^2.24.4",
-		"datatables.net": "^1.10.19",
+		"datatables.net": "^1.10.22",
 		"datatables.net-dt": "^1.10.19",
 		"font-awesome": "^4.7.0",
 		"gulp": "^3.9.1",
